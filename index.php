@@ -42,7 +42,7 @@
 								    	<ul class="slides">
 											<li style="background-image: url(images/homepage/hs_board.jpg)">
 												<div class="info">
-												<h2>Who we are</h2>
+												<h2>Who IS ROBBIE</h2>
 												<div class="bg-border">
 													<p>At GGLeagues we provide a competitive gaming community for players to compete against one another for cash prizes.</p>
 												</div>
