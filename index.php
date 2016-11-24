@@ -54,7 +54,7 @@
 									            <div class="info">
 													<h2>What we do</h2>
 													<div class="bg-border">
-														<p>Guides can give tours on areas of their interst such as History,  &amp; leagues at the highest standard for cash prizes.</p>
+														<p>Guides can give tours on areas of their interst such as History, Art, and Sport</p>
 													</div>
 												</div>
 									            
