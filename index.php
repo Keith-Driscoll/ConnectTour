@@ -265,8 +265,8 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 					<column cols="4">
 						<div class="inner">
 							<img src="images/svg/alarm-clock2.svg" class=""/>
-							<h3>Waiting Lists</h3>
-							<p>Once a full tournament starts, open slots will be filled by players in the waiting list!</p>
+							<h3>Tours</h3>
+							<p>Once a tour is live, you can join a tour there is a limit per tour. First people who join the tour will be sent more information about the tour.</p>
 						</div>
 					</column><!-- ./3rd column end -->
 				</row><!-- ./1st row end -->
