@@ -133,9 +133,9 @@ require_once 'getProfilePicture.php';
 				<?php echo "<a href='profile.php?id=".$_SESSION['user_id']."&page=notifications'>"; ?>Notifications 
 				<?php
 				//print number of notifications
-				$sql = "SELECT * FROM notifications WHERE p_id = ".$_SESSION['user_id']." AND is_read=0";
-				$result = $db_connection->query($sql);
-				echo " (".$result->num_rows.")";
+				//$sql = "SELECT * FROM notifications WHERE p_id = ".$_SESSION['user_id']." AND is_read=0";
+				//$result = $db_connection->query($sql);
+				//echo " (".$result->num_rows.")";
 				?>
 				</a>
 			</li>
