@@ -65,9 +65,9 @@ require_once 'getProfilePicture.php';
 			<a href="support.php" class=""> Support</a>
 			<?php 
 				
-			  require_once 'classes/doLoginCheck.php';
-			  require_once 'classes/connections.php';
-			  $db_connection = db_connect();
+			  //require_once 'classes/doLoginCheck.php';
+			  //require_once 'classes/connections.php';
+			  //$db_connection = db_connect();
 			?>
 			
 			

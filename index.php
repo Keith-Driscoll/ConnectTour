@@ -4,7 +4,8 @@
 	  //session_start();
 	  //echo "SESSION ID:".session_id();
 	  //$login = new Login();
-	  //$loggedIn = $login->isUserLoggedIn() ?>
+	  //$loggedIn = $login->isUserLoggedIn() 
+?>
 <!-- Insert additional scripts here -->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/pages/landingPage.css"/>
