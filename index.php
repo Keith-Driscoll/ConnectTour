@@ -271,7 +271,7 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 					</column><!-- ./3rd column end -->
 				</row><!-- ./1st row end -->
 				<div class="divide">
-					<h3>Up Next!</h3>
+					<h3>Coming Soon!</h3>
 				</div>
 				<!-- 2nd row start -->
 				<row centered class="featured">
@@ -279,8 +279,8 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 					<column cols="4">
 						<div class="inner">
 							<img src="images/svg/change.svg" class=""/>
-							<h3>Entry Fees</h3>
-							<p>Organising a tournament? Wallet not thick enough? Crowd fund the prize pool by setting an entry fee!</p>
+							<h3>Tour Fees</h3>
+							<p>Organising a tour? But want to make money to cover the costs?  Set an fee for users to join the tour!</p>
 						</div>
 					</column><!--./ 1st column end -->
 
@@ -288,8 +288,8 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 					<column cols="4">
 						<div class="inner">
 							<img src="images/svg/trophy.svg" class=""/>
-							<h3>Leagues</h3>
-							<p>Leagues coming soon! Think you’re the best? Prove your skill and endurance in our bimonthly leagues hosted by GGLeagues and other top gamers!</p>
+							<h3>Awards</h3>
+							<p>Awards and prizes coming soon! Think you’ve giving the best? Submit yout user feedback and based of ratings you will be entered into a competition for best tour!</p>
 						</div>
 					</column><!-- ./2nd column end -->
 
@@ -297,8 +297,8 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 					<column cols="4">
 						<div class="inner">
 							<img src="images/svg/television.svg" class=""/>
-							<h3>Live Streaming</h3>
-							<p> Live streams coming soon! Watch livestreams of top players battling it out against each other in our tournaments and leagues.</p>
+							<h3>Profile Rating</h3>
+							<p> Profile rating coming soon, giving the ability for people to rate tour guides.</p>
 						</div>
 					</column><!-- ./3rd column end -->
 				</row><!-- ./2nd row end -->
