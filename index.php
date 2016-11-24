@@ -49,7 +49,7 @@
 											</div>
 												
 											</li> 
-								            <li style="background-image: url(images/homepage/hs_bg.jpg)">
+								            <li style="background-image: url(images/homepage/DublinAtNight.JPG)">
 									            
 									            <div class="info">
 													<h2>What we do</h2>
