@@ -1,4 +1,4 @@
-<?php// require_once 'segments/header.php';
+<?php require_once 'segments/header.php';
 	  //require_once 'classes/connections.php';
 	  //require_once 'classes/Login.php';
 	  //session_start();
@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/pages/landingPage.css"/>
 <link rel="stylesheet" href="css/pages/signup.css"/>
 <link rel="stylesheet" href="css/games.css"/>
-<?php //require_once 'segments/navigation.php'; ?>
+<?php require_once 'segments/navigation.php'; ?>
 <body class="loading">
 <!-- This stops particular scripts being loaded on every page regardless if they're needed or not -->
 <!-- ./Header End -->

@@ -1397,7 +1397,6 @@
     <Compile Include="home.php" />
     <Compile Include="image_upload.php" />
     <Compile Include="index(old).php" />
-    <Compile Include="index1.php" />
     <Compile Include="leagues.php" />
     <Compile Include="league_api_test.php" />
     <Compile Include="login.php" />
