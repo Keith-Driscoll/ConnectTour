@@ -44,12 +44,12 @@
 												<div class="info">
 												<h2>Who IS Keith</h2>
 												<div class="bg-border">
-													<p>At GGLeagues we provide a competitive gaming community for players to compete against one another for cash prizes.</p>
+													<p>At Connect Tour we provide a service that allows genuine local people to give tours of t.</p>
 												</div>
 											</div>
 												
 											</li> 
-								            <li style="background-image: url(images/homepage/DublinAtNight.JPG)">
+								            <li style="background-image: url(images/homepage/HaPennyBridge.jpg)">
 									            
 									            <div class="info">
 													<h2>What we do</h2>
