@@ -239,7 +239,7 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 		
 			<div class="container align-centered">
 			<div class="divide">
-				<h3>Under Development</h3>
+				<h3>Features</h3>
 			</div>
 				<!-- 1st row start -->
 				<row centered class="featured">
@@ -325,7 +325,7 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 
 			<div class="container">
 				<row centered>
-					<h1>Alpha Signup</h1>
+					<h1>ConnectTour Signup</h1>
 				</row>
 				<row centered class="footer-signup">
 					<column cols="6">
@@ -377,7 +377,7 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 				<row centered>
 					<column cols="8">
 						<div class="align-centered inner">
-							<p>&copy; 2015-2016 <a href="index.php">Good Gaming Leagues</a>.</p>
+							<p>&copy; 2016 - 2017 <a href="index.php">ConnectTour</a>.</p>
 						</div>
 					</div>
 				</row>
