@@ -40,9 +40,9 @@
 				        		<!-- Slideshow Start -->			        		
 								<div class="flexslider">
 								    	<ul class="slides">
-											<li style="background-image: url(images/homepage/hs_board.jpg)">
+											<li style="background-image: url(images/homepage/GPO.jpg)">
 												<div class="info">
-												<h2>Who IS JIMMIE</h2>
+												<h2>Who IS Shane</h2>
 												<div class="bg-border">
 													<p>At GGLeagues we provide a competitive gaming community for players to compete against one another for cash prizes.</p>
 												</div>
