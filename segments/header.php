@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8" />
 <!--<link rel="icon" type="image/png" href="http://www.ggleagues.com/images/logo.png">-->
-<title>Good Gaming Leagues</title>
+<title>ConnectTour</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
 <link href='http://fonts.googleapis.com/css?family=Exo+2:400,100,300,500,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>  
