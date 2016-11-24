@@ -58,7 +58,7 @@ require_once 'getProfilePicture.php';
 	<div class="container clearfix">
 		<!-- main column -->					
 		<a href="index.php">
-			<h1  id="logo">Connect-Tour</h1>
+			<h1  id="logo">ConnectTour</h1>
 		</a>
 		<nav>	
 			<a href="tournaments.php" class="">Tours</a>

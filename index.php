@@ -248,7 +248,7 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 						<div class="inner">
 							<img src="images/svg/team.svg" class=""/>
 							<h3>Profiles</h3>
-							<p>Customize your gamer profile, follow your friends and join the same competitions as them!</p>
+							<p>Customize your profile, join a tour or register to be your own tourguide</p>
 						</div>
 					</column><!--./ 1st column end -->
 
