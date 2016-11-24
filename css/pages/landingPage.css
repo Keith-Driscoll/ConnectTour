@@ -1,0 +1,363 @@
+
+/*
+Last Edited 7/22/2016 - Keith Driscoll 
+*/
+
+/* Defaults ==================================== */
+	
+	body {  
+		background:#4e596b url('../../images/homepage/bg3.jpg') center center fixed;	
+		background-size:100% 100%;
+		color: #777;
+		font-family: 'Open Sans', sans-serif;
+		font-weight:100;
+		padding:0;
+		margin:0;
+		font-size:1.4em;
+		line-height:1.6em;
+		padding:0 0 0;
+		height:100%; 
+	}
+	#body-wrapper{
+		width:400px;
+		background-color:#000;
+		margin-top:100px;
+	}
+	a span.down {
+		font-size: 5em;
+		color:#f9f9f9;
+	}	
+	a span.down:hover{
+		color:#F39C12;
+	}
+	row.down {
+		position: absolute;
+		top:88%;
+		left:47%;
+	}
+	row.down a,
+	row.down span{
+		color:#fff;
+		text-decoration: none;
+	}
+	p{
+		color: #333;
+	}
+	#content .inner{
+		padding:1em 1em 1em 0em;
+	}
+	
+/* Forms ==================================== */	 
+	
+	.form-row {
+		margin-bottom: 0; 
+	} 
+	
+	form label{
+		width:100%;
+	}
+	
+	.input-wrapper {
+		border: solid 1px #e0e0e0;
+		border-bottom:0;
+	}
+	
+	.form-row input.text,
+	.form-row textarea {
+		width:100%;
+		display: block;
+		border:0; 
+		padding:1.2em 0; 
+		font-size:1em;
+		font-weight: 300;
+		font-family: 'Exo 2', sans-serif;
+		background:#f9f9f9;
+		color:#7f7f7f; 
+		text-align: center;
+		-webkit-box-shadow: inset 0 5px 10px #f3f3f3; 
+		-moz-box-shadow: inset 0 5px 10px #f3f3f3; 
+		-o-box-shadow: inset 0 5px 10px #f3f3f3; 
+		box-shadow: inset 0 5px 10px #f3f3f3; 
+	}
+	
+	select {   
+		width:100%;
+		font-size:1em; 
+	}  
+	
+	.form-row input.btn {
+		width:100%;
+		border: 0;
+		font-size:1em;
+		background:#F39C12; 
+		color:#fff;    
+		text-shadow:  0 -1px 2px rgba(0,0,0,.2);	
+	}
+	
+	.form-row input.btn:hover, 
+	.form-row input.btn:focus {
+		background:#E87E04;
+	}
+	
+	.form-box {
+		padding:2em 1em 1em 2em;
+		text-align: center;		
+	}
+	
+	.form-box .btn {
+		-webkit-border-bottom-right-radius: 4px;
+		-moz-border-radius-bottomright: 4px;
+		border-bottom-right-radius: 4px;  
+		-moz-border-radius-bottomleft: 4px;
+		border-bottom-left-radius: 4px;  
+		-webkit-border-bottom-left-radius: 4px;
+	}
+	
+	.form-box form {
+		position: relative;
+	}
+	
+/* Sidebar ==================================== */
+
+	#sidebar ul {
+		list-style: none;
+		padding:0;
+		margin:0;	
+	}
+
+	#sidebar ul li {
+		list-style: none;
+		padding:0 0 1em;
+		margin:0 0 1em;	
+		border-bottom: solid 1px #eee;
+	}
+
+	#sidebar ul li h3.label {
+		margin:0 0 .5em;	
+	}
+
+	#sidebar ul li h3.label span {
+		color:#F39C12	
+	}	
+/* Alpha Signup ============================ */
+.alpha{
+	background-color:#f8f8f8;
+	background-image: url("../../images/bg02.png"), url("../../images/bg03.png"), url("../../images/bg01.png");
+    background-position: top left,	bottom left,	top left;
+    background-size: 100% 6em,	100% 6em,	auto;
+    background-repeat: no-repeat,	no-repeat,	repeat;
+}
+.alpha-signup{
+	padding-top: 2em; 
+	padding-bottom: 1em;
+}
+.alpha-signup h2{
+	color: #333;
+	font-size: 3.2em;
+	padding: .5em 0;
+}
+.alpha-signup p{
+	color:#666;
+	font-size: 1.4em;
+    padding-bottom: 0em;
+}
+.alpha-signup hr{
+	width: 90%;
+	padding: .5em 0;
+}
+
+.alpha-signup button{
+	color: #fff;
+	margin: 1em 0;
+	background-color: #F39C12;
+}
+.alpha-signup button:hover{
+	cursor: default;
+	background-color: rgba(243, 156, 18,.8);
+	-webkit-transition: background-color .3s ease;
+	-moz-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+}
+.footer-signup button{
+	color: #fff;
+	margin-bottom:2px;
+	background-color: #F39C12;
+}
+.footer-signup input{
+	margin-top:2px
+}
+.footer-signup button:hover{
+	cursor: default;
+	background-color: rgba(243, 156, 18,.8);
+	-webkit-transition: background-color .3s ease;
+	-moz-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+}
+
+/* Panel ==================================== */
+	#content container{
+		padding:0;
+	}
+	.panel { 
+		padding:2em 0;
+		position: relative; 
+		position: relative;
+		overflow:hidden;
+	}
+	.panel-alt{
+		padding:2em 0;
+		position: relative; 
+		position: relative;
+		overflow:hidden;
+	}
+	#panel {
+		background:#fff; 
+		padding:2em 0;
+		position: relative; 
+		position: relative;
+		overflow:hidden;
+	}
+	
+	.panel-content {
+		padding:2em 0	
+	}
+	
+	.panel-alt {
+		background:#f9f9f9; 
+	}
+	
+	.box-right .image-box, image-box-last {	
+		width:50%;
+		right:0;
+  		top:0;	
+		height:100%;
+		padding:0;
+		position:absolute;	
+  		box-sizing:border-box;
+	}
+	.box-right .image-box.img{
+		background: url('../../images/homepage/imac.jpg') 50% 0 / cover no-repeat;	
+	}
+	.box-right .image-box.img2{
+		background: url('../../images/homepage/ipad.jpg') 50% 0 / cover no-repeat;	
+	}
+	
+	.box-right .inner {
+		padding:0 6em 0 0;
+	}
+	
+	.box-left .image-box {
+		background: url('../../images/homepage/iphone.jpg') 50% 0 / cover no-repeat;	
+		width:50%;
+		left:0;
+  		top:0;	
+		height:100%;
+		padding:0;
+		position:absolute;	
+  		box-sizing:border-box;
+	}
+	
+	.box-left .inner {
+		padding:0 0 0 6em; 
+	}
+	
+	/* Features =================================== */
+	section.featured{
+		background-color:#fff;
+	}
+	.features h3{
+		padding-bottom: .3em;
+		margin-bottom: .2em;
+		border-bottom: 1px solid #F39C12;
+	}
+	.panel .inner{
+		padding: 2em;
+	}
+	.features-icon{
+		margin-bottom: 1.1em;
+		height:86px;
+	}
+	.features-icon .board{
+		width: 80px;
+	}
+	.features-icon .dollar{
+		width: 98px;
+	}
+	.features-icon .lock{
+		width: 72px;
+	}
+	.panel .features .featured img{
+		width:42px;
+		height:42px;
+	}
+	section.soon{
+		background-color:#34495e;
+		color: #fff;
+	}
+	section.soon h3{
+		padding-top:1em;
+		color:#fff;
+		border:0;
+	}
+	section.soon p{
+		color:#f8f8f8;	
+	}
+	section.soon a{
+		color:#f39c12;
+	}
+	section.soon .divide{
+		background-color: rgba(0,0,0,0.2);
+		padding: 1em 0;
+		margin: 0 auto;
+		border: 1px solid rgba(255,255,255,0.2);
+	}
+	section.soon .divide h3{
+		letter-spacing: 4px;
+		padding:0;
+	}
+	.values {
+		text-align: center;
+	}
+	
+	/* Promo ==================================== */
+	
+	.promo {
+		background: transparent;	
+		margin-bottom:-1px;
+	}
+	
+	.promo .intro { 
+		max-width:50em;
+		margin:0 auto 5em;
+		color:#fff;
+	}
+	
+	.promo .intro h3 { 
+		color:#fff;	
+	}
+	
+	.promo .intro p { 
+		color:#fff;	
+		color:rgba(255,255,255,0.7);
+	}
+
+/* Video  ==================================== */
+	
+	video#bgvid {
+		position: fixed; right: 0; bottom: 0;
+		min-width: 100%; min-height: 100%;
+		width: auto; height: auto; z-index: -100; 
+		background:transparent;
+	}	
+	
+	.videooverlay {
+		position: fixed; right: 0; bottom: 0;
+		min-width: 100%; min-height: 100%;
+		width: auto; height: auto; z-index: -100; 
+		background: rgba(97,114,144,.7) url('../../images/.png'); 
+	}
+ 
+ 
+ 
+ 
+ 

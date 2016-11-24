@@ -1,0 +1,117 @@
+.view_ajax {
+  display: block;
+  overflow: auto;
+  height:100%;
+  min-height: 130px;
+  max-height: 130px;
+  overflow-y: auto;
+  border: 1px solid RGBA(0,0,0,0.1);
+  margin: 0 auto;
+  padding:1em;
+  color:#fff;
+}
+.chatInput{
+  height:34px;
+	width:80%;
+	float:left;
+	clear:left;
+	border: 1px solid rgba(255,255,255, 0.5);
+	/* unique input styling */
+	margin-right: -3%;
+	position: relative;
+	z-index: 1;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.sendBtn {
+	float:left;
+	clear:right;
+	height:34px;
+	padding:0;
+	line-height: 1em;
+	width: 23%;
+	color:#fff;
+	/* unique input styling */
+	position: relative;
+	z-index: 2;
+	text-shadow: 1px 1px  #333;
+	background-color: #F39C12;
+	border: 1px solid rgba(255,255,255, 0.2);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 10px;
+}
+.ajaxForm{
+  display: block;
+  margin: 1em auto;
+}
+/* Chat styling */
+.username{
+  font-size:14px;
+  font-weight: 700;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.oneUsersName{
+	cursor:pointer;
+}
+.chattext{
+  color:RGBA(0,0,0,0.8);
+  font-size:14px;
+  font-weight: 200;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+}
+.chattime{
+  font-size:10px;
+  font-style:bold;
+  color:lightgrey;
+  font-weight: 200;
+  float:right;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  vertical-align: middle;
+}
+.activeUsers h4{
+  font-size:15px;
+  font-weight: 500;
+  text-shadow: 1px 1px #000;
+  text-align:center;
+  color:#f8f8f8;
+  border-bottom:solid 1px RGBA(0,0,0,0.1);
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.activeUsers{
+  font-size:14px;
+  font-weight: 700;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.aUButtonStyling{
+	background-color:white;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	vertical-align:middle;	
+	border-top: solid 1px RGBA(0,0,0,0.1);
+	border-right: solid 1px RGBA(0,0,0,0.1);
+	border-bottom: solid 1px RGBA(0,0,0,0.1);
+	border-left: none !important;
+}
+.aUButtonStyling:hover{
+	background-color:RGBA(1,1,1,0.1);
+}
+.aUButtonStyling:active{
+	background-color:RGBA(1,1,1,0.2);
+}
+.aUButtonStyling:focus {
+	outline:0;
+	background-color:RGBA(1,1,1,0.2);
+	border:solid 1px RGBA(0,0,0,0.1);
+}
+#smallerChatActiveUsers{
+	padding:2px;
+	padding-right:0px;
+}
+.nopadding{
+	padding:0 !important;
+}

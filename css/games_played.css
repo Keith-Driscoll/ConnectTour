@@ -1,0 +1,66 @@
+.games{
+	text-align:center;
+	font-size:19px;
+}
+.prevWin{
+	color:forestgreen;
+}
+.prevLoss{
+	color:darkred;
+}
+#fileToUpload{	
+	color:white;
+	background: lightblue;
+	border-radius:3px;
+	font-size:15px;
+}
+.uploadButton{
+	margin-top:5px;
+	color:white;
+	background: lightblue;
+	padding:5px;
+	border-radius:3px;
+	font-size:15px;
+}
+
+.userScreenshot{	
+	display:none;
+	position:fixed;
+	width:85%;
+	height:85%;
+	top: 7.5%;
+  	left:7.5%;
+	z-index:50;
+}
+.closeButtonScr {
+	display:none;
+	color:white;
+	font-size:4em;
+	cursor:pointer;
+	position: fixed;
+	top: 10%;
+	right: 10%;
+	transition: all ease 1s;
+	z-index:50;
+}
+.closeButtonScr:hover {
+	color:RGBA(200,200,200,1);
+	transition: all ease 1s;
+}
+.viewShotBut{
+	width:10%;
+	color:white;
+	font-size:15px;
+	background-color: lightgrey;
+	border-radius:3px;
+	cursor:pointer;
+	padding:3px;
+}
+.viewShotBut:hover{
+	color:white;
+	background-color: RGBA(200,200,200,1);
+}
+.oneGame{
+	padding-bottom:24px;
+	
+}

@@ -1,0 +1,125 @@
+section {
+		background:#f8f8f8; 
+		padding:7em 0;
+		position: relative; 
+		position: relative;
+		overflow:hidden;
+	}
+section img{
+	max-height:200px;
+	width:100%;
+	border-radius: .3em;
+}
+.alpha-features p{
+	color: #333;
+}
+.comingsoon{
+	background: transparent;
+}
+.comingsoon p,
+.comingsoon h4,
+.comingsoon h2{
+	color:#fff;
+}
+/* Jumbotron ==================================== */
+	
+	.desktop .intro { 
+		padding:5em 1em 0; 
+	}
+	
+	#jumbotron {
+		color:#fff;
+		padding-top:5em;
+		height:100%;
+	}
+	
+	#jumbotron h1, #jumbotron h2, #jumbotron h3, #jumbotron h4, #jumbotron h5, #jumbotron h6  {
+		color:#fff;
+	}
+	
+	#jumbotron img { 
+		width:100%;
+		margin:0 auto;
+		display: block;
+		height: auto
+	}
+	
+	.jumbotron {
+		margin:0 0 0	
+	}
+	
+	.jumbotron p {
+		color:#fff;	
+		color:rgba(255,255,255,0.6); 
+	}  
+	
+	.jumbotron .intro { 
+		padding:0 1em 0; 
+		max-width:50em;
+		margin: 0 auto
+	}
+	
+	.jumbotron .intro.pagetitle {
+		padding:5em 1em	
+	}	 
+	
+	.jumbotron .intro.pagetitle h4 {
+		padding: 0;
+		margin:0;
+	}	 
+	
+	.jumbotron h2 {
+		font-weight: 300;
+		color:#fff;
+	}
+	  
+	.jumbotron h2 span { 
+		border-bottom: solid 5px #F39C12;
+		font-weight: 500
+	}
+	
+	.jumbotron h4 {
+		color:#fff !important; 
+		color:rgba(255,255,255,0.9) !important; 
+		font-weight: 100;
+		margin-bottom:1.5em
+	}
+	
+	.jumbotron .button {
+		float: none;
+		display: inline
+	}
+	
+	.jumbotron .button-light, .jumbotron .button-light:visited  {
+		border: solid 1px #fff;
+		background:rgba(0,0,0,0.2);
+		color:#fff;
+	}
+	
+	.jumbotron .icons {
+		margin-top:2em;
+		margin-bottom:2em
+	}
+	
+	.jumbotron .large {
+		color:#fff;	
+	}
+	
+	.jumbotron .form-box.boxed {
+		color:inherit;
+		background: #fff;
+		box-shadow: 0px 0px 40px rgba(0,0,0,.2);	
+		padding:2em
+	}
+	
+	.jumbotron .form-box .medium {
+		font-size:1.2em	
+	}
+	
+	.jumbotron .form-box .top .spacer {
+		display: block;
+		width:6em;
+		height:.2em;
+		margin:0 auto 2em;
+		background:#e94e6b;
+	}

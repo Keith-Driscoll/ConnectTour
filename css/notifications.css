@@ -1,0 +1,15 @@
+.notifications{
+	padding: 100px 0px 0px 20px;
+}
+
+.unread{
+	color: white;
+}
+
+.read{
+	color: lightgray;
+}
+
+.markAsRead{
+	display: inline;
+}

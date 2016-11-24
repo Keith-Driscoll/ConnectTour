@@ -1,0 +1,7 @@
+.all{
+	background-color:lightgrey;
+	height:100%;
+}
+.bracketRound:last-of-type .bracketMatch:last-of-type{
+	visibility: hidden;
+}

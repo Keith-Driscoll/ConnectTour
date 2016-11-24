@@ -1,0 +1,157 @@
+/* Tournament listing styling page*/
+.compete-tables img{width: 30px; height: 30px; margin: 0 auto; }
+.compete-tables {
+    border-collapse: separate;
+    margin-bottom: 30px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.compete-tables tr {
+}
+
+.compete-tables th {
+    border-color: inherit;
+    border-collapse: separate;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #6790ac;
+    font-size: 1.1em;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding: 5px;
+}
+
+.compete-tables tfoot {
+    color: #fff;
+    border-color: inherit;
+    vertical-align: inherit
+}
+
+.compete-tables tfoot td {
+    color: #fff;
+    text-align: center;
+}
+
+.compete-tables td {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    font-weight: 100;
+    color: #777;
+    font-size: 1em;
+    padding: 5px 0px;
+}
+.compete-tables td:nth-of-type(1) {
+	background: rgba(157, 157, 157, 0.2);
+	color:#fff;
+	width:20px;
+	text-align: center;
+}
+.compete-tables td:nth-of-type(2) {
+	text-align: left;
+	padding-left: 10px;
+}
+	.compete-tables td:nth-of-type(3) {
+	text-align: left;
+	padding-left: 10px;
+
+	}
+.compete-tables td:nth-of-type(6) {
+	color:#fff;
+	width:50px;
+	text-align: center;
+}
+.compete-tables tr:nth-of-type(odd) {
+    background-color: #f8f8f8;
+}
+.compete-tables tr:nth-of-type(even) {
+    background-color: #fff;
+}
+.compete-tables a.btn {margin: 0 5px; background-color: #d75c37; color:#f5f5f5;}
+.compete-tables a.btn:hover {background-color: #6790ac; color:#f5f5f5; }
+
+.pagination {
+    color:#666;
+    background-color:#fff;
+    width:100%;
+    border-radius: 0;
+    border: 1px solid #eee;
+    font-weight: bold;
+    padding: 10px 0;
+    margin:0;
+}
+ul.pages {
+    display:inline;
+}
+ul.pages li{
+    float:left;
+}
+/*Tournament Creation Styling*/
+
+.top { float: left; margin-top: 5%; margin-bottom: 5%;
+}
+
+aside {float:left; background-color: #f5f5f5; height: 300px; min-height: 200px;}
+aside ul {list-style: none;}
+
+.profile {float:left; background-color: #f5f5f5; margin-bottom: 20px; height: 100px;}
+
+.create {width: 100%; float:left;}
+	.textarea {width:100%; height:100px}
+
+	#legend legend{float:left;}
+	#legend h5 {margin: 0; padding: 0 15px; float:left; text-align: center; font-weight: bolder;}
+
+	/*Tournament Listing Styling*/
+.btn-join-tournament {
+    border: 1px solid rgba(238,238,238,0.5);
+    background-color: #eee;
+    color: #333;
+}
+.btn-join-tournament:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.tournament-info {
+    padding: 10px;
+    background: rgba(238,238,238,0.5);
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    margin: 3% 20px 0px 20px;
+}
+.tournament-info legend {
+    color: #fff;
+}
+
+
+/* List Filter Styling */
+
+.filter-list {
+    list-style: none;
+}
+
+/*List Filter end */
+
+.participant-img {
+    width:100%;
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto}
+.participant-info {text-align: center; border-bottom: 1px solid #e1e1e1; padding: 5px;}
+.participant-box { text-align: center; border: 5px solid #fff; background-color: #eee; padding:10px;}
+
+.content-right { margin-left: -15px; }
+.content-right a  {color:#888;}
+.content-right a:hover {color: #f5f5f5;}
+.content-right .tab-content .active {padding: 10px ;}
+
+hr.middle {
+	border-top: 2px solid #000;
+}
+
+
+

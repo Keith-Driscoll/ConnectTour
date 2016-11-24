@@ -1,0 +1,190 @@
+/* Stuff for the popup box */
+	#abc {
+	width:50%;
+	height:50%;
+	opacity:.95;
+	top: 25%;
+  	left:25%;
+	display:none;
+	position:fixed;
+	background-color:#AADDFF;
+	overflow:auto;
+	z-index:100;
+	text-align: center;
+	vertical-align: middle;
+	border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;	
+	}
+	
+	.closeButton {
+		font-size:4em;
+		cursor:pointer;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		transition: all ease 1s;
+	}
+	.closeButton:hover {
+		color:RGBA(200,200,200,1);
+		transition: all ease 1s;
+	}
+	.lobbyHeading{
+		margin-top:10px;
+		color:white;
+	}
+	#game_number_display{
+		color:white;
+		font-size:20px;
+	}
+	#pop_up_name{
+		color:white;
+		font-size:30px;
+	}
+	.popUpButtons{
+		text-decoration:none;
+		width:15%;
+		text-align:center;
+		display:block;
+		background-color:#FFBC00;
+		color:#fff;
+		padding:10px 0;
+		font-size:20px;
+		cursor:pointer;
+		border-radius:5px
+	}
+	#submit {
+		text-decoration:none;
+		width:30%;
+		text-align:center;
+		display:block;
+		background-color:#FFBC00;
+		color:#fff;
+		padding:10px 0;
+		font-size:20px;
+		cursor:pointer;
+		border-radius:5px
+	}
+	#submit:hover{
+		background-color:#FFDD00;
+	}
+	#leftOfConfirm{
+		color:black;
+		display:none;
+		margin-right:10px;
+		font-size:20px;
+		margin-top: 10px;
+	}
+	#leftOfDispute{
+		color:black;
+		margin-right:10px;
+		font-size:20px;
+		margin-top: 10px;
+	}
+	#subConfirm{		
+		background-color:forestgreen;	
+		display:none;	
+		margin:3px;
+	}
+	#subCancel{		
+		background-color:darkred;		
+		display:none;
+		margin:3px;
+	}	
+	#subResubmit{		
+		background-color:yellow;
+		color:black;	
+	}
+	#subResubmit:hover{
+		background-color:#FFDD00;
+	}
+	#subCancel:hover{
+		background-color:RGBA(180,70,70,1);
+	}
+	#subConfirm:hover{
+		background-color:RGBA(70,180,70,1);
+	}
+	.scoreDisplayPop{
+		width:100%;
+		float:left;
+		overflow: hidden;
+		text-align: center;
+		font-size: 2em;
+		margin-top:100px;
+	}
+	.highlight_box{
+		padding-top:12px;
+		padding-bottom: 12px;
+		border-top-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	.name_winner{
+		background-color: forestgreen;
+	}
+	.name_loser{
+		background-color: darkred;
+	}
+	.won{
+		margin-left :5px;
+		margin-top :17px;
+		font-size:25px;
+	}
+	.loss{
+		margin-right :5px;
+		margin-top :17px;
+		font-size:25px;
+	}
+	.show{
+		visibility:hidden;
+	}
+	#myClasses .classIcon{
+		transition:all ease 1s; 
+	}
+	#oppClasses .classIcon{
+		transition:all ease 1s; 
+	}
+	.glow:hover {
+		filter: sepia(0.86);
+		-webkit-filter: sepia(0.86);
+		transition:all ease 1s; 
+	}	
+	#player1{
+		box-shadow: 0 0 20px darkred;
+	}
+	#player2{
+		box-shadow: 0 0 20px darkred;
+	}
+	.winner {
+		box-shadow: 0 0 20px forestgreen !important;
+	}
+	.waitingNote{
+		font-size:30px;
+		color:white;
+		margin-top: 40px;
+	}
+	
+	#classChooseReport{
+		color:white;
+		font-size:20px;
+		bottom: 48px;
+		right: 40px;
+		color:rgba(243, 156, 18, 1);
+		position: absolute;
+		display:none;
+	}
+	/* Pop up mobile */
+	@media screen and (max-width: 48em) { 
+		#abc {
+			width:100%;
+			height:100%;
+			opacity:1;
+			top: 0;
+			left:0;
+			border-top-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+			overflow:scroll;
+		}
+		.scoreDisplayPop{
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+	}

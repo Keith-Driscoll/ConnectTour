@@ -1,0 +1,284 @@
+/*
+Last Edited 6/29/2016 - Keith Driscoll 
+*/
+
+/* Content ==================================== */
+ 
+	#content {
+		clear:both;
+		padding-top:5em;
+		margin-top:3px;
+	}
+	#content p{
+		color: #333;
+	}
+ 
+/* Profile  ===================================== */
+#profile{
+	clear:both;
+	margin-top: 7em;
+}
+.profile-header {
+	background: url('../images/profile/profile-banner.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+#profile h2{
+	color:#fff;
+}
+	.fade{
+		opacity:.9;
+	}
+button{
+	color:#333;
+}
+/* Header Content Styling */
+.profile-id{
+	padding: 1.5em 0 0 0;
+	text-shadow: 1px 1px #000;
+}
+.isFollowing{
+	font-size: 1.2em;
+	float:left;
+	color: #fff;
+	font-weight: bold;
+	height: 1.2em;
+	line-height: 1.2em;
+}
+.profile-photo{
+	display:block;
+	margin:0 auto;
+	border-radius: 50%;
+	height:150px;
+	width:150px;
+	overflow: hidden;
+	border: 3px solid #F39C12;
+	/* stops border from pushing content below */
+	box-shadow: 0px 0px 15px #333;
+	-moz-box-shadow: 0px 0px 15px #333;
+	-webkit-box-shadow: 0px 0px 15px #333;
+	box-shadow-bottom: 0px 0px 15px #333;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.editProfilePicButton{
+	width : 50%;
+	margin-top:10px;
+	background:RGBA(255,255,255,0.8);
+	cursor:pointer;
+	border-radius:3px;
+}
+.editProfilePicButton:hover{
+	background:RGBA(255,255,255,1);
+}
+.uploadInput{	
+	margin-top:10px;
+	color:black;
+	background: white;
+	border-radius:3px;
+}
+.uploadButton{
+	margin-top:5px;
+	color:black;
+	background: white;
+	padding:5px;
+	border-radius:3px;
+}
+
+/*About section box*/
+#edit{
+	border : 1px solid RGBA(0,0,0,0.6);
+	min-height: 100px;
+}
+
+
+	.edit-profile{
+		position: absolute;
+		margin: 1em -1em;
+		padding:0;
+		top:40%;
+		bottom: 50%;
+		left: 50%;
+		right: 50%;
+		z-index: 5;
+	}
+	.edit-icon{
+		color:rgba(255,255,255,0.5);
+		font-size: .8em;
+	}
+	.edit-icon:hover{
+		color:#fff;
+		cursor: pointer;
+		font-size: 1.2em;
+		/* button highlight fade */
+		transition:color 0.5s ease;
+		-o-transition:color 0.5s ease;
+		-webkit-transition:color 0.5s ease;
+		-moz-transition:color 0.5s ease;
+		/* button size increase on hover */
+		transition:font-size 0.5s ease;
+		-o-transition:font-size 0.5s ease;
+		-webkit-transition:font-size 0.5s ease;
+		-moz-transition:font-size 0.5s ease;
+	}
+	
+	.sm-show {
+		display:none;
+	}
+	.title{
+		font-size: 2em;
+	}
+/* Notifications Styling */
+.notifications row{
+	border-bottom:1px solid #999;
+}
+.notifications .notif-title{
+	padding: 1em 0em;
+	margin:0;
+}
+.notifications .notif-title p{
+	font-weight: bold;
+	font-size: 1.4em;
+	text-align: left;
+}
+.notifications notif-body p{
+	font-size: 1em;
+	text-align: left;
+}
+.notifications{
+	padding: 0px 1em;
+}
+.notifications p{
+	color: #333;
+}
+	
+/* Navigation Styling */
+#sidebar {
+	border-top: 1px solid rgba(255,255,255,0.05);
+}
+#sidebar ul li{
+	float:left;
+	list-style: none;
+}
+#sidebar ul li a{
+	width:inherit;
+	padding: 5px 25px 5px 25px;
+    color:#f8f8f8;
+    display:inline-block;
+    text-decoration:none;
+	border-right: 1px solid rgba(255,255,255,0.05);
+	text-shadow: 1px 1px #000;
+}
+#sidebar ul li a.last {
+	border-right: none;
+	}
+
+#sidebar ul li a:hover{
+	color:#f8f8f8;
+	background-color: rgba(255,255,255,0.05);
+	width: inherit;
+	/* stops border from pushing content below */
+	box-shadow: 3px #d75c37;
+	-moz-box-shadow: 0px 3px 0px #d75c37;
+	-webkit-box-shadow: 0px 3px 0px #d75c37;
+	box-shadow-bottom: 3px #d75c37;
+	/* button highlight fade */
+    transition:background-color 0.5s ease;
+    -o-transition:background-color 0.5s ease;
+    -webkit-transition:background-color 0.5s ease;
+    -moz-transition:background-color 0.5s ease;
+}
+#sidebar ul li a:active{
+	color:#d75c37;
+	text-shadow: 1px 1px rgba(0,0,0,0.7);
+}
+.selected {
+	background-color: rgba(255,255,255,0.05);
+	/* stops border from pushing content below */
+	box-shadow: #d75c37;
+	-moz-box-shadow: 0px 2px 0px #d75c37;
+	-webkit-box-shadow: 0px 2px 0px #d75c37;
+	box-shadow-bottom: 2px #d75c37;
+}
+/* Profile body styling */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+section{
+	position: relative;
+	background-color: #f9f9f9;
+	padding:2em;
+}
+/* Profile Responsiveness */
+
+   /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+		
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+		#sidebar ul li a{
+			padding: 5px 20px 5px 20px;
+		}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		
+		
+	#profile row column{
+	}
+		#sidebar ul li a{
+			padding:5px 8px 5px 8px;
+		}
+		#sidebar ul li span{
+			font-size: 1em;
+		}
+		.profile-card{
+		}
+		.sm-show{
+			display: block;
+		}	
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+		
+		
+	#profile row column{
+		margin:1em 0;
+	}
+		#sidebar ul li p{
+			display: none;
+		}
+		#sidebar ul li a{
+			padding: 20px 3px 20px 3px;
+		}
+		#sidebar ul li span{
+			font-size:1.2em;
+		}
+		
+	.sm-show{
+		display: block;
+	}
+}
+/* Icon Menu Styling */
+ #sidemenu span{
+	 font-size: 2em;
+	 padding: 5px 15px 5px 15px;
+ }
+ #sidemenu, #sidebar {
+	 margin:0;
+	 padding:0;
+ }
+
+.unfollowButton:hover span {display:none}
+.unfollowButton:hover:before {content:"Unfollow"}
+
+.requestSent:hover span {display:none}
+.requestSent:hover:before {content:"Cancel Request"}

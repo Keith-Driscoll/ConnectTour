@@ -1,0 +1,211 @@
+.filtersAndList{
+	margin-top:160px;
+	padding:10px;
+	padding-top:0px;
+}
+.filtersList{
+	min-height: 505px;	
+ 	background-color: lightgrey;
+	margin-bottom:20px;		
+}
+.tournamentListHeader column{
+	background-color: skyblue;
+	color:white;	
+}
+.tournamentListHeader{
+	background-color: skyblue;
+	color:white;
+}
+.tournamentListHeader row{
+	background-color: skyblue;
+	color:white;
+}
+.filtersListHeader{	
+ 	background-color: white;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align: center;
+}
+.filtersListHeader row{	
+ 	margin:0px;
+}
+.filterOptions{
+	padding:10px;
+}
+.fixLabel{
+	vertical-align: middle;	
+}
+.select{
+	font-size:12px;
+}
+.linedividor{
+	border-bottom:1px solid RGBA(0,0,0,0.1);
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.tournamentsList{	
+	min-height:455px;
+	max-height:455px;
+ 	background-color: lightgrey;
+	padding: 10px;
+	padding-top: 0px;
+	overflow:auto;
+}
+.dataFillUp{
+	transition: all ease 0.5s;
+}
+.bottomNavigator{
+	min-height:50px;
+	background-color: white;
+	margin: auto;
+}
+.tournamentContainer{
+	min-height: 500px;	
+	background-color: lightgrey;
+}
+.oneTournament{
+	background-color: white;
+	min-height:36px;
+	margin-top:8px;
+	transition: all ease 0.5s;
+}
+.oneTournament:hover{
+	cursor:pointer;
+	background-color: RGBA(255,255,255,0.6);
+	transition: all ease 0.5s;
+}
+.gameIcon{
+	height:32px;	
+	min-width:32px;
+	max-width:32px;
+}
+.optionMenu:active{
+	border:none;
+}
+.oneTournament row{
+	margin-bottom:0px;
+}
+.oneTournament column{
+	padding:10px;
+	display: flex;
+	border-right:solid 1px RGBA(0,0,0,0.1);
+	text-align: center;	
+	min-width:64px;
+}
+.oneTournament column:last-child{
+	border-right:0px;
+}
+.oneTournament column div{
+	vertical-align: middle;
+	align-self: center;
+	text-align: center;
+}
+.bottomNavigator ul{
+	padding:13px;
+	margin-bottom: 0px;
+}
+.bottomNavigatorM{
+	margin-bottom: 0px;
+	min-height:50px;
+	background-color: white;
+	margin: auto;
+	vertical-align: middle;
+}
+.mobilePagination1{
+	width:10%;
+	float:left;
+	min-height:50px;
+	line-height: 50px;
+	vertical-align: middle;	
+	text-align: center;
+	font-size: 20px;
+}
+.mobilePagination{
+	width:17.5%;
+	float:left;
+	min-height:50px;
+	line-height: 50px;
+	vertical-align: middle;	
+	text-align: center;
+	font-size: 25px;
+}
+.colorChange:hover{
+	background-color:darkgrey;
+	transition:ease 0.5s;
+}
+/*.joinButton{
+	padding:10px;
+	padding-left:15px;
+	padding-right:15px;
+	font-size:12px;
+	line-height: 10px;
+	background-color: mediumseagreen;
+	color:white;
+}
+.joinButton:hover{
+	background-color: mediumaquamarine;
+	color:white;
+}
+.fullButton{
+	padding:10px;
+	padding-left:17px;
+	padding-right:16px;
+	font-size:12px;
+	line-height: 10px;
+	background-color: brown;
+	color:white;
+}
+.fullButton:hover{
+	background-color: brown;
+	color:white;
+}*/
+.input-prepend{
+	height:40px;
+	margin-bottom: 0px;
+}
+row column{
+	margin-right:0px;
+}
+.bothColumns{
+	margin-right :24px;
+}
+.noborder{
+	border:0px;
+}
+.applyButton{
+	background-color: white;
+	height:35px;
+	transition: all ease 0.5s;
+}
+.applyButton:hover{
+	background-color: RGBA(230,230,230,1);
+	cursor:pointer;
+	transition: all ease 0.5s;
+}
+.textOverflow{
+	text-overflow: ellipsis;
+	max-width:64px;
+}
+@media screen and (max-width: 55em) { 
+	.sm-hidden{
+		display:none !important;
+	}
+}
+
+/* Mobile Specific*/
+.blockCoverage{
+	background-color:lightgrey;
+}
+.tournamentBlock{
+	min-height:200px;
+	padding:10px;
+}
+.infoBlock{
+	min-height:200px;
+	padding:5px;
+	background-color: white;
+	text-align:center;
+}
+.infoBlock:hover{
+	background-color: RGBA(100,100,100,0.4);
+}

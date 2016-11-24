@@ -1,0 +1,372 @@
+/*
+Last Edited 7/22/2016 - Keith Driscoll 
+*/
+
+/* Structure and containers ==================================== */
+	*, *::after, *::before {
+		box-sizing: border-box;
+	}
+	html {
+		height:100%;
+		position: relative
+	}
+
+	body {  
+		background:#4e596b url('../images/homepage/bg3.jpg') center center fixed;	
+		background-size:100% 100%;
+		color: #777;
+		font-family: 'Open Sans', sans-serif;
+		font-weight:100;
+		padding:0;
+		margin:0;
+		font-size:14px;
+		line-height:1.6em;
+		padding:0 0 0;
+		height:100%; 
+	}
+
+	.container { 
+		margin:0 auto;   
+		min-width: 50em; /* 300px @ 16px */
+		max-width: 75em; /* 1140px @ 16px */ 
+	}  
+	
+ 
+/* Typography ==================================== */
+	#header h1 a{
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 1.2em;
+	}
+	
+	p {
+		font-size: 1.2em;
+		line-height:1.5em;
+		color: #3d454e;
+		font-weight: 100;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		margin:0 0 1em;
+		padding:0; 
+		font-family: 'Exo 2', sans-serif;
+		font-weight:300;
+		color:#3d454e;
+	}
+	
+	h1 {
+		font-size:2.6em;	
+		margin:0 0 .5em;
+		line-height:1.1em;
+		font-weight:500
+	}
+	
+	h2 {
+		font-size:2.5em;
+		margin:0 0 .4em;	
+		line-height:1.2em;
+	}
+	
+	h3 {
+		font-size:1.8em;
+		margin:0 0 .8em;
+		line-height:1.3em;	
+	}
+	
+	h4 {
+		font-size:1.4em;
+		line-height:1.4em;	
+	}
+	
+	h5 {
+		font-size:1em;	
+		line-height:1.6em;
+	}
+	
+	h6 {
+		font-size:.8em;	
+		line-height:1.6em;
+	}
+	
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		text-decoration: none
+	}	 
+	
+	a, a:visited {
+		color: #3d454e;
+		-webkit-transition: all ease 0.25s;
+		transition: all ease 0.25s;
+	}  
+	
+	a:hover {
+		color: #3d454e; 
+	}  
+	
+	a.button, a.button:visited {
+		font-family: 'Open Sans', sans-serif;
+		font-size:1em;
+		font-weight: 300;
+		line-height:1em;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: .7em 1em;
+		background:#F39C12;
+		color:#fff;
+		margin:0 1em .5em 0;
+		display: block;
+		float: left;
+		-webkit-border-radius: 4px; 
+		-moz-border-radius: 4px; 
+  		border-radius: 4px; 		
+	}
+	a.button-alt, a.button-alt:visited {
+		font-family: 'Sans Serif', sans-serif;
+		font-size:1.2em;
+		font-weight: 400;
+		line-height:1em;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: .6em 3em;
+		background:#F39C12;
+		color:#fff;
+		text-decoration: none; 
+		margin:0 1em .5em 0;
+		-webkit-border-radius: 4px; 
+		-moz-border-radius: 4px; 
+  		border-radius: 4px; 		
+	}
+	
+	a.button:hover, a.button-alt:hover {
+		background:#E87E04; 
+	}
+	
+	a.button-light, a.button-light:visited {
+		border: solid 1px #eff0f1;
+		background:#fff;
+		color:#3d454e;		
+	}
+	
+	a.button-light:hover {
+		border: solid 1px #3d454e; 	
+	}
+	
+	a.button-dark, a.button-dark:visited { 
+		background:#3d454e;
+		color:#fff;		
+	}
+	
+	a.button-dark:hover { 
+		background:#3d454e;
+		color:#fff;		
+	}
+	
+	a.button span {
+		margin-right:.5em	
+	}
+	
+	.align-centered {
+		text-align: center	
+	}
+	
+	.align-left {
+		text-align: left
+	}
+	
+	.align-right {
+		text-align: right
+	}
+
+	.large { 
+		font-size: 3em;
+		margin-bottom:.5em;
+		color:#F39C12;
+	}
+
+	.medium { 
+		font-size: 1.6em;
+		margin:0 .1em .5em;
+		color:#F39C12;
+	}
+	
+	img {
+		border:0;	
+	}
+
+/* Header ==================================== */
+	
+	#header {
+		position: absolute;
+		top:1em;
+		left:2em;
+		right:1em;	
+	}
+	
+	#header h1 { 
+		float: left;	
+		margin:0;
+		padding:0;
+		height:100%;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size:1.8em
+	}
+	.left{
+		float:left;
+		margin:0;
+	}
+	.right {
+		float:right;
+		margin:0;
+	}
+	.margin-none{
+		margin:0;
+	}
+
+/* Content ==================================== */
+ 	section{
+		 color:#3d454e;
+	 }
+	#content{
+		margin-top:1em;
+		color:#3d454e;
+	}
+ 
+	#content .left img {
+		width:100%;
+		margin:0;
+		padding:0;
+		display: block;
+	}
+ 
+	#content .container { 	
+		position: relative
+	}
+ 
+	#content.boxed .container {
+		background: #fff;
+		box-shadow: 0px 0px 40px rgba(0,0,0,.2);	 
+	} 
+	.inner {
+		margin:0;
+		padding: 1.5em 0;
+	}	
+/* Responsive options ==================================== */
+
+@media screen and (max-width: 55em) { 
+	
+	#header {
+		padding:1em	
+	}
+	body { 
+		padding:0;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.container {
+		min-width: 100%;
+		max-width: 100% 
+	}
+	
+	.inner {
+		margin:0 0 1em 0;	
+	}  
+	
+	.image-box {
+		display: none	
+	}
+	
+	#content {
+		padding-top:4.5em; 
+	}
+	
+	.form-box {
+		padding:2em 1em 0em 1em;		
+	}
+	
+	.panel {
+		padding:2em 1em	
+	}
+	
+	#signup .align-right {
+		text-align: left	
+	}
+	.sm-hidden{
+		display:none;
+	}
+	
+}
+
+
+@media screen and (max-width: 48em) { 
+	.xs-hidden{
+		display:none;
+	}
+}
+
+@media screen and (max-width: 55em) { 
+	.sm-hidden{
+		display:none;
+	}
+}
+
+@media screen and (min-width: 48em) { 
+	.sm-hidden-up{
+		display:none;
+	}
+}
+
+/* Loading Dialog =====================*/
+
+.loading #loadingoverlay { 
+		background: #4e596b;
+		height:100%;
+		width:100%;
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index:999999; 
+		text-align: center
+	}	
+	
+	#loadingoverlay h1 { 
+		height:100%;
+		width:100%;
+		position: fixed;
+		top:45%;
+		left:0;
+		right:0; 
+		z-index:999999; 
+		text-align: center;
+		color:#fff; 
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size:1.8em
+	} 
+	#loadingoverlay h3 { 
+		height:100%;
+		width:100%;
+		position: fixed;
+		top:35%;
+		left:0;
+		right:0; 
+		z-index:999999; 
+		text-align: center;
+		color:#fff; 
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size:1.4em
+	} 
+	#loadingoverlay p { 
+		height:100%;
+		width:100%;
+		display: block;
+		position: fixed;
+		top:55%;
+		left:0;
+		right:0; 
+		z-index:999999; 
+		text-align: center;
+		color:#fff; 
+		text-transform: uppercase;
+		font-weight: 200;
+		font-size:1.1em
+	}

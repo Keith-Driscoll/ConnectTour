@@ -1,0 +1,184 @@
+/* Element Styling */
+
+
+/* #d75c37 Good Gaming League Orange */
+
+.btn-primary {
+	color: #d75c37;
+	background-color: #fff;
+	border-radius: 5px;
+	border: #d75c37 solid 1px;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #d75c37;
+	border-radius: 5px;
+	border: #d75c37 solid 1px;
+}
+
+.btn-login {
+	background-color: #fff;
+	outline: none;
+	color: #d75c37;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #d75c37;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #d75c37;
+}
+
+.btn-register {
+	background-color: #fff;
+	outline: none;
+	color: #d75c37;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #d75c37;
+}
+
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #d75c37;
+}
+
+.login-form {
+	color: #fff;
+}
+
+.login-form-link {
+	color: #fff;
+}
+
+.remember {
+	color: #888;
+	font-weight: 100;
+}
+
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #d75c37;
+}
+
+.login-link {
+	color: #d75c37
+}
+
+.login-link:hover {
+	color: #666;
+}
+
+.cancel-btn {
+	color: #d75c37;
+	background-color: #fff;
+	border-radius: 5px;
+	border: #d75c37 solid 1px;
+	padding: 7px 15px 5px 15px;
+}
+
+.cancel-btn:hover {
+	color: #ffffff;
+	background-color: #d75c37;
+}
+
+.popup {
+	margin: 5px;
+	padding: 5px 10px;
+	color: #d75c37;
+	border: 1px solid #fff;
+	background-color: transparent;
+	border-radius:
+}
+
+
+/* Body Styling */
+
+.panel-heading {}
+
+.panel-title {
+	text-align: center;
+	display: block;
+}
+
+.panel-body {}
+
+.panel-footer {}
+
+.panel-login {
+	margin: 20% 0;
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align: center;
+}
+
+.panel-login>.panel-heading a {
+	text-decoration: none;
+	color: #666;
+	font-size: 1em;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+.panel-login>.panel-heading a.active {
+	color: #d75c37;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.panel-login>.panel-heading hr {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+	background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+}
+
+.panel-login input[type="text"],
+.panel-login input[type="email"],
+.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+.panel-login input:hover,
+.panel-login input:focus {
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}

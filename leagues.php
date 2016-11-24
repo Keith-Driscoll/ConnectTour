@@ -1,7 +1,6 @@
 <?php
 	include 'classes/connections.php';
     require_once("classes/Login.php");
-    include 'classes/doLoginCheck.php';
     //checks if a player is logged in, and displays navbar accordingly
 
     //pulls game name following '?game = ' in url and stores in
