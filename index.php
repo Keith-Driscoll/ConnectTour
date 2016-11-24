@@ -44,7 +44,7 @@
 												<div class="info">
 												<h2>Who IS Keith</h2>
 												<div class="bg-border">
-													<p>At Connect Tour we provide a service that allows genuine local people to give tours of t.</p>
+													<p>At Connect Tour we provide a service that allows genuine people to give tours of their local towns.</p>
 												</div>
 											</div>
 												
@@ -59,7 +59,7 @@
 												</div>
 									            
 								            </li> 
-								            <li style="background-image: url(images/homepage/esports_event.jpg)">
+								            <li style="background-image: url(images/homepage/DublinPublicLibrary.jpg)">
 											
 									            <div class="info">
 													<h2>Alpha Launch Tournament</h2>
