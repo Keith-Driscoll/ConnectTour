@@ -279,7 +279,7 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 					<column cols="4">
 						<div class="inner">
 							<img src="images/svg/change.svg" class=""/>
-							<h3>Tour Fees</h3>
+							<h3>Fees</h3>
 							<p>Organising a tour? But want to make money to cover the costs?  Set an fee for users to join the tour!</p>
 						</div>
 					</column><!--./ 1st column end -->
