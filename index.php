@@ -54,7 +54,7 @@
 									            <div class="info">
 													<h2>What we do</h2>
 													<div class="bg-border">
-														<p>To enable gamers to create their own or take part in competitive tournaments &amp; leagues at the highest standard for cash prizes.</p>
+														<p>Guides can give tours on areas of their interst such as History,  &amp; leagues at the highest standard for cash prizes.</p>
 													</div>
 												</div>
 									            
@@ -85,9 +85,9 @@
 											
 										?>
 										
-											<h1>Alpha Signup</h1>
+											<h1>ConnectTour Signup</h1>
 											
-											<p>Sign up to get involved with our Alpha launch. Help improve the quality of our development. Keep up to-date with upcoming deals & features!</p>
+											<p>Sign up to get involved with our new Tours of Ireland launch! Keep up to-date with upcoming Tours & events!</p>
 				        			 	<?php
 											} else{
 												
