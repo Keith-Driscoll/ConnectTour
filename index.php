@@ -42,7 +42,7 @@
 								    	<ul class="slides">
 											<li style="background-image: url(images/homepage/GPO.jpg)">
 												<div class="info">
-												<h2>ROBBIE IS COOOOL </h2>
+												<h2>Who we are</h2>
 												<div class="bg-border">
 													<p>At Connect Tour we provide a service that allows genuine people to give tours of their local towns.</p>
 												</div>
@@ -62,9 +62,9 @@
 								            <li style="background-image: url(images/homepage/DublinPublicLibrary.jpg)">
 											
 									            <div class="info">
-													<h2>Alpha Launch Tournament</h2>
+													<h2>Beta Signup</h2>
 													<div class="bg-border">
-														<p>Join our community and compete in tournaments created by other players for cash prizes.</p>
+														<p>We are still under development but we need your help to make our service better!</p>
 													</div>
 												</div>
 									            
