@@ -7,7 +7,7 @@ Last modified  7/3/2016 - Keith
 
 <?php require_once 'analyticstracking.php';
 session_start();
-require_once 'getProfilePicture.php';
+//require_once 'getProfilePicture.php';
 /*
  $p_id = $_SESSION['user_id'];
  if(!isset($_SESSION)){

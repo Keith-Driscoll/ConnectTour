@@ -1,10 +1,8 @@
 <?php
 	function db_connect(){
-		//server1 servername -> gglmysql.cloudapp.net (active)
-		//server2 servername -> gglmysql2.cloudapp.net
-		$servername = "127.0.0.1";
-		$username = "ct_admin";
-		$password = "Password123";
+		$servername = "eu-cdbr-azure-west-a.cloudapp.net";
+		$username = "be4333e100072e";
+		$password = "2cb22472";
 		$dbname = "ggl_main";
 
 		// Create connection
@@ -15,7 +13,7 @@
 		    //exit();
 		} else {
 			echo "Connection successful <br>";
-			return $conn; 
+			return $conn;
 		}
 	}
 ?>
