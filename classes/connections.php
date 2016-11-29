@@ -2,7 +2,7 @@
 	function db_connect(){
 		//server1 servername -> gglmysql.cloudapp.net (active)
 		//server2 servername -> gglmysql2.cloudapp.net
-		$servername = "localhost";
+		$servername = "127.0.0.1:54112";
 		$username = "ct_admin";
 		$password = "Password123";
 		$dbname = "ggl_main";

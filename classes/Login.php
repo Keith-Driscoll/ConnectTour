@@ -6,7 +6,7 @@ include 'lib/password.php';
  * handles the user's login and logout process
  */
 class Login{
-    
+
     /**
      * @var object The database connection
      */
@@ -49,11 +49,11 @@ class Login{
         if (empty($_POST['user_name'])) {
             $this->errors[] = "Username field was empty.";
         } elseif (empty($_POST['user_password'])) {
-            $this->errors[] = "Password field was empty.";  
+            $this->errors[] = "Password field was empty.";
         } elseif (!empty($_POST['user_name']) && !empty($_POST['user_password'])) {
             // create a database connection, using the constants from config/db.php (which we loaded in index.php)
-            $this->db_connection = new mysqli("localhost", "ct_admin", "Password123", "ggl_main");
-			
+            $this->db_connection = new mysqli("127.0.0.1:54112", "ct_admin", "Password123", "ggl_main");
+
             // change character set to utf8 and check it
             if (!$this->db_connection->set_charset("utf8_general_ci")) {
                 $this->errors[] = $this->db_connection->error;
@@ -69,11 +69,11 @@ class Login{
                 $sql = "SELECT id, player_username, player_email, player_pass
                         FROM player
                         WHERE player_username = '".$user_name."' OR player_email = '".$user_name."'";
-                
+
                 $result_of_login_check = $this->db_connection->query($sql);
                 // if this user exists
                 if ($result_of_login_check->num_rows == 1) {
-                    
+
                     // get result row (as an object)
                     $result_row = $result_of_login_check->fetch_object();
 
@@ -85,7 +85,7 @@ class Login{
                         $_SESSION['user_name'] = $result_row->player_username;
                         $_SESSION['user_email'] = $result_row->player_email;
                         $_SESSION['user_login_status'] = 1;
-						
+
 						function random_colour_part() {
     						return str_pad( dechex( mt_rand( 0, 255 ) ), 2, '0', STR_PAD_LEFT);
 						}
@@ -94,7 +94,7 @@ class Login{
    			 				return random_colour_part() . random_colour_part() . random_colour_part();
 						}
 						$_SESSION['colour'] = random_colour();
-						
+
                     } else {
                         $this->errors[] = "Wrong password. Try again.";
                     }
@@ -103,7 +103,7 @@ class Login{
                     $this->errors[] = "This user does not exist.";
                 }
             } else {
-                $this->errors[] = "Database connection problem.";               
+                $this->errors[] = "Database connection problem.";
             }
             mysqli_close($this->db_connection);
         }
