@@ -15,7 +15,7 @@
 		    //exit();
 		} else {
 			echo "Connection successful <br>";
-			return $conn;
+			return $conn; 
 		}
 	}
 ?>
