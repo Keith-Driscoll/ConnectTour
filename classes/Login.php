@@ -52,7 +52,7 @@ class Login{
             $this->errors[] = "Password field was empty.";  
         } elseif (!empty($_POST['user_name']) && !empty($_POST['user_password'])) {
             // create a database connection, using the constants from config/db.php (which we loaded in index.php)
-            $this->db_connection = new mysqli("gglmysql.cloudapp.net", "ggl_adam", "skwreapm0011", "ggl_main");
+            $this->db_connection = new mysqli("localhost", "ct_admin", "Password123", "ggl_main");
 			
             // change character set to utf8 and check it
             if (!$this->db_connection->set_charset("utf8_general_ci")) {

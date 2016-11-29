@@ -62,12 +62,12 @@ require_once 'getProfilePicture.php';
 		</a>
 		<nav>	
 			<a href="tournaments.php" class="">Tours</a>
-			<a href="support.php" class=""> Supportters</a>
+			<a href="support.php" class=""> Support</a>
 			<?php 
 			    //checks if user is logged in, if not, redirect to login page
-			  //require_once 'classes/doLoginCheck.php';
-			  //require_once 'classes/connections.php';
-			  //$db_connection = db_connect();
+			  require_once 'classes/doLoginCheck.php';
+			  require_once 'classes/connections.php';
+			  $db_connection = db_connect();
 			?>
 			
 			
