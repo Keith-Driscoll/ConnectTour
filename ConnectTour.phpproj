@@ -343,8 +343,8 @@
     <Compile Include="css\pages\features.css" />
     <Compile Include="css\pages\footer.css" />
     <Compile Include="css\pages\landingPage.css" />
-    <Compile Include="css\pages\navigation(old).css" />
     <Compile Include="css\pages\navigation.css" />
+    <Compile Include="css\pages\navigation%28older%29.css" />
     <Compile Include="css\pages\profile.css" />
     <Compile Include="css\pages\signup.css" />
     <Compile Include="css\pages\tournamentInfo.css" />
@@ -1240,7 +1240,7 @@
     <Compile Include="segments\header.php" />
     <Compile Include="segments\jumbotron.php" />
     <Compile Include="segments\logged_in.php" />
-    <Compile Include="segments\navigation.php" />
+    <Compile Include="segments\navigation%28older%29.php" />
     <Compile Include="segments\navigation%28old%29.php" />
     <Compile Include="segments\not_logged_in.php" />
     <Compile Include="support\admin\applyfilter.php" />
