@@ -58,7 +58,7 @@ session_start();
 	<div class="container clearfix">
 		<!-- main column -->					
 		<a href="index.php">
-			<h1  id="logo">ConnectTour</h1>
+			<h1  id="logo">ConnectTouring</h1>
 		</a>
 		<nav>	
 			<a href="tournaments.php" class="">Tours</a>
