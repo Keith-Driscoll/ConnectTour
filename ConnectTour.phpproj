@@ -1240,8 +1240,8 @@
     <Compile Include="segments\header.php" />
     <Compile Include="segments\jumbotron.php" />
     <Compile Include="segments\logged_in.php" />
-    <Compile Include="segments\navigation(new).php" />
     <Compile Include="segments\navigation.php" />
+    <Compile Include="segments\navigation%28old%29.php" />
     <Compile Include="segments\not_logged_in.php" />
     <Compile Include="support\admin\applyfilter.php" />
     <Compile Include="support\admin\claimticket.php" />

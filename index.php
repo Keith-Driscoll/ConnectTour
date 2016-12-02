@@ -1,10 +1,10 @@
 <?php require_once 'segments/header.php';
-	  //require_once 'classes/connections.php';
-	  //require_once 'classes/Login.php';
-	  //session_start();
-	  //echo "SESSION ID:".session_id();
-	  //$login = new Login();
-	  //$loggedIn = $login->isUserLoggedIn() 
+	  require_once 'classes/connections.php';
+	  require_once 'classes/Login.php';
+	  session_start();
+	  echo "SESSION ID:".session_id();
+	  $login = new Login();
+	  $loggedIn = $login->isUserLoggedIn() 
 ?>
 <!-- Insert additional scripts here -->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
@@ -392,7 +392,8 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 	<script src="../js/jquery.validate.min.js"></script>
 	<script src="../js/scripts.js"></script> 
 	<script src="../js/navigation.js"></script> 
-	<!--<script src="../js/signup.js"></script>-->
+	<script src="../js/signup.js"></script>
+    <script src="../js/main.js"></script>
 	<!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
 	
 	<!-- ./ End Script Loading -->
