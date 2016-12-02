@@ -9,7 +9,7 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
 <link href="../css/style.css" rel="stylesheet"/>
 <link href="../css/kube.css" rel="stylesheet"/>
-<link href="../css/pages/navigation.css" rel="stylesheet"/>
+<link href="../css/pages/navigation(old).css" rel="stylesheet"/>
 <link href="../css/pages/footer.css" rel="stylesheet"/>
 <link href="../css/icons.css" rel="stylesheet"/> 
 
