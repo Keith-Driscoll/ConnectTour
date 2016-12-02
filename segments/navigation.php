@@ -35,7 +35,7 @@ Last modified  7/3/2016 - Keith
 	<div class="container clearfix">
 		<!-- main column -->					
 		<a href="index.php">
-			<h1 id="logo">GGLeagues</h1>
+			<h1 id="logo">ConnectTour</h1>
 		</a>
 		<nav>	
 			<a href="tournaments.php" class="">Compete</a>
