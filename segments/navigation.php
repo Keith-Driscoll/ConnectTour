@@ -1,10 +1,4 @@
-﻿
-
-<!-- Google analytics 
-Last modified  7/3/2016 - Keith
--->
-
-<?php include_once("analyticstracking.php");
+﻿<?php;
  $p_id = $_SESSION['user_id'];
  if(!isset($_SESSION)){
 	 $p_id=0;
@@ -26,7 +20,7 @@ Last modified  7/3/2016 - Keith
 	}
 	
 	$(function() {
-			//var sessionTime = setInterval(sessionTimer,18000000); //30 minute timeout
+			var sessionTime = setInterval(sessionTimer,18000000); //30 minute timeout
 	});
 	
 </script>
@@ -41,10 +35,6 @@ Last modified  7/3/2016 - Keith
 			<a href="tournaments.php" class="">Compete</a>
 			<a href="support.php" class=""> Support</a>
 			<a href="../login.php" class="login-btn">Login</a>
-			
-			
-						
-			
 		</nav>
 	</div><!-- ./row end -->	
 </header><!-- ./ header end-->
