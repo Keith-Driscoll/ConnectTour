@@ -43,7 +43,7 @@
 								    	<ul class="slides">
 											<li style="background-image: url(images/homepage/GPO.jpg)">
 												<div class="info">
-												<h2>Who we are</h2>
+												<h2>Who is ROBBIE?!?</h2>
 												<div class="bg-border">
 													<p>At Connect Tour we provide a service that allows genuine people to give tours of their local towns.</p>
 												</div>
@@ -185,7 +185,7 @@
 					<column cols="4">
 						<div class="inner align-centered">
 							<img src="images/svg/dollar-bill.svg" class="features-icon dollar" alt="Error: Unable to load"/>
-							<h3>Win Cash prizes</h3>
+							<h3>Pay</h3>
 							<p>Join tournaments and leagues and win real cash prizes. Earn cash playing games you love!</p>
 							<div class="clearfix"></div>
 							
