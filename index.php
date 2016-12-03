@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/pages/signup.css"/>
 <link rel="stylesheet" href="css/games.css"/>
 <?php require_once 'segments/navigation.php'; ?>
+
 <body class="loading">
 <!-- This stops particular scripts being loaded on every page regardless if they're needed or not -->
 <!-- ./Header End -->

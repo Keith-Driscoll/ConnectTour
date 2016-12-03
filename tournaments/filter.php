@@ -24,12 +24,12 @@
 			<form method="post" id="filters">
 				<!-- option start -->
 				<div>
-					<label>Game</label>
+					<label>Tour</label>
 					<select id="game" class="select width-12" name='game'>
 						<option>Choose Game</option>
-						<option value='Hearthstone'>Hearthstone</option>
-						<option value='League_of_Legends'>League of Legends</option>
-						<option value='Starcraft_II'>Starcraft II</option>
+						<option value='Hearthstone'>Sport</option>
+						<option value='League_of_Legends'>History</option>
+						<option value='Starcraft_II'>Architecture</option>
 					</select>
 				</div>	
 				<!-- option divider -->
