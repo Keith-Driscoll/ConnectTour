@@ -26,10 +26,10 @@
 				<div>
 					<label>Tour</label>
 					<select id="game" class="select width-12" name='game'>
-						<option>Choose Game</option>
-						<option value='Hearthstone'>Sport</option>
-						<option value='League_of_Legends'>History</option>
-						<option value='Starcraft_II'>Architecture</option>
+						<option>Choose tour</option>
+						<option value='sport'>Sport</option>
+						<option value='history'>History</option>
+						<option value='architecture'>Architecture</option>
 					</select>
 				</div>	
 				<!-- option divider -->
