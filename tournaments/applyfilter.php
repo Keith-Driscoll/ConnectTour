@@ -2,7 +2,7 @@
 	include '../classes/connections.php';
 	$db_connection = db_connect();
 
-	$sql = "SELECT id, tournament_game, tournament_name, tournament_prize_pool_start, 
+	$sql = "SELECT id, tournament_game, tour_name, tournament_prize_pool_start, 
 					tournament_region, tournament_current_players, tournament_p_max, tournament_start_timestamp 
 			FROM tournaments WHERE TRUE";
 			

@@ -1,18 +1,16 @@
 <?php
 	function db_connect(){
-		//server1 servername -> gglmysql.cloudapp.net (active)
-		//server2 servername -> gglmysql2.cloudapp.net
-		$servername = "localhost";
-		$username = "ct_admin";
-		$password = "Password123";
-		$dbname = "ggl_main";
+		$servername = "127.0.0.1:49354";
+        $username = "azure";
+        $password = "6#vWHD_$";
+        $dbname = "ggl_main";
 
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
 		// Check connection
 		if (mysqli_connect_error()) {
-		    //die("Connection failed: " . mysqli_connect_error());
-		    exit();
+		    die("Connection failed: " . mysqli_connect_error());
+		    //exit();
 		} else {
 			//echo "Connection successful <br>";
 			return $conn;

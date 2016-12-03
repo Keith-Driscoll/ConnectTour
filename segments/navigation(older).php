@@ -81,14 +81,15 @@ Last modified  7/3/2016 - Keith
 							<?php echo "<a href='profile.php?id=".$_SESSION['user_id']."'>My Account</a>";?>
 						</li>
 						<li>
-							<?php echo "<a href='../profile.php?id=".$_SESSION['user_id']."&page=notifications'>"; ?>Notifications 
+							<?php //echo "<a href='../profile.php?id=".$_SESSION['user_id']."&page=notifications'>"; ?>Notifications 
 								<?php
 								//print number of notifications
+                                /*
 								$db_connection = db_connect();
 								$sql = "SELECT * FROM notifications WHERE p_id = ".$_SESSION['user_id']." AND is_read=0";
 								$result = $db_connection->query($sql);
 								echo " (".$result->num_rows.")";
-								?>
+								*/?>
 							</a>
 						</li>
 						<li>
