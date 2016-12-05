@@ -25,12 +25,18 @@
 				<!-- option start -->
 				<div>
 					<label>Tour</label>
-					<select id="game" class="select width-12" name='game'>
-						<option>Choose Game</option>
+					<select id="Category" class="select width-12" name='Category'>
+						<option>Choose a category</option>
+						<option value='Sport'>Sport</option>
+						<option value='History'>History</option>
+						<option value='Architecture'>Architecture</option>
+					</select>
+					<!--<select id="game" class="select width-12" name='game'>
+						<option>Choose a categor</option>
 						<option value='Hearthstone'>Sport</option>
 						<option value='League_of_Legends'>History</option>
 						<option value='Starcraft_II'>Archite</option>
-					</select>
+					</select> -->
 				</div>	
 				<!-- option divider -->
 				<div class="linedividor"></div>
@@ -40,10 +46,18 @@
 					<label>Region</label>
 					<select id="region" class="select width-12" name='region'>
 						<option>Choose Region</option>
+						<option value='Leinster'>Leinster</option>
+						<option value='Munster'>Munster</option>
+						<option value='Connacht'>Connacht</option>
+						<option value='Ulster'>Ulster</option>
+					</select>
+					<!--<label>Region</label>
+					<select id="region" class="select width-12" name='region'>
+						<option>Choose Region</option>
 						<option value='EUW'>Europe West</option>
 						<option value='EUNE'>Europe North-East</option>
 						<option value='NA'>North America</option>
-					</select>
+					</select>-->
 				</div>		
 				<!-- option divider -->
 				<div class="linedividor"></div>
@@ -54,22 +68,24 @@
 		</div><!-- ./filter options end -->
 	</div><!-- ./filters list end-->
 </column> <!-- ./ filters end -->
-
+	<!--	var game = document.forms['filters'].elements['game'].value;-->
 <script>
 	var jsonData;
-	function filter(){		
-		var game = document.forms['filters'].elements['game'].value;
+	function filter(){
+		
+
+		var category = document.forms['filters'].elements['category'].value;
 		var region = document.forms['filters'].elements['region'].value;
-		filterResults(game, region);
+		filterResults(category, region);
 	}
 
-	function filterResults(game, region){
+	function filterResults(category, region){
 		$.ajax({
 			type: "POST",
 			url: "tournaments/applyfilter.php",
 			dataType : 'json',
 			cache: false,
-			data: {Game: game, Region: region},
+			data: {Category: category, Region: region},
 			success: function(records){
 				jsonData = records;
 				changePage(1);			
