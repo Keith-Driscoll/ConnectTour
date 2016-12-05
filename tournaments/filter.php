@@ -24,13 +24,19 @@
 			<form method="post" id="filters">
 				<!-- option start -->
 				<div>
-					<label>Game</label>
-					<select id="game" class="select width-12" name='game'>
-						<option>Choose Game</option>
-						<option value='Hearthstone'>Hearthstone</option>
-						<option value='League_of_Legends'>League of Legends</option>
-						<option value='Starcraft_II'>Starcraft II</option>
+					<label>Tour</label>
+					<select id="Game" class="select width-12" name='category'>
+						<option>Choose a category</option>
+						<option value='Sport'>Sport</option>
+						<option value='History'>History</option>
+						<option value='Architecture'>Architecture</option>
 					</select>
+					<!--<select id="game" class="select width-12" name='game'>
+						<option>Choose a categor</option>
+						<option value='Hearthstone'>Sport</option>
+						<option value='League_of_Legends'>History</option>
+						<option value='Starcraft_II'>Archite</option>
+					</select> -->
 				</div>	
 				<!-- option divider -->
 				<div class="linedividor"></div>
@@ -40,10 +46,18 @@
 					<label>Region</label>
 					<select id="region" class="select width-12" name='region'>
 						<option>Choose Region</option>
+						<option value='Leinster'>Leinster</option>
+						<option value='Munster'>Munster</option>
+						<option value='Connacht'>Connacht</option>
+						<option value='Ulster'>Ulster</option>
+					</select>
+					<!--<label>Region</label>
+					<select id="region" class="select width-12" name='region'>
+						<option>Choose Region</option>
 						<option value='EUW'>Europe West</option>
 						<option value='EUNE'>Europe North-East</option>
 						<option value='NA'>North America</option>
-					</select>
+					</select>-->
 				</div>		
 				<!-- option divider -->
 				<div class="linedividor"></div>
@@ -54,11 +68,13 @@
 		</div><!-- ./filter options end -->
 	</div><!-- ./filters list end-->
 </column> <!-- ./ filters end -->
-
+	<!--	var game = document.forms['filters'].elements['game'].value;	var category = document.forms['filters'].elements['category'].value;-->
 <script>
 	var jsonData;
-	function filter(){		
-		var game = document.forms['filters'].elements['game'].value;
+	function filter(){
+		
+var game = document.forms['filters'].elements['game'].value;
+	
 		var region = document.forms['filters'].elements['region'].value;
 		filterResults(game, region);
 	}
