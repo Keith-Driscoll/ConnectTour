@@ -62,7 +62,7 @@
 								            <li style="background-image: url(images/homepage/DublinPublicLibrary.jpg)">
 											
 									            <div class="info">
-													<h2>Signups</h2>
+													<h2>Beta Signup</h2>
 													<div class="bg-border">
 														<p>We are still under development but we need your help to make our service better!</p>
 													</div>
