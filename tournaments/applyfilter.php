@@ -22,5 +22,5 @@
 	$result = $db_connection->query($sql);
 	$rows = mysqli_fetch_all($result);
 	$json = json_encode($rows);
-	echo($json);
+	echo($json); 
 ?>
