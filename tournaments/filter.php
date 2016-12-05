@@ -25,7 +25,7 @@
 				<!-- option start -->
 				<div>
 					<label>Tour</label>
-					<select id="Category" class="select width-12" name='Category'>
+					<select id="Game" class="select width-12" name='category'>
 						<option>Choose a category</option>
 						<option value='Sport'>Sport</option>
 						<option value='History'>History</option>
@@ -68,24 +68,24 @@
 		</div><!-- ./filter options end -->
 	</div><!-- ./filters list end-->
 </column> <!-- ./ filters end -->
-	<!--	var game = document.forms['filters'].elements['game'].value;-->
+	<!--	var game = document.forms['filters'].elements['game'].value;	var category = document.forms['filters'].elements['category'].value;-->
 <script>
 	var jsonData;
 	function filter(){
 		
-
-		var category = document.forms['filters'].elements['category'].value;
+var game = document.forms['filters'].elements['game'].value;
+	
 		var region = document.forms['filters'].elements['region'].value;
-		filterResults(category, region);
+		filterResults(game, region);
 	}
 
-	function filterResults(category, region){
+	function filterResults(game, region){
 		$.ajax({
 			type: "POST",
 			url: "tournaments/applyfilter.php",
 			dataType : 'json',
 			cache: false,
-			data: {Category: category, Region: region},
+			data: {Game: game, Region: region},
 			success: function(records){
 				jsonData = records;
 				changePage(1);			
