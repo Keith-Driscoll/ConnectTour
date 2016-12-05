@@ -52,13 +52,8 @@ class Login{
             $this->errors[] = "Password field was empty.";
         } elseif (!empty($_POST['user_name']) && !empty($_POST['user_password'])) {
             // create a database connection, using the constants from config/db.php (which we loaded in index.php)
-<<<<<<< HEAD
-            $this->db_connection = new mysqli("localhost", "ct_admin", "Password123", "ggl_main");
-			
-=======
             $this->db_connection = new mysqli("127.0.0.1:49354", "azure", "6#vWHD_$", "ggl_main");
 
->>>>>>> fd0e3d1badb618c582eeadcdb3a51c529a196dc7
             // change character set to utf8 and check it
             if (!$this->db_connection->set_charset("utf8_general_ci")) {
                 $this->errors[] = $this->db_connection->error;

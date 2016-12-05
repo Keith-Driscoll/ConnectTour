@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="css/pages/signup.css"/>
 <link rel="stylesheet" href="css/games.css"/>
 <?php require_once 'segments/navigation.php'; ?>
-
 <body class="loading">
 <!-- This stops particular scripts being loaded on every page regardless if they're needed or not -->
 <!-- ./Header End -->
@@ -43,7 +42,7 @@
 								    	<ul class="slides">
 											<li style="background-image: url(images/homepage/GPO.jpg)">
 												<div class="info">
-												<h2>Who are we?</h2>
+												<h2>Who we are</h2>
 												<div class="bg-border">
 													<p>At Connect Tour we provide a service that allows genuine people to give tours of their local towns.</p>
 												</div>
@@ -93,9 +92,9 @@
 											} else{
 												
 										?>
-											<h1>Join a Tour</h1>
+											<h1>Join a Tournament</h1>
 											
-											<p>Get Involved with your first tour. Click here to begin!</p>
+											<p>Get involved with your first tournament on GGLeagues. Click here to begin!</p>
 										<?
 											}
 										?>
@@ -176,7 +175,7 @@
 						<div class="inner align-centered">	
 							<img src="images/svg/chalkboard.svg" class="features-icon board" alt="Error: Unable to load"/>			
 							<h3>Simple &amp; Easy</h3>
-							<p>We enable you to sign up and create tours.</p>	
+							<p>With our minimalist approach, you can create and participate in competitions with ease</p>	
 							<div class="clearfix"></div>
 							
 						</div>
@@ -185,8 +184,8 @@
 					<column cols="4">
 						<div class="inner align-centered">
 							<img src="images/svg/dollar-bill.svg" class="features-icon dollar" alt="Error: Unable to load"/>
-							<h3>Pay</h3>
-							<p>Choose the option of paying online or cash in hand.</p>
+							<h3>Win Cash prizes</h3>
+							<p>Join tournaments and leagues and win real cash prizes. Earn cash playing games you love!</p>
 							<div class="clearfix"></div>
 							
 						</div>
@@ -216,18 +215,18 @@
 		<div class="container align-centered alpha-signup">
 			<h2>Our Aims</h2>
 			<hr class="divider">
-			<p>We give people to visit places they would not usually visit and get a tour from genuine people who live in these ares and know these areas inside and out.
-We want to bring back the genuine approach to tours.<br/></p>
+			<p>Every gamer should have the opportunity to compete in a competitive environment against other players of the same level and gaming interests. Our aim at GGLeagues is to provide tournaments and leagues for players of all abilities and skill levels.
+We want to improve the quality of e-sports tournaments for everyone, on every device.<br/></p>
 			<!--<p><b>At GGLeagues, we are unified on three core values:</b></p>
 			<p>
-				<b>-</b> A friendly community environment.</br>
-				<b>-</b> Full tour control for tourists and companies.</br>
+				<b>-</b> A competitive community environment.</br>
+				<b>-</b> Full tournament control for gamers and companies.</br>
 				<b>-</b> Quick and reliable payouts.
 			</p>-->
 			<br/>
-			<!--<p>Join connecttour today and <i>help us reach these aims!</i></p>-->
+			<!--<p>Join GGLeagues today and <i>help us reach these aims!</i></p>-->
 			<a href="signup.php">
-				<button class="button big">Join ConnectTour Today!</button>
+				<button class="button big">Join GGLeagues Today!</button>
 			</a>
 		</div><!-- ./container end -->
 	</div><!-- ./panel end -->
