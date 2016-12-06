@@ -18,10 +18,10 @@
     //holds user_id stored in session if the player is logged in
     $p_id = intval($_SESSION['user_id']);
     //query retrieves all data relating to the tournament $t_id
-    $sql = "SELECT * FROM tournaments WHERE id = '".$t_id."'";
+    $sql = "SELECT * FROM tours WHERE id = '".$t_id."'";
     $result = $db_connection->query($sql);
     $row = $result->fetch_assoc();
-	$game = $row['tournament_game'];
+	$game = $row['tour_type'];
 	
 	if($game!="Hearthstone"){ //TODO Should be replaced with a list of supported games
 		$game = "general";
@@ -47,11 +47,11 @@
         $enter = $db_connection->query($sql);
 
         //query increments number of players in tournament by 1
-        $sql = "UPDATE tournaments SET tournament_current_players=tournament_current_players+1";
+        $sql = "UPDATE tours SET tour_members=tour_members+1";
         $enter = $db_connection->query($sql);
     }
 	
-	$bracketHeight = pow(2,ceil(log($row['tournament_current_players'],2)));
+	$bracketHeight = pow(2,ceil(log($row['tour_members'],2)));
 
 	$sql = "SELECT is_admin FROM player WHERE id=$p_id";
 	$adminres= $db_connection->query($sql);
@@ -141,7 +141,7 @@
 			<!-- information header -->
 			<!-- participantsTab class is used for it's border-right property -->
 			<div class="infoHeader participantsTab">
-				<?= $row['tournament_name'];?>
+				<?= $row['tour_name'];?>
 				<?=$plsWork;?>
 			</div><!-- information header end -->
 			<!-- Information body -->
@@ -152,7 +152,7 @@
 						Game
 					</div>
 					<div class="actualDetail piece">
-						<?= $row['tournament_game'];?>
+						<?= $row['tour_type'];?>
 					</div>
 				</div>	<!-- ./game detail end-->
 				<!-- prize pool detail -->
@@ -161,7 +161,7 @@
 						Prize Pool
 					</div>
 					<div class="actualDetail piece">
-						€<?= $row['tournament_prize_pool_start'];?>
+						€<?= $row['tour_price'];?>
 					</div>
 				</div>	<!-- ./prize pool detail end-->
 				<!-- players detail -->
@@ -170,7 +170,7 @@
 						Players
 					</div>
 					<div class="actualDetail piece">
-						<?= $row['tournament_current_players'];?>/<?= $row['tournament_p_max'];?> Players
+						<?= $row['tour_members'];?>/<?= $row['tour_max'];?> Players
 					</div>
 				</div><!-- ./players detail end-->
 				<!-- entry fee detail -->
@@ -189,7 +189,7 @@
 					</div>
 					<div class="actualDetail piece">
 						<!-- timestamp -->
-						<?php $timestamp =$row['tournament_start_timestamp'];
+						<?php $timestamp =$row['tour_start'];
 							$justDate = substr($timestamp,0,10);	
 							echo $justDate?>
 					</div><!-- ./timestamp detail end -->
@@ -200,7 +200,7 @@
 						Region
 					</div>
 					<div class="actualDetail piece">
-						<?= $row['tournament_region'];?>
+						<?= $row['tour_region'];?>
 					</div>
 				</div><!-- ./region detail end -->
 				
@@ -291,7 +291,7 @@
 							<iframe width="" class="iframe bracketFrame" <?php echo'src="bracket_test.php?id='.$t_id.'"'?>></iframe>
 						<?php
 							}else{
-									echo "Tournament has not begun yet.";
+									echo "Tour has not begun yet.";
 							}
 						?>	
 					</div>
