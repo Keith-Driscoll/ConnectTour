@@ -2,9 +2,9 @@
 <?php include 'segments/header.php';?>
 <?php 
 	require_once 'segments/navigation.php'; 
-	if($login->isUserLoggedIn()==true){
-		header("Location: index.php");
-		exit;
+	//if($login->isUserLoggedIn()==true){
+		//header("Location: index.php");
+		//exit;
 	}
 	
 ?>
