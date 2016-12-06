@@ -74,7 +74,7 @@
 				<button href="" onclick="hideNav();" class="hide-btn">Hide<span class="x icon_close"></span></button>
 			</li>
 				<?php 
-                pic == getProfilePicture($_SESSION['user_id']);
+                //pic == getProfilePicture($_SESSION['user_id']);
                 ?>
 				
 				<row>
