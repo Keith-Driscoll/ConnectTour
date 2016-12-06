@@ -4,7 +4,7 @@
 	if (isset($_GET['game'])){
 		$game = $_GET['game'];	
 	}
-	$sql = "SELECT * FROM tournaments";
+	$sql = "SELECT * FROM tours";
 	$db_connection = db_connect();
 	$result = $db_connection->query($sql);
 	
@@ -26,7 +26,7 @@
 				include 'tournaments/filter.php';
 			?>
 			
-			<!-- tournament list -->
+			<!-- tour list -->
 			<column class="bothColumns" cols="9">
 				<!--Desktop Version Start-->
 				<div class="tournamentContainer xs-hidden">			
@@ -78,7 +78,7 @@
 				</div>
 				<!--Mobile Version End -->
 				
-			</column> <!-- ./tournaments list end -->
+			</column> <!-- ./tour list end -->
 		</row><!-- ./row end -->
 	</div>	<!-- ./ container end -->
 </section><!-- content end -->

@@ -27,9 +27,9 @@
 					<label>Game</label>
 					<select id="game" class="select width-12" name='game'>
 						<option>Choose Tour</option>
-						<option value='Hearthstone'>Sport</option>
-						<option value='League_of_Legends'>History</option>
-						<option value='Starcraft_II'>Architecture</option>
+						<option value='Sport'>Sport</option>
+						<option value='History'>History</option>
+						<option value='Architecture'>Architecture</option>
 					</select>
 				</div>	
 				<!-- option divider -->
