@@ -52,7 +52,7 @@ class Login{
             $this->errors[] = "Password field was empty.";
         } elseif (!empty($_POST['user_name']) && !empty($_POST['user_password'])) {
             // create a database connection, using the constants from config/db.php (which we loaded in index.php)
-            $this->db_connection = new mysqli("127.0.0.1:49354", "azure", "6#vWHD_$", "ggl_main");
+            $this->db_connection = new mysqli("127.0.0.1:49354", "aazure", "6#vWHD_$", "ggl_main");
 
             // change character set to utf8 and check it
             if (!$this->db_connection->set_charset("utf8_general_ci")) {
@@ -91,7 +91,7 @@ class Login{
 						}
 
 						function random_colour() {
-   			 				return random_colour_part() . random_colour_part() . random_colour_part();
+                            return random_colour_part() . random_colour_part() . random_colour_part();
 						}
 						$_SESSION['colour'] = random_colour();
 
@@ -104,6 +104,7 @@ class Login{
                 }
             } else {
                 $this->errors[] = "Database connection problem.";
+                echo 'ERROR';
             }
             mysqli_close($this->db_connection);
         }
@@ -118,7 +119,7 @@ class Login{
         $_SESSION = array();
         session_destroy();
         // return a little feedback message
-        $this->messages[] = "You have been logged out.";
+        //$this->messages[] = "You have been logged out.";
 
     }
 
@@ -126,7 +127,6 @@ class Login{
      * simply return the current state of the user's login
      * @return boolean user's login status
      */
-    
     public function isUserLoggedIn()
     {
         if (isset($_SESSION['user_login_status']) AND $_SESSION['user_login_status'] == 1) {

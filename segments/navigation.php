@@ -71,7 +71,7 @@ Last modified  7/3/2016 - Keith
             ?>
 			
 			
-			<?php 
+			<?php /*
              $currentpage = $_SERVER['PHP_SELF'];
             // //Pages allowed to be visited when user is unverified
             // //Removing unverified or login will cause infinite loop, don't remove.
@@ -89,7 +89,7 @@ Last modified  7/3/2016 - Keith
              	else{
              		header('Location: login.php');	
              	}				
-             }
+             }*/
             ?>
 			
 			
