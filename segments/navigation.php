@@ -34,7 +34,7 @@
 		<nav>	
 			<a href="tournaments.php" class="">Compete</a>
 			<a href="support.php" class="">Support</a>
-            <?php //require_once 'classes/doLoginCheck.php'; ?>
+            <?php require_once 'classes/doLoginCheck.php'; ?>
 		</nav>
 	</div><!-- ./row end -->	
 </header><!-- ./ header end-->
