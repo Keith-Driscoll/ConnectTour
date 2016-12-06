@@ -126,6 +126,7 @@ class Login{
      * simply return the current state of the user's login
      * @return boolean user's login status
      */
+    /*
     public function isUserLoggedIn()
     {
         if (isset($_SESSION['user_login_status']) AND $_SESSION['user_login_status'] == 1) {
@@ -134,5 +135,6 @@ class Login{
         // default return
         return false;
     }
+    */
 }
 
