@@ -61,7 +61,7 @@ Last modified  7/3/2016 - Keith
 			<h1 id="logo">ConnectTour</h1>
 		</a>
 		<nav>	
-			<a href="tournaments.php" class="">Compete</a>
+			<a href="tournaments.php" class="">Tours</a>
 			<a href="support.php" class=""> Support</a>
 			<?php 
             
@@ -72,24 +72,24 @@ Last modified  7/3/2016 - Keith
 			
 			
 			<?php 
-            // $currentpage = $_SERVER['PHP_SELF'];
+             $currentpage = $_SERVER['PHP_SELF'];
             // //Pages allowed to be visited when user is unverified
             // //Removing unverified or login will cause infinite loop, don't remove.
-            // if($currentpage!= "/index.php" && $currentpage != "/unverified.php" && $currentpage != "/login.php" && $currentpage != "/signup.php"){
-            // 	if($_SESSION['user_id']!=null){
-            // 		$sql = "SELECT is_verified FROM player WHERE id = " . $_SESSION['user_id'];
+             if($currentpage!= "/index.php" && $currentpage != "/unverified.php" && $currentpage != "/login.php" && $currentpage != "/signup.php"){
+             	if($_SESSION['user_id']!=null){
+             		$sql = "SELECT is_verified FROM player WHERE id = " . $_SESSION['user_id'];
             
-            // 		$result = $db_connection->query($sql);
-            // 		$v = $result->fetch_assoc();
-            // 		if($v['is_verified']==0){
-            // 			header('Location: unverified.php');
-            // 		}
+             		$result = $db_connection->query($sql);
+             		$v = $result->fetch_assoc();
+             		if($v['is_verified']==0){
+             			header('Location: unverified.php');
+             		}
             
-            // 	}
-            // 	else{
-            // 		header('Location: login.php');	
-            // 	}				
-            // }
+             	}
+             	else{
+             		header('Location: login.php');	
+             	}				
+             }
             ?>
 			
 			
