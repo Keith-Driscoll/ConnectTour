@@ -91,7 +91,7 @@ $(function() {
                 required: "Please enter your email address/username"
             }
         },
-       /*  submitHandler: function(form) {
+        submitHandler: function(form) {
             $(form).ajaxSubmit({
                 type:"GET",
                 data: $(form).serialize(),
@@ -114,7 +114,7 @@ $(function() {
                     });
                 }
             });
-        } */
+        }
     });
 	
 	// Subscription form
