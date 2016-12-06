@@ -6,9 +6,11 @@
 	require_once 'segments/navigation.php'; 
 	if($login->isUserLoggedIn()==true){
 		header("Location: index.php");
-        echo 'EURIKA';
 		exit;
 	}
+    else{
+        echo'Robbie';
+    }
 	
 ?>
 <link rel="stylesheet" href="css/pages/signup.css"> 
