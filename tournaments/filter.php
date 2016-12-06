@@ -31,7 +31,7 @@
 						<option value='History'>History</option>
 						<option value='Architecture'>Architecture</option>
                         <option value='Adventure'>Adventure</option>
-
+                        <option value='Scenic'>Scenic</option>
 					</select>
 				</div>	
 				<!-- option divider -->
