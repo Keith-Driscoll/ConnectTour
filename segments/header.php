@@ -24,6 +24,8 @@ require_once 'classes/Login.php';
 	  $login = new Login();
 	  $loggedIn = $login->isUserLoggedIn();
 
+      echo $_SESSION['user_id'];
+
 ?>
 
 
