@@ -29,12 +29,12 @@
 	<div class="container clearfix">
 		<!-- main column -->					
 		<a href="index.php">
-			<h1 id="logo"><?php echo $_SESSION['user_name']; ?> ConnectTour</h1>
+			<h1 id="logo"><?php include 'classes/Login.php'; echo $_SESSION['user_name']; ?> ConnectTour</h1>
 		</a>
 		<nav>	
 			<a href="tournaments.php" class="">Compete</a>
 			<a href="support.php" class="">Support</a>
-            <?php require_once 'classes/doLoginCheck.php'; ?>
+            <?php //require_once 'classes/doLoginCheck.php'; ?>
 		</nav>
 	</div><!-- ./row end -->	
 </header><!-- ./ header end-->
