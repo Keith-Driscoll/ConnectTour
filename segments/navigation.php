@@ -10,7 +10,7 @@
 <script src="js/main.js"></script>
 
  <script>
-
+     /*
 	function sessionTimer(){
 		var p_id = "<?=$p_id?>"; 
 		if(p_id!=0){
@@ -22,7 +22,7 @@
 	$(function() {
 			var sessionTime = setInterval(sessionTimer,18000000); //30 minute timeout
 	});
-	
+	*/
 </script>
 <header>
 	<!-- row -->

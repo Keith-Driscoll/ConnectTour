@@ -2,14 +2,20 @@
 <?php 
 
 include 'segments/header.php';
-require_once 'classes/Login.php';
+/*Added in by Keith*/
 
-	require_once 'segments/navigation.php'; 
+// load the login class
+require_once 'classes/Login.php';
+//checks if player is logged in and displays navbar accordingly
+$login = new Login();
+
+//Original
+require_once 'segments/navigation.php'; 
 	if($login->isUserLoggedIn()==true){
 		header("Location: index.php");
 		exit;
 	}
-	
+
 ?>
 <link rel="stylesheet" href="css/pages/signup.css"> 
 </head><!--./ head tag ends here to support page-specific style-sheets/scripts -->
