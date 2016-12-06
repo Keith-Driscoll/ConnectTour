@@ -14,10 +14,10 @@
 <link href="../css/icons.css" rel="stylesheet"/> 
 <?php
 //Added by Keith
-//Removed from index and pasted here
+/*Removed from index and pasted here
 
 require_once 'classes/connections.php';
-//require_once 'classes/Login.php';
+require_once 'classes/Login.php';
 
 	  session_start();
 	  echo "SESSION ID:".session_id();
@@ -25,7 +25,7 @@ require_once 'classes/connections.php';
 	  $loggedIn = $login->isUserLoggedIn();
 
       echo $_SESSION['user_name'];
-
+*/
 ?>
 
 
