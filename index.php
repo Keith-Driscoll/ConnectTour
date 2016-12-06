@@ -92,9 +92,9 @@
 											} else{
 												
 										?>
-											<h1>Join a Tournament</h1>
+											<h1>Join a Tour</h1>
 											
-											<p>Get involved with your first tournament on GGLeagues. Click here to begin!</p>
+											<p>Get involved with your first tour. Click here to begin!</p>
 										<?
 											}
 										?>
@@ -175,7 +175,7 @@
 						<div class="inner align-centered">	
 							<img src="images/svg/chalkboard.svg" class="features-icon board" alt="Error: Unable to load"/>			
 							<h3>Simple &amp; Easy</h3>
-							<p>With our minimalist approach, you can create and participate in competitions with ease</p>	
+							<p>With our simple approach, you can easily create and join a tour</p>	
 							<div class="clearfix"></div>
 							
 						</div>
@@ -184,8 +184,8 @@
 					<column cols="4">
 						<div class="inner align-centered">
 							<img src="images/svg/dollar-bill.svg" class="features-icon dollar" alt="Error: Unable to load"/>
-							<h3>Win Cash prizes</h3>
-							<p>Join tournaments and leagues and win real cash prizes. Earn cash playing games you love!</p>
+							<h3>Ease of payment</h3>
+							<p>Join a tour by signing up to one, And pay by online or by cash in hand!</p>
 							<div class="clearfix"></div>
 							
 						</div>
@@ -215,18 +215,18 @@
 		<div class="container align-centered alpha-signup">
 			<h2>Our Aims</h2>
 			<hr class="divider">
-			<p>Every gamer should have the opportunity to compete in a competitive environment against other players of the same level and gaming interests. Our aim at GGLeagues is to provide tournaments and leagues for players of all abilities and skill levels.
-We want to improve the quality of e-sports tournaments for everyone, on every device.<br/></p>
+			<p>We aim to bring a completely genuine approach to tours, by giving locals the oppurtunity to give a tour of their area of living. This could be a historic or architectural tour.
+            It also gives tourists the opportunity to visit rural areas.<br/></p>
 			<!--<p><b>At GGLeagues, we are unified on three core values:</b></p>
 			<p>
 				<b>-</b> A competitive community environment.</br>
-				<b>-</b> Full tournament control for gamers and companies.</br>
+				<b>-</b> Full tourt control for tourists and companies.</br>
 				<b>-</b> Quick and reliable payouts.
 			</p>-->
 			<br/>
-			<!--<p>Join GGLeagues today and <i>help us reach these aims!</i></p>-->
+			<!--<p>Join ConnectTour today and <i>help us reach these aims!</i></p>-->
 			<a href="signup.php">
-				<button class="button big">Join GGLeagues Today!</button>
+				<button class="button big">Join ConnectTour Today!</button>
 			</a>
 		</div><!-- ./container end -->
 	</div><!-- ./panel end -->
@@ -344,13 +344,13 @@ We want to improve the quality of e-sports tournaments for everyone, on every de
 					<column cols="1">
 					<!-- icon alignment -->
 						<!-- icon -->	
-						<a href="https://www.facebook.com/GoodGamingLeagues/">
+						<a href="https://www.facebook.com/">
 							<span aria-hidden="true" class="social_facebook medium" ></span> 
 						</a><!-- ./icon end-->
 					</column>
 					<column cols="1">	
 						<!-- icon -->	
-						<a href="http://www.twitter.com/ggleagues">
+						<a href="http://www.twitter.com/">
 							<span aria-hidden="true" class="social_twitter medium" ></span> 
 						</a><!-- ./icon end-->
 					</column>
