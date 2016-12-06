@@ -104,6 +104,7 @@ class Login{
                 }
             } else {
                 $this->errors[] = "Database connection problem.";
+                echo 'ERROR';
             }
             mysqli_close($this->db_connection);
         }
