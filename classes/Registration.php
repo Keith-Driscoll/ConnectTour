@@ -1,6 +1,6 @@
 <?php
     /**
-     * 
+     *
      *
      * @var object $db_connection The database connection
      */
@@ -43,7 +43,7 @@
 		&& ($_POST['user_password_new'] === $_POST['user_password_repeat'])
 	) {
 		// create a database connection
-		$db_connection = new mysqli("gglmysql.cloudapp.net", "ggl_adam", "skwreapm0011", "ggl_main");
+		$db_connection = new mysqli("127.0.0.1:49354", "azure", "6#vWHD_$", "ggl_main");
 		// change character set to utf8 and check it
 		if (!($db_connection->set_charset("utf8_general_ci"))) {
 			$errors[] = $db_connection->error;
@@ -54,7 +54,7 @@
 		// 	// escaping, additionally removing everything that could be (html/javascript-) code
 			$user_name = $db_connection->real_escape_string(strip_tags($_POST['user_name'], ENT_QUOTES));
 			$user_email = $db_connection->real_escape_string(strip_tags($_POST['user_email'], ENT_QUOTES));
-			$user_password = $_POST['user_password_new'];                
+			$user_password = $_POST['user_password_new'];
 			$hash = password_hash($user_email, PASSWORD_DEFAULT);
 
 			// crypt the user's password with PHP 5.5's password_hash() function, results in a 60 character
@@ -72,14 +72,14 @@
 				else{
 					echo "Sorry, that email address is already taken.";
 				}
-				$errors[] = "Sorry, that username / email address is already taken.";				
-			} 
+				$errors[] = "Sorry, that username / email address is already taken.";
+			}
 		 	else {
 				// write new user's data into database
 				$sql = "INSERT INTO player (player_username, player_pass, player_email, verification_hash)
 						VALUES('".$user_name."', '".$user_password_hash."', '".$user_email."', '".$hash."')";
 				$query_new_user_insert = $db_connection->query($sql);
-				
+
 				$stmt = $db_connection->prepare("INSERT INTO player (player_username, player_pass, player_email, verification_hash)
 						VALUES(?,?,?,?)");
 				$stmt->bind_param("ssss",$user_name,$user_password_hash,$user_email,$hash);
@@ -91,7 +91,7 @@
 				$_POST['user_password']=$_POST['user_password_new'];
 				$login = new Login();
 				// echo '<script>console.log("8");</script>';
-				echo "success";		
+				echo "success";
 			}
 		} else {
 			echo "error1";
