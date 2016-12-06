@@ -7,7 +7,7 @@
 		include 'segments/logged_in.php';
 	} else {
 	    include 'segments/not_logged_in.php';
-	    header("Location: permissions.php");
+	    //header("Location: permissions.php");
 	    exit;
 	}
 ?>
