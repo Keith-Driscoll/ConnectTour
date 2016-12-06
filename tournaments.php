@@ -27,7 +27,7 @@
             ?>
 			
 			<!-- tour list -->
-			<column class="bothColumns" cols="7">
+			<column class="bothColumns" cols="10">
 				<!--Desktop Version Start-->
 				<div class="tournamentContainer xs-hidden">			
 					<div class="tournamentsList">
