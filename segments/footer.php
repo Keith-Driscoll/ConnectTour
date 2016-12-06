@@ -9,13 +9,13 @@
 					<column cols="1">
 					<!-- icon alignment -->
 						<!-- icon -->	
-						<a href="https://www.facebook.com/GoodGamingLeagues/">
+						<a href="https://www.facebook.com/">
 							<span aria-hidden="true" class="social_facebook medium" ></span> 
 						</a><!-- ./icon end-->
 					</column>
 					<column cols="1">	
 						<!-- icon -->	
-						<a href="http://www.twitter.com/ggleagues">
+						<a href="http://www.twitter.com/">
 							<span aria-hidden="true" class="social_twitter medium" ></span> 
 						</a><!-- ./icon end-->
 					</column>					
@@ -32,7 +32,7 @@
 				<row centered>
 					<column cols="8">
 						<div class="align-centered inner">
-							<p>&copy; 2015-2016 <a href="index.php">Good Gaming Leagues</a>.</p>
+							<p>&copy; 2015-2016 <a href="index.php">ConnectTour</a>.</p>
 						</div>
 					</div>
 				</row>
