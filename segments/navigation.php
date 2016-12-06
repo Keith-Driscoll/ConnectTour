@@ -1,4 +1,4 @@
-﻿<?php;
+<?php;
  $p_id = $_SESSION['user_id'];
  if(!isset($_SESSION)){
 	 $p_id=0;
@@ -12,7 +12,7 @@
  <script>
 
 	function sessionTimer(){
-		var p_id = <?=$p_id?>;
+		var p_id = "<?=$p_id?>"; 
 		if(p_id!=0){
 			alert("Session timed out. Please login to continue.");
 		}
