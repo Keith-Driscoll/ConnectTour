@@ -174,14 +174,14 @@
 					</div>
 				</div><!-- ./players detail end-->
 				<!-- entry fee detail -->
-				<div class="width-6 piece">
+				 <!--<div class="width-6 piece">
 					<div class="nameOfDetail piece">
 						Tour Cost
 					</div>
 					<div class="actualDetail piece">
 						€<?= $row['tournament_entry_fee'];?>
 					</div>
-				</div><!-- ./ entry fee detail end-->
+				</div><!-- ./ entry fee detail end--> -->
 				<!-- start date detail -->
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
