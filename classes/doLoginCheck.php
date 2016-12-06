@@ -8,6 +8,5 @@
 	} else {
 	    include 'segments/not_logged_in.php';
 	    //header("Location: permissions.php");
-	    exit;
 	}
 ?>
