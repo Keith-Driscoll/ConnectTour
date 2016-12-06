@@ -1,5 +1,8 @@
 <?php
 
+//added by keith
+include_once("segments/header.php");
+//
 	// load the login class
 	require_once("classes/Login.php");
 	$login = new Login();
@@ -12,4 +15,4 @@
 	echo $error;
 ?>
 
-<?php //include 'segments/footer.php'; ?>
+<?php include 'segments/footer.php'; ?>
