@@ -2,7 +2,7 @@
 	// load the login class
 	//require_once 'classes/Login.php';
 	//checks if player is logged in and displays navbar accordingly
-	$login = new Login();
+	//$login = new Login();
 	if ($login->isUserLoggedIn() == true) {
 		include 'segments/logged_in.php';
 	} else {

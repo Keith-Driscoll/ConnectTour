@@ -17,14 +17,14 @@
 //Removed from index and pasted here
 
 require_once 'classes/connections.php';
-require_once 'classes/Login.php';
+//require_once 'classes/Login.php';
 
 	  session_start();
 	  echo "SESSION ID:".session_id();
 	  $login = new Login();
 	  $loggedIn = $login->isUserLoggedIn();
 
-      echo $_SESSION['user_id'];
+      echo $_SESSION['user_name'];
 
 ?>
 
