@@ -12,5 +12,18 @@
 <link href="../css/pages/navigation.css" rel="stylesheet"/>
 <link href="../css/pages/footer.css" rel="stylesheet"/>
 <link href="../css/icons.css" rel="stylesheet"/> 
+<?php
+//Added by Keith
+//Removed from index and pasted here
+
+require_once 'classes/connections.php';
+require_once 'classes/Login.php';
+
+	  session_start();
+	  echo "SESSION ID:".session_id();
+	  $login = new Login();
+	  $loggedIn = $login->isUserLoggedIn();
+
+?>
 
 

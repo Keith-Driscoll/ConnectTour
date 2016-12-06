@@ -1,10 +1,4 @@
 <?php require_once 'segments/header.php';
-	  require_once 'classes/connections.php';
-	  require_once 'classes/Login.php';
-	  session_start();
-	  echo "SESSION ID:".session_id();
-	  $login = new Login();
-	  $loggedIn = $login->isUserLoggedIn() 
 ?>
 <!-- Insert additional scripts here -->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
