@@ -220,13 +220,13 @@
 			<!--<p><b>At GGLeagues, we are unified on three core values:</b></p>
 			<p>
 				<b>-</b> A competitive community environment.</br>
-				<b>-</b> Full tournament control for gamers and companies.</br>
+				<b>-</b> Full tourt control for tourists and companies.</br>
 				<b>-</b> Quick and reliable payouts.
 			</p>-->
 			<br/>
-			<!--<p>Join GGLeagues today and <i>help us reach these aims!</i></p>-->
+			<!--<p>Join ConnectTour today and <i>help us reach these aims!</i></p>-->
 			<a href="signup.php">
-				<button class="button big">Join GGLeagues Today!</button>
+				<button class="button big">Join ConnectTour Today!</button>
 			</a>
 		</div><!-- ./container end -->
 	</div><!-- ./panel end -->
@@ -344,13 +344,13 @@
 					<column cols="1">
 					<!-- icon alignment -->
 						<!-- icon -->	
-						<a href="https://www.facebook.com/GoodGamingLeagues/">
+						<a href="https://www.facebook.com/">
 							<span aria-hidden="true" class="social_facebook medium" ></span> 
 						</a><!-- ./icon end-->
 					</column>
 					<column cols="1">	
 						<!-- icon -->	
-						<a href="http://www.twitter.com/ggleagues">
+						<a href="http://www.twitter.com/">
 							<span aria-hidden="true" class="social_twitter medium" ></span> 
 						</a><!-- ./icon end-->
 					</column>
