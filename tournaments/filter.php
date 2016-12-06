@@ -40,9 +40,9 @@
 					<label>Region</label>
 					<select id="region" class="select width-12" name='region'>
 						<option>Choose Region</option>
-						<option value='EUW'>Leinster</option>
-						<option value='EUNE'>Munster</option>
-						<option value='NA'>Ulster</option>
+						<option value='LEI'>Leinster</option>
+						<option value='MUN'>Munster</option>
+						<option value='ULS'>Ulster</option>
 					</select>
 				</div>		
 				<!-- option divider -->
