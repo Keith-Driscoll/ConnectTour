@@ -158,7 +158,7 @@
 				<!-- prize pool detail -->
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
-						Prize Pool
+						Price
 					</div>
 					<div class="actualDetail piece">
 						€<?= $row['tour_price'];?>
@@ -167,16 +167,16 @@
 				<!-- players detail -->
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
-						Players
+						Members
 					</div>
 					<div class="actualDetail piece">
-						<?= $row['tour_members'];?>/<?= $row['tour_max'];?> Players
+						<?= $row['tour_members'];?>/<?= $row['tour_max'];?> Tour members
 					</div>
 				</div><!-- ./players detail end-->
 				<!-- entry fee detail -->
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
-						Entry Fee
+						Tour Cost
 					</div>
 					<div class="actualDetail piece">
 						€<?= $row['tournament_entry_fee'];?>
@@ -215,7 +215,7 @@
 					</div>
 					<?php }else{
 						?>
-						<div class="nameOfDetail piece ongoing">This tournament is ongoing</div>
+						<div class="nameOfDetail piece ongoing">This tour is ongoing</div>
 					<?php }
 						}?>
 				</div>
