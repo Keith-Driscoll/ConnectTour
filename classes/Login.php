@@ -91,7 +91,7 @@ class Login{
 						}
 
 						function random_colour() {
-   			 				return random_colour_part() . random_colour_part() . random_colour_part();
+                            return random_colour_part() . random_colour_part() . random_colour_part();
 						}
 						$_SESSION['colour'] = random_colour();
 
@@ -118,7 +118,7 @@ class Login{
         $_SESSION = array();
         session_destroy();
         // return a little feedback message
-        $this->messages[] = "You have been logged out.";
+        //$this->messages[] = "You have been logged out.";
 
     }
 
@@ -126,7 +126,6 @@ class Login{
      * simply return the current state of the user's login
      * @return boolean user's login status
      */
-    
     public function isUserLoggedIn()
     {
         if (isset($_SESSION['user_login_status']) AND $_SESSION['user_login_status'] == 1) {
