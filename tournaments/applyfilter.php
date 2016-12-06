@@ -4,7 +4,7 @@
 
 	$sql = "SELECT id, tour_type, tour_name, tour_price, 
 					tour_region, tour_members, tour_max, tour_start 
-			FROM tournaments WHERE TRUE";
+			FROM tours WHERE TRUE";
 			
 	//append filters to text if needed
 	if(isset($_POST['Game']) && $_POST['Game'] != "Choose Tour"){
