@@ -30,6 +30,8 @@
 						<option value='Sport'>Sport</option>
 						<option value='History'>History</option>
 						<option value='Architecture'>Architecture</option>
+                        <option value='Adventure'>Adventure</option>
+
 					</select>
 				</div>	
 				<!-- option divider -->
@@ -43,6 +45,7 @@
 						<option value='LEI'>Leinster</option>
 						<option value='MUN'>Munster</option>
 						<option value='ULS'>Ulster</option>
+						<option value='CON'>Connacht</option>
 					</select>
 				</div>		
 				<!-- option divider -->
