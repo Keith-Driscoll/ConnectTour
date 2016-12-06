@@ -36,7 +36,7 @@
 								    	<ul class="slides">
 											<li style="background-image: url(images/homepage/GPO.jpg)">
 												<div class="info">
-												<h2>Who we are</h2>
+												<h2>Who is JIMMMMMY dab</h2>
 												<div class="bg-border">
 													<p>At Connect Tour we provide a service that allows genuine people to give tours of their local towns.</p>
 												</div>
