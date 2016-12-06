@@ -1230,6 +1230,7 @@
     <Compile Include="profile\notifications.php" />
     <Compile Include="profile\overview.php" />
     <Compile Include="profile\teams.php" />
+    <Compile Include="segments\navigation.php" />
     <Compile Include="segments\old\footer(old).php" />
     <Compile Include="segments\old\friends.php" />
     <Compile Include="segments\old\logged_in(old).php" />

@@ -1,17 +1,21 @@
 <!-- Header -->
 <?php 
 
-    include 'segments/header.php';
+include 'segments/header.php';
+/*Added in by Keith*/
 
-	require_once 'segments/navigation.php'; 
+// load the login class
+require_once 'classes/Login.php';
+//checks if player is logged in and displays navbar accordingly
+$login = new Login();
+
+//Original
+require_once 'segments/navigation.php'; 
 	if($login->isUserLoggedIn()==true){
 		header("Location: index.php");
 		exit;
 	}
-    else{
-        echo 'Robbie';
-    }
-	
+
 ?>
 <link rel="stylesheet" href="css/pages/signup.css"> 
 </head><!--./ head tag ends here to support page-specific style-sheets/scripts -->
@@ -87,7 +91,7 @@
 	<script defer src="js/jquery.flexslider-min.js"></script> 
 	<script src="js/jquery.form.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
-	<!--<script src="js/signup.js"></script>-->
+	<script src="js/signup.js"></script>
 	<!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
 	
 	<!-- ./ End Script Loading -->
