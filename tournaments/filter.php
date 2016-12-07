@@ -24,7 +24,7 @@
 			<form method="post" id="filters">
 				<!-- option start -->
 				<div>
-					<label>Game</label>
+					<label>Tour</label>
 					<select id="game" class="select width-12" name='game'>
 						<option>Choose Tour</option>
 						<option value='Sport'>Sport</option>
