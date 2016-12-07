@@ -15,14 +15,14 @@
 	include "segments/navigation.php";
     require_once 'classes/connections.php';
     $db_connection = db_connect();
-    $stmt = $db_connection->prepare("INSERT INTO tours (tour_name, tour_type, tournament_format, 
+    $stmt = $db_connection->prepare("INSERT INTO tours (tour_name, tour_type, 
 															tournament_details, tour_start, 
 															tour_max, tournament_entry_fee, tour_price, 
                                                            tour_region, tournament_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,
                                                                    ?)");
 	$timestamp =  "" . $_POST['tour_start']." ".$_POST['StartTime'];
     if(isset($_POST["submit"])){							   
-        $stmt->bind_param("sssssidiss", $_POST['game'], $_POST['name'], $_POST['format'], $_POST['desc'],$timestamp, $_POST['max_players'], $_POST['entry_fee'], 
+        $stmt->bind_param("sssssidiss", $_POST['game'], $_POST['name'], $_POST['desc'],$timestamp, $_POST['max_players'], $_POST['entry_fee'], 
                                         $_POST['start_prize_pool'], $_POST['region'], $_POST['privacy']);
         if($stmt->execute()){
             echo "Done";
@@ -141,7 +141,7 @@
 
         <div style="margin-bottom:10px"class="container col-lg-9 col-md-9 col-sm-9 col-xs-12">
             <div class="well container col-lg-12 col-md-9 col-sm-12 col-xs-12">
-                <h3>Create your own Tournament</h3>
+                <h3>Create your own Tour</h3>
 
                 <p>Lorem ipsum doler sit amet.</p>
             </div>
@@ -150,34 +150,35 @@
 
                 <form class="form-horizontal" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                     <div id="legend">
-                        <legend class="">Create Tournament</legend>
+                        <legend class="">Create Tour</legend>
                         
                     </div>
-<!-- GAME START -->
+<!-- Tour START -->
 
                     <div class="control-group col-md-6 col-sm-4 col-xs-12">
-                        <label class="control-label" for="region">Game</label>
+                        <label class="control-label" for="region">Tour</label>
 
                         <div class="controls">
-                            <select id="game" name="game" required="">
-	                        <option>Hearthstone</option>
-	                        <option>League_of_Legends</option>
-	                        <option>Starcraft_II</option>
-	                        <option>Minecraft</option>
+                            <select id="tour_type" name="type" required="">
+                                <option value='Sport'>Sport</option>
+                                <option value='History'>History</option>
+                                <option value='Architecture'>Architecture</option>
+                                <option value='Adventure'>Adventure</option>
+                                <option value='Scenic'>Scenic</option>
                         </select>
 
                            
                         </div>
                     </div>
-                    <!-- GAME END-->
+                    <!-- Tour END-->
                     
                     <!-- DATE START -->
 
                     <div class="control-group">
-                        <label class="control-label" for="start_date">Start date *</label>
+                        <label class="control-label" for="tour_start">Start date *</label>
 
                         <div class="date controls">
-                            <input data-format="dd/MM/yyyy hh:mm" type="date" id="start_date" name="start_date" required=""></input>
+                            <input data-format="dd/MM/yyyy hh:mm" type="date" id="tour_start" name="tour_start" required=""></input>
                            
                             <p class="help-block">Choose your tournament start time/date</p>
                         </div>
@@ -187,12 +188,12 @@
                     <!-- TIME START -->
 
                     <div class="control-group">
-                        <label class="control-label" for="start_time">Start time *</label>
+                        <label class="control-label" for="StartTime">Start time *</label>
 
                         <div class="date controls">
-                            <input data-format="dd/MM/yyyy hh:mm" type="time" id="start_time" name="start_time" required=""></input>
+                            <input data-format="dd/MM/yyyy hh:mm" type="time" id="StartTime" name="StartTime" required=""></input>
                            
-                            <p class="help-block">Choose your tournament start time</p>
+                            <p class="help-block">Choose your tour start time</p>
                         </div>
                     </div>
                     <!-- TIME END-->
@@ -201,12 +202,12 @@
                     <!-- START -->
 
                     <div class="control-group">
-                        <label class="control-label" for="name">Tournament Name *</label>
+                        <label class="control-label" for="tour_name">Tour Name *</label>
 
                         <div class="controls">
-                            <input type="text" id="name" name="name" placeholder="Enter name" class="input-xlarge" required="">
+                            <input type="text" id="tour_name" name="name" placeholder="Enter name" class="input-xlarge" required="">
 
-                            <p class="help-block">This will display your tournament name in the tournaments listing directory</p>
+                            <p class="help-block">This will display your tour name in the tours listing directory</p>
                         </div>
                     </div>
                     <!-- END-->
@@ -219,12 +220,12 @@
                         <div class="controls">
                             <textarea type="text" class="textarea" maxlength="500" id="desc" name="desc" placeholder="Enter description (max 500 characters)" class="input-xlarge" required=""></textarea>
 
-                            <p class="help-block">Give your tournament a relevant description.</p>
+                            <p class="help-block">Give your tour a relevant description.</p>
                         </div>
                     </div>
                     <!-- DESCRIPTION END-->
                     
-                    <!-- FORMAT START-->
+                    <!-- FORMAT START
 
                     <div class="control-group">
                         <label class="control-label" for="format">Format</label>
@@ -257,26 +258,31 @@
                     </div>
                     <!-- FORMAT END-->
                     
-                    <!-- MAX PLAYERS START -->
+                    <!-- MAX Tourists START -->
 
                     <div class="control-group">
-                        <label class="control-label" for="max_players">Max Players</label>
+                        <label class="control-label" for="tour_max">Max Tourists</label>
 
                         <div class="controls">
-                            <select name="max_players" id="max_players" required="">
+                            <select name="tour_max" id="tour_max" required="">
 	                            <option>8</option>
-	                            <option>16</option>
-	                            <option>32</option>
+                                <option>12</option>
+                                <option>16</option>
+                                <option>20</option>
+                                <option>25</option>
+                                <option>30</option>
+	                            <option>40</option>
+	                            <option>50</option>
 	                            <option>64</option>
 	                            <option>128</option>
 	                            <option>256</option>
 	                            <option>512</option>
                             </select>
 
-                            <p class="help-block">Determine how many players you want to be able to enter</p>
+                            <p class="help-block">Determine how many tourists you want to be able to join your tour</p>
                         </div>
                     </div>
-                    <!-- MAX PLAYERS END-->
+                    <!-- MAX TOURISTS END-->
                   
                     <!-- PRIVACY START -->
 
@@ -299,20 +305,21 @@
                     <!-- REGION START -->
 
                     <div class="control-group">
-                        <label class="control-label" for="region">Region</label>
+                        <label class="control-label" for="tour_region">Region</label>
 
                         <div class="controls">
-                            <select name="region" id="region" required="">
-	                            <option>EUW</option>
-	                            <option>NA</option>
-	                            <option>EUNE</option>
+                            <select name="region" id="tour_region" required="">
+	                            <option>LEI</option>
+	                            <option>MUN</option>
+	                            <option>ULS</option>
+                                <option>CON</option>
                             </select>
 
                             <p class="help-block">Select your preferred region</p>
                         </div>
                     </div>
                     <!-- REGION END-->
-                    <!-- Prize Pool START -->
+                    <!-- Price START -->
 
                     <div class="control-group">
                         <label class="control-label" for="entry_fee">Entry Fee</label>
@@ -335,12 +342,12 @@
                     <!-- Entry Fee START -->
 
                     <div class="control-group">
-                        <label class="control-label" for="start_prize_pool">Starting Prize Pool </label>
+                        <label class="control-label" for="tour_price">Tour Price </label>
 
                         <div class="controls">
-                            <input type="number" name="start_prize_pool" id="start_prize_pool" placeholder="€" required=""></div>
+                            <input type="number" name="tour_price" id="tour_price" placeholder="€" required=""></div>
 
-                            <p class="help-block">Enter your starting prize pool amount</p>
+                            <p class="help-block">Enter the price of tour</p>
                         </div>
                     <!-- Entry Fee END-->
                     <!-- SUBMIT Button -->
