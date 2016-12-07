@@ -53,7 +53,8 @@
 				<!-- ./option end -->
 				<!-- apply button -->
 				<input type='button' onclick='filter();' id='apply' value='Apply' class="applyButton width-12">
-                <input type='button' onclick="window.location.href= 'signup.php'" id='create' value="Create" class="btn width-12">
+                <!-- link so user can create tour -->
+                <input type='button' onclick="window.location.href= 'create_tournament.php'" id='create' value="Create" class="btn width-12">
 
 			</form>
 		</div><!-- ./filter options end -->
