@@ -52,7 +52,7 @@ class Login{
             $this->errors[] = "Password field was empty.";
         } elseif (!empty($_POST['user_name']) && !empty($_POST['user_password'])) {
             // create a database connection, using the constants from config/db.php (which we loaded in index.php)
-            $this->db_connection = new mysqli("127.0.0.1:49354", "aazure", "6#vWHD_$", "ggl_main");
+            $this->db_connection = new mysqli("127.0.0.1:49354", "azure", "6#vWHD_$", "ggl_main");
 
             // change character set to utf8 and check it
             if (!$this->db_connection->set_charset("utf8_general_ci")) {
@@ -62,6 +62,7 @@ class Login{
             // if no connection errors (= working database connection)
             if (!$this->db_connection->connect_errno) {
 
+                echo 'connected to database';
                 // escape the POST stuff
                 $user_name = $this->db_connection->real_escape_string($_POST['user_name']);
                 // database query, getting all the info of the selected user (allows login via email address in the
@@ -104,7 +105,7 @@ class Login{
                 }
             } else {
                 $this->errors[] = "Database connection problem.";
-                echo 'ERROR';
+                echo 'ERROR - database connection issue';
             }
             mysqli_close($this->db_connection);
         }

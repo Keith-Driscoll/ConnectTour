@@ -83,18 +83,7 @@ require_once 'segments/navigation.php';
 <!-- Footer -->
 	
 	
-	<!-- Load scripts -->
-	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/respond.min.js"></script>
-	<script src="js/scripts.js"></script> 
-	<script defer src="js/jquery.flexslider-min.js"></script> 
-	<script src="js/jquery.form.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
-	<script src="js/signup.js"></script>
-	<!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
-	
-	<!-- ./ End Script Loading -->
+	<?php include_once 'segments/footer.php'; ?>
 	
 	<!-- ./Footer End -->
 </body>
