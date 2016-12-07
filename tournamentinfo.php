@@ -252,10 +252,10 @@
 			<!-- Main content -->
 			<div class="tabbedHeaders">
 				<div class="tabCollection">
-					<div id="matchTab" href="theMatch" class="myTabClass">Match</div>
-					<div class="myTabClass" href="theBrackets">Brackets</div>
-					<div id="pTab" class="participantsTab myTabClass" href="theParticipants">Participants</div>		
-					<div id="actualrulesTab" class="myTabClass" href="theRules">Rules</div>
+					<div id="matchTab" href="theMatch" class="myTabClass">Tour</div>
+					<div class="myTabClass" href="theBrackets">places visited</div>
+					<div id="pTab" class="participantsTab myTabClass" href="theParticipants">Tour members</div>		
+					<div id="actualrulesTab" class="myTabClass" href="theRules">Extra info</div>
 				</div>	
 			</div>	
 		</column><!-- ./column end -->

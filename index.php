@@ -338,13 +338,13 @@
 					<column cols="1">
 					<!-- icon alignment -->
 						<!-- icon -->	
-						<a href="https://www.facebook.com/">
+						<a href="https://www.facebook.com/ConnectTour-237723679981537/">
 							<span aria-hidden="true" class="social_facebook medium" ></span> 
 						</a><!-- ./icon end-->
 					</column>
 					<column cols="1">	
 						<!-- icon -->	
-						<a href="http://www.twitter.com/">
+						<a href="http://www.twitter.com/https://twitter.com/connecttour1">
 							<span aria-hidden="true" class="social_twitter medium" ></span> 
 						</a><!-- ./icon end-->
 					</column>

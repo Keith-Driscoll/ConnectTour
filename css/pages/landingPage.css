@@ -1,7 +1,5 @@
 
-/*
-Last Edited 7/22/2016 - Keith Driscoll 
-*/
+
 
 /* Defaults ==================================== */
 	
@@ -20,7 +18,7 @@ Last Edited 7/22/2016 - Keith Driscoll
 	}
 	#body-wrapper{
 		width:400px;
-		background-color:#000;
+		background-color:#00FFFF;
 		margin-top:100px;
 	}
 	a span.down {
