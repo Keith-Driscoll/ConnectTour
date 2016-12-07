@@ -53,6 +53,8 @@
 				<!-- ./option end -->
 				<!-- apply button -->
 				<input type='button' onclick='filter();' id='apply' value='Apply' class="applyButton width-12">
+                <input type='button' onclick="window.location.href= 'signup.php'" id='create' value="Create" class="btn width-12">
+
 			</form>
 		</div><!-- ./filter options end -->
 	</div><!-- ./filters list end-->
