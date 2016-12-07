@@ -291,16 +291,16 @@
 				<li>
 					<a href="#!" id="games" class="">
 						<span class="fa fa-gamepad"></span><br/>
-						<p>Games</p>
+						<p>Tours</p>
 					</a>
-				</li><!-- ./Game Accounts End -->
+				</li><!-- ./Tour Accounts End -->
 			<!-- Teams -->
 				<li>
 					<a href="#!" id="teams" class="">
 						<span class="fa fa-shield"></span><br/>
-						<p>Teams</p>
+						<p>Groups</p>
 					</a>
-				</li><!-- ./Teams End -->
+				</li><!-- ./Group End -->
 			<!-- Contact -->		
 				<li>
 					<a href="#!" id="contact" class="">
