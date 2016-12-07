@@ -15,12 +15,12 @@
 	include "segments/navigation.php";
     require_once 'classes/connections.php';
     $db_connection = db_connect();
-    $stmt = $db_connection->prepare("INSERT INTO tournaments (tournament_game, tournament_name, tournament_format, 
-															tournament_details, tournament_start_timestamp, 
-															tournament_p_max, tournament_entry_fee, tournament_prize_pool_start, 
-                                                           tournament_region, tournament_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,
+    $stmt = $db_connection->prepare("INSERT INTO tours (tour_name, tour_type, tournament_format, 
+															tournament_details, tour_start, 
+															tour_max, tournament_entry_fee, tour_price, 
+                                                           tour_region, tournament_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,
                                                                    ?)");
-	$timestamp =  "" . $_POST['start_date']." ".$_POST['start_time'];
+	$timestamp =  "" . $_POST['tour_start']." ".$_POST['StartTime'];
     if(isset($_POST["submit"])){							   
         $stmt->bind_param("sssssidiss", $_POST['game'], $_POST['name'], $_POST['format'], $_POST['desc'],$timestamp, $_POST['max_players'], $_POST['entry_fee'], 
                                         $_POST['start_prize_pool'], $_POST['region'], $_POST['privacy']);
