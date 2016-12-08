@@ -54,10 +54,10 @@
 					});
 					var date = array[5].substring(0, 10);
 					var stringPart = `<div class="oneTournament">
-											<a href= "tournamentinfo.php?id=`+array[0]+`">
+											<a href= "tournamentinfo.php?id=`+array[1]+`">
 												<row>
                                                     <!-- Tour Title -->
-													<column cols="4"><div class ="width-12 giveMinWidth"> `+array[2]+` </div></column>
+													<column cols="5"><div class ="width-12 giveMinWidth"> `+array[2]+` </div></column>
                                                     <!-- Tour Price -->
 													<column cols="1"><div class ="width-12 giveMinWidth">€`+array[12]+` </div></column>
                                                     <!-- Tour Region-->
