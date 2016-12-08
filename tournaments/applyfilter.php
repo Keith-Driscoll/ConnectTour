@@ -4,7 +4,7 @@
 
 	$sql = "SELECT id, tour_type, tour_name, tour_price, 
 					tour_region, tour_members, tour_max, tour_start, 
-			FROM tours WHERE TRUE";
+			FROM tournaments WHERE TRUE";
 
 			
 	//append filters to text if needed

@@ -4,7 +4,7 @@ require_once "classes/connections.php";
 if (isset($_GET['game'])){
     $game = $_GET['game'];	
 }
-$sql = "SELECT * FROM tours";
+$sql = "SELECT * FROM tournaments";
 $db_connection = db_connect();
 $result = $db_connection->query($sql);
 
