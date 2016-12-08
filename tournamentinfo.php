@@ -18,7 +18,7 @@
     //holds user_id stored in session if the player is logged in
     $p_id = intval($_SESSION['user_id']);
     //query retrieves all data relating to the tournament $t_id
-    $sql = "SELECT * FROM tournaments WHERE id = '".$t_id."'";
+    $sql = "SELECT * FROM tours WHERE id = '".$t_id."'";
     $result = $db_connection->query($sql);
     $row = $result->fetch_assoc();
 	$game = $row['tour_type'];
@@ -47,7 +47,7 @@
         $enter = $db_connection->query($sql);
 
         //query increments number of players in tournament by 1
-        $sql = "UPDATE tournaments SET tour_members=tour_members+1";
+        $sql = "UPDATE tours SET tour_members=tour_members+1";
         $enter = $db_connection->query($sql);
     }
 	
@@ -193,7 +193,22 @@
 							$justDate = substr($timestamp,0,10);	
 							echo $justDate?>
 					</div><!-- ./timestamp detail end -->
-				</div><!-- ./info body end -->	
+				</div>
+                <div class="width-6 piece">
+                    <div class="nameOfDetail piece">
+                       StartTime
+                    </div>
+                    <div class="actualDetail piece">
+                        <?php $timestamp =$row['StartTime'];
+                              $justTime = substr($timestamp,0,10);	
+                              echo $justTime?>
+                    </div>
+                </div>
+            
+            
+            
+            
+            <!-- ./info body end -->	
 				<!-- region detail -->
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
