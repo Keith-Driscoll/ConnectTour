@@ -190,25 +190,10 @@
 					<div class="actualDetail piece">
 						<!-- timestamp -->
 						<?php $timestamp =$row['tour_start'];
-								
-							echo $timestamp?>
+							$justDate = substr($timestamp,0,10);	
+							echo $justDate?>
 					</div><!-- ./timestamp detail end -->
-				</div>
-                <!--<div class="width-6 piece">
-                    <div class="nameOfDetail piece">
-                       StartTime
-                    </div>
-                    <div class="actualDetail piece">
-                        <?php /* $timestamp =$row['StartTime'];
-                              $justTime = substr($timestamp,0,10);	
-                              echo $justTime */ ?>
-                    </div>
-                </div>-->
-            
-            
-            
-            
-            <!-- ./info body end -->	
+				</div><!-- ./info body end -->	
 				<!-- region detail -->
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
