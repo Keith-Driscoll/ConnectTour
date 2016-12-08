@@ -4,7 +4,7 @@ require_once "classes/connections.php";
 if (isset($_GET['game'])){
     $game = $_GET['game'];	
 }
-$sql = "SELECT * FROM tours";
+$sql = "SELECT * FROM tournaments";
 $db_connection = db_connect();
 $result = $db_connection->query($sql);
 
@@ -26,22 +26,21 @@ $pageNumber= 1;
             include 'tournaments/filter.php';
             ?>
 			
-			<!-- tour list -->
-			<column class="bothColumns" cols="10">
+			<!-- tournament list -->
+			<column class="bothColumns" cols="9">
 				<!--Desktop Version Start-->
 				<div class="tournamentContainer xs-hidden">			
 					<div class="tournamentsList">
 						<div class="oneTournament tournamentListHeader">
 										<row>
+											<column cols="1"></column>
 											<column cols="4"><div class="width-12 giveMinWidth">Name</div></column>
-											<column cols="2"><div class="width-12 giveMinWidth">Price</div></column>
+											<column cols="2"><div class="width-12 giveMinWidth">Prize Pool</div></column>
 											<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">Region</div></column>
-											<column cols="1"><div class="width-12 giveMinWidth">Tour Members</div></column>
-											<column cols="3"><div class="width-12 giveMinWidth">Start date</div></column>
-											<column cols="1"><div class="width-12 giveMinWidth">Start Time</div></column>												
+											<column cols="1"><div class="width-12 giveMinWidth">Players</div></column>
+											<column cols="3"><div class="width-12 giveMinWidth">Start date</div></column>											
 										</row>						
 						</div>			
-                        <!-- PHP query loops through database and outputs data -->
 						<div class="dataFillUp">		
 							
 						</div>
@@ -77,9 +76,9 @@ $pageNumber= 1;
 						</div>
 					</div>	
 				</div>
-				<!--Mobile Version Ends -->
+				<!--Mobile Version End -->
 				
-			</column> <!-- ./tour list end -->
+			</column> <!-- ./tournaments list end -->
 		</row><!-- ./row end -->
 	</div>	<!-- ./ container end -->
 </section><!-- content end -->
