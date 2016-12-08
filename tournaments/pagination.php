@@ -67,6 +67,9 @@
 =======
 													<column cols="3"><div class ="width-12 giveMinWidth"> `+date+` </div></column>
                                                     <column cols="1"><div class ="width-12 giveMinWidth"> `` </div></column>
+<<<<<<< HEAD
+>>>>>>> parent of 17e5218... output date and time - Keith
+=======
 >>>>>>> parent of 17e5218... output date and time - Keith
 												</row>
 											</a>						
