@@ -3,9 +3,9 @@
 	$db_connection = db_connect();
 	session_start();
     $sql = "SELECT      id, tour_type, tour_name, tour_price,
-					tour_region, tour_members, tour_max, tour_start, StartTime
+					tour_region, tour_members, tour_max, tour_start,
 			FROM tournament_participants
-			JOIN tours ON tournament_participants.Tours_id = tours.id
+			JOIN tournaments ON tournament_participants.Tournaments_id = tournaments.id
 			WHERE tournament_participants.Player_id = ".$_SESSION['user_id']."
 				AND tournaments.tournament_checkin_phase >= 0";
 

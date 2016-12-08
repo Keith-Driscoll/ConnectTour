@@ -47,7 +47,7 @@
         $enter = $db_connection->query($sql);
 
         //query increments number of players in tournament by 1
-        $sql = "UPDATE tours SET tour_members=tour_members+1";
+        $sql = "UPDATE tournaments SET tour_members=tour_members+1";
         $enter = $db_connection->query($sql);
     }
 	
