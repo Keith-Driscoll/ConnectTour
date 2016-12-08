@@ -52,15 +52,19 @@
 					$.each(jsonData[i], function(k , v) {				
 						array.push(v);				
 					});
-					var date = array[7].substring(0, 10);
-					var gameIconString = "../images/old/icons/png/"+array[1]+"mini.png";
+					var date = array[5].substring(0, 10);
 					var stringPart = `<div class="oneTournament">
 											<a href= "tournamentinfo.php?id=`+array[0]+`">
 												<row>
-													<column cols="4"><div class="width-12 giveMinWidth">`+array[2]+`</div></column>
-													<column cols="1"><div class="width-12 giveMinWidth">€`+array[3]+`</div></column>
-													<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">`+array[4]+`</div></column>
-													<column cols="2"><div class="width-12 giveMinWidth">`+array[5]+`/`+array[6]+`</div></column>
+                                                    <!-- Tour Title -->
+													<column cols="4"><div class ="width-12 giveMinWidth"> `+array[2]+` </div></column>
+                                                    <!-- Tour Price -->
+													<column cols="1"><div class ="width-12 giveMinWidth">€`+array[12]+` </div></column>
+                                                    <!-- Tour Region-->
+													<column cols="1" class ="sm-hidden"><div class ="width-12 giveMinWidth"> `+array[10]+` </div></column>
+                                                    <!-- Tour Participants-->
+													<column cols="2"><div class ="width-12 giveMinWidth"> `+array[8]+`/`+array[6]+`</div></column>
+                                                    <!-- Tour Start Date/Time-->
 													<column cols="3"><div class ="width-12 giveMinWidth"> `+date+` </div></column>
 												</row>
 											</a>						
