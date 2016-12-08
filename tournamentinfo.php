@@ -149,7 +149,7 @@
 				<!-- game detail -->						
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
-						Game
+						Tour
 					</div>
 					<div class="actualDetail piece">
 						<?= $row['tour_type'];?>
