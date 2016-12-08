@@ -16,13 +16,13 @@
     require_once 'classes/connections.php';
     $db_connection = db_connect();
     $stmt = $db_connection->prepare("INSERT INTO tours (tour_type, tour_name, 
-															tournament_details, tour_start, 
+															tournament_details, tour_start, StartTime,
 															tour_max, tournament_entry_fee, tour_price, 
-                                                           tour_region, tournament_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                                                           tour_region, tournament_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
 	$timestamp =  "" . $_POST['tour_start']." ".$_POST['StartTime'];
     if(isset($_POST["submit"])){							   
-        $stmt->bind_param("sssssidiss", $_POST['tour_type'], $_POST['tour_name'], $_POST['desc'],$timestamp, $_POST['tour_max'], $_POST['tournament_entry_fee'], 
-                                        $_POST['tour_price'], $_POST['region'], $_POST['privacy']);
+        $stmt->bind_param("sssssidiss", $_POST['tour_type'], $_POST['tour_name'], $_POST['tournament_details'],$timestamp, $_POST['tour_max'], $_POST['tournament_entry_fee'], 
+                                        $_POST['tour_price'], $_POST['region'], $_POST['tournament_privacy'], $_POST['']);
         if($stmt->execute()){
             echo "Done";
         } 
@@ -179,14 +179,14 @@
                         <div class="date controls">
                             <input data-format="dd/MM/yyyy hh:mm" type="date" id="tour_start" name="tour_start" required=""></input>
                            
-                            <p class="help-block">Choose your tournament start time/date</p>
+                            <p class="help-block">Choose your tournament start date</p>
                         </div>
                     </div>
                     <!-- DATE END-->
                     
                     <!-- TIME START -->
 
-                    <div class="control-group">
+                    <!--<div class="control-group">
                         <label class="control-label" for="StartTime">Start time *</label>
 
                         <div class="date controls">
@@ -194,7 +194,7 @@
                            
                             <p class="help-block">Choose your tour start time</p>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- TIME END-->
                     
                     
