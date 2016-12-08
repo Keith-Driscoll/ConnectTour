@@ -37,7 +37,8 @@ $pageNumber= 1;
 											<column cols="2"><div class="width-12 giveMinWidth">Price</div></column>
 											<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">Region</div></column>
 											<column cols="1"><div class="width-12 giveMinWidth">Tour Members</div></column>
-											<column cols="3"><div class="width-12 giveMinWidth">Start date/time</div></column>											
+											<column cols="3"><div class="width-12 giveMinWidth">Start date</div></column>
+											<column cols="1"><div class="width-12 giveMinWidth">Start Time</div></column>												
 										</row>						
 						</div>			
                         <!-- PHP query loops through database and outputs data -->
