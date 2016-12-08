@@ -23,7 +23,7 @@
     $row = $result->fetch_assoc();
 	$game = $row['tour_type'];
 	
-	if($game!="Hearthstone"){ //TODO Should be replaced with a list of supported games
+	if($game!="Sport"){ //TODO Should be replaced with a list of supported games
 		$game = "general";
 	}
 	
@@ -41,7 +41,7 @@
 	} 
 	$loggedIn = $login->isUserLoggedIn();
     //if user tries to join, is logged in, is not already part of the tournament, and there is space in the tournament;
-    if (isset($_POST['join']) && ($login->isUserLoggedIn() == true) && ($test->num_rows == 0) && ($row['tournament_current_players'] < $row['tournament_p_max'])){
+    if (isset($_POST['join']) && ($login->isUserLoggedIn() == true) && ($test->num_rows == 0) && ($row['tour_members'] < $row['tour_max'])){
         //query adds player to tournament participants
         $sql = "INSERT INTO tournament_participants (Player_id, Tournaments_id) VALUES ('".$p_id."', '".$t_id."')";
         $enter = $db_connection->query($sql);
