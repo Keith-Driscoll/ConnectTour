@@ -77,7 +77,7 @@ $pageNumber= 1;
 						</div>
 					</div>	
 				</div>
-				<!--Mobile Version End -->
+				<!--Mobile Version Ends -->
 				
 			</column> <!-- ./tour list end -->
 		</row><!-- ./row end -->
