@@ -16,13 +16,13 @@
     require_once 'classes/connections.php';
     $db_connection = db_connect();
     $stmt = $db_connection->prepare("INSERT INTO tours (tour_type, tour_name, 
-															tournament_details, tour_start, 
-															tour_max, tournament_entry_fee, tour_price, 
-                                                           tour_region, tournament_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+															tour_details, tour_start, 
+															tour_max, tour_entry_fee, tour_price, 
+                                                           tour_region, tour_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 	$timestamp =  "" . $_POST['tour_start']." ".$_POST['StartTime'];
     if(isset($_POST["submit"])){							   
-        $stmt->bind_param("sssssidiss", $_POST['tour_type'], $_POST['tour_name'], $_POST['desc'],$timestamp, $_POST['tour_max'], $_POST['tournament_entry_fee'], 
-                                        $_POST['tour_price'], $_POST['region'], $_POST['privacy']);
+        $stmt->bind_param("sssssidiss", $_POST['tour_type'], $_POST['tour_name'], $_POST['tour_details'],$tour_start['tour_start'],$timestamp, $_POST['tour_max'], $_POST['tour_entry_fee'], 
+                                        $_POST['tour_price'], $_POST['tour_region'], $_POST['tour_privacy']);
         if($stmt->execute()){
             echo "Done";
         } 
@@ -155,7 +155,7 @@
 <!-- Tour START -->
 
                     <div class="control-group col-md-6 col-sm-4 col-xs-12">
-                        <label class="control-label" for="region">Tour</label>
+                        <label class="control-label" for="tour_type">Tour Type</label>
 
                         <div class="controls">
                             <select id="tour_type" name="type" required="">
@@ -214,10 +214,10 @@
                     <!-- DESCRIPTION-->
 
                     <div class="control-group">
-                        <label class="control-label" for="desc">Description *</label>
+                        <label class="control-label" for="tour_details">Description *</label>
 
                         <div class="controls">
-                            <textarea type="text" class="textarea" maxlength="500" id="desc" name="desc" placeholder="Enter description (max 500 characters)" class="input-xlarge" required=""></textarea>
+                            <textarea type="text" class="textarea" maxlength="500" id="tour_details" name="tour_details" placeholder="Enter description (max 500 characters)" class="input-xlarge" required=""></textarea>
 
                             <p class="help-block">Give your tour a relevant description.</p>
                         </div>
@@ -286,10 +286,10 @@
                     <!-- PRIVACY START -->
 
                     <div class="control-group">
-                        <label class="control-label" for="privacy">Privacy</label>
+                        <label class="control-label" for="tour_privacy">Privacy</label>
 
                         <div class="controls">
-                            <select name="privacy" id="privacy" required="">
+                            <select name="tour_privacy" id="tour_privacy" required="">
 	                            <option>Public Only</option>
 	                            <option>Premium Only</option>
 	                            <option>Invite Only</option>
