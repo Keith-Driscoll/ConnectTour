@@ -199,9 +199,9 @@
                        StartTime
                     </div>
                     <div class="actualDetail piece">
-                        <?php $timestamp =$row['StartTime'];
+                        <?php /* $timestamp =$row['StartTime'];
                               $justTime = substr($timestamp,0,10);	
-                              echo $justTime?>
+                              echo $justTime */ ?>
                     </div>
                 </div>-->
             
