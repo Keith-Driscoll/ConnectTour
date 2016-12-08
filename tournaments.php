@@ -33,7 +33,6 @@
 					<div class="tournamentsList">
 						<div class="oneTournament tournamentListHeader">
 										<row>
-											<!--<column cols="1"></column>-->
 											<column cols="4"><div class="width-12 giveMinWidth">Name</div></column>
 											<column cols="2"><div class="width-12 giveMinWidth">Price</div></column>
 											<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">Region</div></column>
@@ -42,6 +41,7 @@
 											<column cols="1"><div class="width-12 giveMinWidth">Start Time</div></column>												
 										</row>						
 						</div>			
+                        <!-- PHP query loops through database and outputs data -->
 						<div class="dataFillUp">		
 							
 						</div>

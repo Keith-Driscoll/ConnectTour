@@ -69,8 +69,7 @@
 										
 					var mobileStringPart =` <div class="tournamentBlock">
 												<a href= "tournamentinfo.php?id=`+array[0]+`">
-													<div class="infoBlock">							
-														<div class="">`+array[2]+`</div>								
+													<div class="infoBlock">												
 														<div class="linedividor"></div>
 														<div class="">`+array[1]+`</div>
 														<div class="linedividor"></div>
