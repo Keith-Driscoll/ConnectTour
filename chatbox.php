@@ -4,7 +4,7 @@
 		<div class='nopadding'>
 			<div id='view_ajax<?=$chatID?>' class='view_ajax'></div>		
 			<div id='smallerChatActiveUsers' class='activeUsersDiv'>
-			
+			hh
 			</div>	
 			
 			<?php if($inTournament==1 || $isAdmin){?>			
