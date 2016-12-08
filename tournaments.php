@@ -1,14 +1,14 @@
 <?php 
-include "segments/header.php";
-require_once "classes/connections.php"; 
-if (isset($_GET['game'])){
-    $game = $_GET['game'];	
-}
-$sql = "SELECT * FROM tournaments";
-$db_connection = db_connect();
-$result = $db_connection->query($sql);
-
-$pageNumber= 1;
+	include "segments/header.php";
+	require_once "classes/connections.php"; 
+	if (isset($_GET['game'])){
+		$game = $_GET['game'];	
+	}
+	$sql = "SELECT * FROM tours";
+	$db_connection = db_connect();
+	$result = $db_connection->query($sql);
+	
+	$pageNumber= 1;
 ?>
 <link href="css/tournaments.css" rel="stylesheet"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,30 +23,25 @@ $pageNumber= 1;
 		<row centered>
 			
 			<?php
-            include 'tournaments/filter.php';
+				include 'tournaments/filter.php';
             ?>
 			
-			<!-- tournament list -->
-			<column class="bothColumns" cols="9">
+			<!-- tour list -->
+			<column class="bothColumns" cols="10">
 				<!--Desktop Version Start-->
 				<div class="tournamentContainer xs-hidden">			
 					<div class="tournamentsList">
 						<div class="oneTournament tournamentListHeader">
 										<row>
-											<column cols="1"></column>
 											<column cols="4"><div class="width-12 giveMinWidth">Name</div></column>
-											<column cols="2"><div class="width-12 giveMinWidth">Prize Pool</div></column>
+											<column cols="2"><div class="width-12 giveMinWidth">Price</div></column>
 											<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">Region</div></column>
-<<<<<<< HEAD
-											<column cols="1"><div class="width-12 giveMinWidth">Players</div></column>
-											<column cols="3"><div class="width-12 giveMinWidth">Start date</div></column>											
-=======
 											<column cols="1"><div class="width-12 giveMinWidth">Tour Members</div></column>
 											<column cols="3"><div class="width-12 giveMinWidth">Start date</div></column>
 											<column cols="1"><div class="width-12 giveMinWidth">Start Time</div></column>												
->>>>>>> parent of 17e5218... output date and time - Keith
 										</row>						
 						</div>			
+                        <!-- PHP query loops through database and outputs data -->
 						<div class="dataFillUp">		
 							
 						</div>
@@ -84,7 +79,7 @@ $pageNumber= 1;
 				</div>
 				<!--Mobile Version End -->
 				
-			</column> <!-- ./tournaments list end -->
+			</column> <!-- ./tour list end -->
 		</row><!-- ./row end -->
 	</div>	<!-- ./ container end -->
 </section><!-- content end -->
