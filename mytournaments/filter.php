@@ -24,12 +24,14 @@
 			<form method="post" id="filters">
 				<!-- option start -->
 				<div>
-					<label>Game</label>
+					<label>Tour</label>
 					<select id="game" class="select width-12" name='game'>
-						<option>Choose Game</option>
-						<option value='Hearthstone'>Hearthstone</option>
-						<option value='League_of_Legends'>League of Legends</option>
-						<option value='Starcraft_II'>Starcraft II</option>
+                        <option>Choose Tour</option>
+                        <option value='Sport'>Sport</option>
+                        <option value='History'>History</option>
+                        <option value='Architecture'>Architecture</option>
+                        <option value='Adventure'>Adventure</option>
+                        <option value='Scenic'>Scenic</option>
 					</select>
 				</div>	
 				<!-- option divider -->
@@ -39,10 +41,10 @@
 				<div>
 					<label>Region</label>
 					<select id="region" class="select width-12" name='region'>
-						<option>Choose Region</option>
-						<option value='EUW'>Europe West</option>
-						<option value='EUNE'>Europe North-East</option>
-						<option value='NA'>North America</option>
+                        <option value='LEI'>Leinster</option>
+                        <option value='MUN'>Munster</option>
+                        <option value='ULS'>Ulster</option>
+                        <option value='CON'>Connacht</option>
 					</select>
 				</div>		
 				<!-- option divider -->

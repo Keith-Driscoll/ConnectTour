@@ -13,7 +13,7 @@
     //holds user_id stored in session if the player is logged in
     $p_id = $_SESSION['user_id'];
     //query retrieves all data relating to the tournament $t_id
-    $sql = "SELECT * FROM tournaments WHERE id = '".$t_id."'";
+    $sql = "SELECT * FROM tours WHERE id = '".$t_id."'";
     $result = $db_connection->query($sql);
     $row = $result->fetch_assoc();
     //query retrieves the ids of all players registered to the tournament
