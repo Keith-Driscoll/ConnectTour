@@ -34,9 +34,9 @@
 						<div class="oneTournament tournamentListHeader">
 										<row>
 											<column cols="4"><div class="width-12 giveMinWidth">Name</div></column>
-											<column cols="2"><div class="width-12 giveMinWidth">Price</div></column>
+											<column cols="1"><div class="width-12 giveMinWidth">Price</div></column>
 											<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">Region</div></column>
-											<column cols="1"><div class="width-12 giveMinWidth">Participants</div></column>
+											<column cols="2"><div class="width-12 giveMinWidth">Participants</div></column>
 											<column cols="3"><div class="width-12 giveMinWidth">Start date/time</div></column>											
 										</row>						
 						</div>			
