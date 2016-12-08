@@ -8,7 +8,7 @@
         include("segments/logged_in.php");
     } else {
 		echo "Not logged in";
-        header('Location: http://www.ggleagues.com/logintocontinue.php');
+        header('Location: login.php');
     } 
     */
     include 'segments/header.php';
