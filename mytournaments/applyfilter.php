@@ -2,8 +2,7 @@
 	include '../classes/connections.php';
 	$db_connection = db_connect();
 	session_start();
-    $sql = "SELECT      id, tour_type, tour_name, tour_price,
-					tour_region, tour_members, tour_max, tour_start, StartTime
+    $sql = "SELECT      Player_id, Tournaments_id, checked_in
 			FROM tournament_participants
 			JOIN tours ON tournament_participants.Tours_id = tours.id
 			WHERE tournament_participants.Player_id = ".$_SESSION['user_id']."
