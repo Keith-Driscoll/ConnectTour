@@ -57,11 +57,13 @@
 					var stringPart = `<div class="oneTournament">
 											<a href= "tournamentinfo.php?id=`+array[0]+`">
 												<row>
+                                                <!-- hi -->
+													<column cols="1"><img src="`+gameIconString+`" class="gameIcon"></column>
 													<column cols="4"><div class="width-12 giveMinWidth">`+array[2]+`</div></column>
 													<column cols="2"><div class="width-12 giveMinWidth">€`+array[3]+`</div></column>
 													<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">`+array[4]+`</div></column>
 													<column cols="1"><div class="width-12 giveMinWidth">`+array[5]+`/`+array[6]+`</div></column>
-													<column cols="3"><div class ="width-12 giveMinWidth"> `+date+` </div></column>
+													<column cols="3"><div class="width-12 giveMinWidth">`+date+`</div></column>
 												</row>
 											</a>
 										</div>	`;
@@ -69,7 +71,6 @@
 					var mobileStringPart =` <div class="tournamentBlock">
 												<a href= "tournamentinfo.php?id=`+array[0]+`">
 													<div class="infoBlock">
-														<div class="">`+array[2]+`</div>
 														<div class="linedividor"></div>
 														<div class="">`+array[1]+`</div>
 														<div class="linedividor"></div>
@@ -134,7 +135,7 @@
 	}
 
 	function numPages(){
-		return Math.ceil(jsonData.length / records_per_page);
-	}
+	    return Math.ceil(jsonData.length / records_per_page); 
+	} 
 
 </script>
