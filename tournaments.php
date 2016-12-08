@@ -7,7 +7,7 @@
 	$sql = "SELECT * FROM tours";
 	$db_connection = db_connect();
 	$result = $db_connection->query($sql);
-	
+	fhfdhh
 	$pageNumber= 1;
 ?>
 <link href="css/tournaments.css" rel="stylesheet"/>
