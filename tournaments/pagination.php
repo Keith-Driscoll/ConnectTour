@@ -62,7 +62,12 @@
 													<column cols="2"><div class="width-12 giveMinWidth">€`+array[3]+`</div></column>
 													<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">`+array[4]+`</div></column>
 													<column cols="1"><div class="width-12 giveMinWidth">`+array[5]+`/`+array[6]+`</div></column>
+<<<<<<< HEAD
 													<column cols="3"><div class="width-12 giveMinWidth">`+date+`</div></column>
+=======
+													<column cols="3"><div class ="width-12 giveMinWidth"> `+date+` </div></column>
+                                                    <column cols="1"><div class ="width-12 giveMinWidth"> `` </div></column>
+>>>>>>> parent of 17e5218... output date and time - Keith
 												</row>
 											</a>						
 										</div>	`;

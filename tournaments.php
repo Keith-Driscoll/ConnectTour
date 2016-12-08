@@ -36,8 +36,14 @@
 											<column cols="5"><div class="width-12 giveMinWidth">Name</div></column>
 											<column cols="1"><div class="width-12 giveMinWidth">Price</div></column>
 											<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">Region</div></column>
+<<<<<<< HEAD
 											<column cols="2"><div class="width-12 giveMinWidth">Participants</div></column>
 											<column cols="3"><div class="width-12 giveMinWidth">Start date/time</div></column>											
+=======
+											<column cols="1"><div class="width-12 giveMinWidth">Tour Members</div></column>
+											<column cols="3"><div class="width-12 giveMinWidth">Start date</div></column>
+											<column cols="1"><div class="width-12 giveMinWidth">Start Time</div></column>												
+>>>>>>> parent of 17e5218... output date and time - Keith
 										</row>						
 						</div>			
                         <!-- PHP query loops through database and outputs data -->
