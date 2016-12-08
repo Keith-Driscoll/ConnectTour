@@ -84,4 +84,4 @@ $pageNumber= 1;
 </section><!-- content end -->
 <?php include 'segments/footer.php'; ?>
 </body>
-</html> 
+</html>
