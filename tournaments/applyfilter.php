@@ -3,13 +3,8 @@
 	$db_connection = db_connect();
 
 	$sql = "SELECT id, tour_type, tour_name, tour_price, 
-<<<<<<< HEAD
-					tour_region, tour_members, tour_max, tour_start, 
-			FROM tournaments WHERE TRUE";
-=======
 					tour_region, tour_members, tour_max, tour_start, StartTime
 			FROM tours WHERE TRUE";
->>>>>>> parent of 7f79b2d... changed toir table - jim
 
 			
 	//append filters to text if needed

@@ -1,28 +1,32 @@
 <?php 
-include "segments/header.php";
-require_once "classes/connections.php"; 
-if (isset($_GET['game'])){
-    $game = $_GET['game'];	
-}
-$sql = "SELECT * FROM tournaments";
-$db_connection = db_connect();
-$result = $db_connection->query($sql);
-
-$pageNumber= 1;
+	// edited table formatting to make each row a link to it's respective
+	// tournamentinfoNew.php page.
 ?>
-<link href="css/tournaments.css" rel="stylesheet"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<?php include "segments/navigation.php"; ?>
+<script>
+	var current_page = 1;
+	var records_per_page = 6;
+	
+	function firstPage(){
+		current_page = 1;
+		changePage(current_page);
+	}	
+	function prevPage() {
+		if (current_page > 1) {
+			current_page--;
+			changePage(current_page);
+		}
+	}
+	function nextPage(){
+		if (current_page < numPages()) {
+			current_page++;
+			changePage(current_page);
+    	}
+	}
+	function lastPage(){
+		current_page = numPages();
+		changePage(current_page);
+	}
 
-<<<<<<< HEAD
-<!-- content section -->
-<section id="content">
-	<!-- container -->
-	<div class="container filtersAndList">
-		<row centered>
-=======
 	function changePage(page){
 		var btn_start = document.getElementById("firstPage");
 		var btn_next = document.getElementById("nextPage");
@@ -58,7 +62,6 @@ $pageNumber= 1;
 													<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">`+array[4]+`</div></column>
 													<column cols="1"><div class="width-12 giveMinWidth">`+array[5]+`/`+array[6]+`</div></column>
 													<column cols="3"><div class ="width-12 giveMinWidth"> `+date+` </div></column>
-                                                    <column cols="1"><div class ="width-12 giveMinWidth"> `` </div></column>
 												</row>
 											</a>						
 										</div>	`;
@@ -86,68 +89,52 @@ $pageNumber= 1;
 			$('.mobileDataFillUp').html(fullMobileString);
 			$('#currentPage').html(current_page);
 			$('#currentPageM').html(current_page);
->>>>>>> parent of 17e5218... output date and time - Keith
 			
-			<?php
-            include 'tournaments/filter.php';
-            ?>
+			if (page == 1) {
+				btn_prev.style.visibility = "hidden";	
+				btn_prevM.style.visibility = "hidden";		
+			} else {
+				btn_prev.style.visibility = "visible";
+				btn_prevM.style.visibility = "visible";
+			}
+			if (page == 1 || page == 2){
+				btn_start.style.visibility = "hidden";
+				btn_startM.style.visibility = "hidden";
+			} else {
+				btn_start.style.visibility = "visible";
+				btn_startM.style.visibility = "visible";
+			}	
+			if (page == numPages()) {
+				btn_next.style.visibility = "hidden";
+				btn_nextM.style.visibility = "hidden";
+			} else {
+				btn_next.style.visibility = "visible";
+				btn_nextM.style.visibility = "visible";
+			}
 			
-			<!-- tournament list -->
-			<column class="bothColumns" cols="9">
-				<!--Desktop Version Start-->
-				<div class="tournamentContainer xs-hidden">			
-					<div class="tournamentsList">
-						<div class="oneTournament tournamentListHeader">
-										<row>
-											<column cols="1"></column>
-											<column cols="4"><div class="width-12 giveMinWidth">Name</div></column>
-											<column cols="2"><div class="width-12 giveMinWidth">Prize Pool</div></column>
-											<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">Region</div></column>
-											<column cols="1"><div class="width-12 giveMinWidth">Players</div></column>
-											<column cols="3"><div class="width-12 giveMinWidth">Start date</div></column>											
-										</row>						
-						</div>			
-						<div class="dataFillUp">		
-							
-						</div>
-						</div>	
-					<div class="bottomNavigator">
-						<row centered>			
-							<ul class="pagination" centered>
-								<li centered><a href="javascript:firstPage()" id="firstPage" href="#">|&larr;</a></li>
-								<li centered><a href="javascript:prevPage()" id="prevPage" href="#">&larr;</a></li>
-								<li centered><span id="currentPage"></span> of <span id="totalPages"></span></li>
-								<li centered><a href="javascript:nextPage()" id="nextPage" href="#">&rarr;</a></li>
-								<li centered><a href="javascript:lastPage()" id="lastPage" href="#">&rarr;|</a></li>
-							</ul>
-						</row>
-					</div>	
-				</div>	
-				<!--Desktop Version End -->
-				
-				<!--Mobile Version Start -->
-				<div class="sm-hidden-up blockCoverage">
-					<div class="mobileDataFillUp">
-						
-					</div>
-					<div class="bottomNavigatorM">	
-						<div class="myPagination">							
-								<a href="javascript:firstPage()" id="firstPageM" > <div class="colorChange mobilePagination">|&larr;</div></a>
-								<a href="javascript:prevPage()" id="prevPageM"><div class="colorChange mobilePagination">&larr;</div></a>
-								<div class="mobilePagination1" id="currentPageM"></div>
-								<div class="mobilePagination1">of</div>
-								<div class="mobilePagination1" id="totalPagesM"></div>
-								<a href="javascript:nextPage()" id="nextPageM"><div class="colorChange mobilePagination" centered>&rarr;</div></a>
-								<a href="javascript:lastPage()" id="lastPageM"><div class="colorChange mobilePagination" centered>&rarr;|</div></a>
-						</div>
-					</div>	
-				</div>
-				<!--Mobile Version End -->
-				
-			</column> <!-- ./tournaments list end -->
-		</row><!-- ./row end -->
-	</div>	<!-- ./ container end -->
-</section><!-- content end -->
-<?php include 'segments/footer.php'; ?>
-</body>
-</html>
+			if (page == numPages() || page == numPages()-1){
+				btn_end.style.visibility = "hidden";
+				btn_endM.style.visibility = "hidden";
+			} else {
+				btn_end.style.visibility = "visible";
+				btn_endM.style.visibility = "visible";
+			}
+		}else{
+			$('.dataFillUp').html("No results found");
+			$('.mobileDataFillUp').html("No results found");
+			btn_prev.style.visibility = "hidden";
+			btn_start.style.visibility = "hidden";
+			btn_next.style.visibility = "hidden";
+			btn_end.style.visibility = "hidden";
+			btn_prevM.style.visibility = "hidden";
+			btn_startM.style.visibility = "hidden";
+			btn_nextM.style.visibility = "hidden";
+			btn_endM.style.visibility = "hidden";
+		}
+	}
+
+	function numPages(){
+		return Math.ceil(jsonData.length / records_per_page);
+	}
+		
+</script>

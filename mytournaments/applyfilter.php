@@ -2,11 +2,11 @@
 	include '../classes/connections.php';
 	$db_connection = db_connect();
 	session_start();
-    $sql = "SELECT      Player_id,Tournaments_id
+    $sql = "SELECT      Player_id, Tournaments_id, checked_in
 			FROM tournament_participants
-			JOIN tournaments ON tournament_participants.Tournaments_id = tournaments.id
+			JOIN tours ON tournament_participants.Tournaments_id = tournaments.id
 			WHERE tournament_participants.Player_id = ".$_SESSION['user_id']."
-				AND tournaments.tournament_checkin_phase >= 0";
+				AND tours.tournament_checkin_phase >= 0";
 
 	//$result = $db_connection->query($sql);
 
@@ -24,7 +24,7 @@
 	// if(isset($_POST['Max_fee'])){
 	// 	$sql .= " AND tournament_entry_fee <= '".$_POST['Max_fee']."'";
 	// }
-	$sql.= " ORDER BY tournaments.tournament_checkin_phase DESC";
+	$sql.= " ORDER BY tours.tournament_checkin_phase DESC";
 	$result = $db_connection->query($sql);
 	$rows = mysqli_fetch_all($result);
 	$json = json_encode($rows);

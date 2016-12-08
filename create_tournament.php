@@ -16,17 +16,10 @@
     require_once 'classes/connections.php';
     $db_connection = db_connect();
     $stmt = $db_connection->prepare("INSERT INTO tours (tour_type, tour_name, 
-<<<<<<< HEAD
-															tournament_details, tour_start,
-															tour_max, tournament_entry_fee, tour_price, 
-                                                           tour_region, tournament_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
-	$timestamp =  "" . $_POST['tour_start'];
-=======
 															tournament_details, tour_start, 
 															tour_max, tournament_entry_fee, tour_price, 
                                                            tour_region, tournament_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 	$timestamp =  "" . $_POST['tour_start']." ".$_POST['StartTime'];
->>>>>>> parent of 7f79b2d... changed toir table - jim
     if(isset($_POST["submit"])){							   
         $stmt->bind_param("sssssidiss", $_POST['tour_type'], $_POST['tour_name'], $_POST['desc'],$timestamp, $_POST['tour_max'], $_POST['tournament_entry_fee'], 
                                         $_POST['tour_price'], $_POST['region'], $_POST['privacy']);

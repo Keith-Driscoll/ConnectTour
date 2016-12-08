@@ -5,7 +5,7 @@
 	require_once("classes/connections.php");
 	$db_connection = db_connect();
 	if($joining==1){
-		$sql = "SELECT tour_members,tour_max FROM tournaments WHERE id=$t_id";
+		$sql = "SELECT tour_members,tour_max FROM tours WHERE id=$t_id";
 		$res = $db_connection->query($sql);
 		$row = $res->fetch_assoc();
 		$current = $row['tournament_participants'];
@@ -15,7 +15,7 @@
 			$stmt->bind_param("ii", $p_id, $t_id);
 			$stmt->execute();
 			$stmt->close();
-			$sql = "UPDATE tournaments SET tour_members = tour_members + 1 WHERE id=".$t_id;
+			$sql = "UPDATE tours SET tour_members = tour_members + 1 WHERE id=".$t_id;
 			$db_connection->query($sql);
 		}
 		else{
@@ -37,7 +37,7 @@
 	else{
 		$sql = "DELETE FROM tournament_participants WHERE Tournaments_id=".$t_id." AND Player_id=".$p_id;
 		$db_connection->query($sql);
-		$sql = "UPDATE tournaments SET tour_members = tour_members - 1 WHERE id=".$t_id;
+		$sql = "UPDATE tours SET tour_members = tour_members - 1 WHERE id=".$t_id;
 		$db_connection->query($sql);
 		
 	}
