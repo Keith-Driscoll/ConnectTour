@@ -62,7 +62,7 @@
 													<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">`+array[4]+`</div></column>
 													<column cols="1"><div class="width-12 giveMinWidth">`+array[5]+`/`+array[6]+`</div></column>
 													<column cols="3"><div class ="width-12 giveMinWidth"> `+date+` </div></column>
-                                                    <column cols="1"><div class ="width-12 giveMinWidth"> `+time+` </div></column>
+                                                    <column cols="1"><div class ="width-12 giveMinWidth"> `` </div></column>
 												</row>
 											</a>						
 										</div>	`;
