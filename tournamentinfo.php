@@ -179,7 +179,7 @@ require_once "payments/entry_fee.php";
 						Tour Cost
 					</div>
 					<div class="actualDetail piece">
-						€<?/*= $row['tournament_entry_fee'];*/?>
+						€/*= $row['tournament_entry_fee'];*/
 					</div>
 				</div><!-- ./ entry fee detail end--> -->
 				<!-- start date detail -->
@@ -199,9 +199,7 @@ require_once "payments/entry_fee.php";
                        <!--StartTime-->
                     </div>
                     <div class="actualDetail piece">
-                        <?php /*$timestamp =$row['StartTime'];
-                        $justTime = substr($timestamp,0,10);	
-                        echo $justTime */?>
+                        <?= $row['tournament_details'];?> Tour Details
                     </div>
                 </div>
             
