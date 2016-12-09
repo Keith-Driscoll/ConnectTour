@@ -12,11 +12,11 @@ $db_connection = db_connect();
 include 'classes/Login.php';
 $login = new Login();
 session_start();
-//holds the id of the tour, pulled from url
+//holds the id of the tournament, pulled from url
 $t_id = intval($_GET['id']);
-//holds user_id stored in session if the tourist is logged in
+//holds user_id stored in session if the player is logged in
 $p_id = intval($_SESSION['user_id']);
-//query retrieves all data relating to the tour $t_id
+//query retrieves all data relating to the tournament $t_id
 $sql = "SELECT * FROM tours WHERE id = '".$t_id."'";
 $result = $db_connection->query($sql);
 $row = $result->fetch_assoc();
@@ -56,6 +56,8 @@ $sql = "SELECT is_admin FROM player WHERE id=$p_id";
 $adminres= $db_connection->query($sql);
 $adminrow = $adminres->fetch_assoc();
 $isAdmin = $adminrow['is_admin'];
+//includes necessary file to handle payment of entry fee if required
+include 'payments/entry_fee.php';
 ?>
 
 <script src='js/jquery.min.js'></script>
@@ -100,24 +102,23 @@ $isAdmin = $adminrow['is_admin'];
 </head>
 <body>
 <?php 
-require_once "segments/navigation.php";
+require_once "segments/navigation.php"; 
+require_once "payments/entry_fee.php";
 ?>
 <script>
 	function joinAndLeave(){
 		var text  = '<?=$text?>';
 		var p_id = <?=intval($p_id)?>;
 		var t_id = <?=$t_id?>;
-		//var entryFee = <?=//$row['tour_entry_fee']?>;
+		var entryFee = <?=$row['tournament_entry_fee']?>;
 		
 		//If entryFee > 0, a payment is required
-	    /*
-        
-        if (entryFee > 0){	
+		if (entryFee > 0){	
 			entry_div_show();
-            */
 
-	//}  
-    if (confirm('Are you sure you want to '+text+'?')) {			
+
+
+		} else if (confirm('Are you sure you want to '+text+'?')) {			
 			var joining = <?=$joining?>;
 				$.ajax({
 					type: "GET",
@@ -179,7 +180,7 @@ require_once "segments/navigation.php";
 					<div class="actualDetail piece">
 						€/*= $row['tournament_entry_fee'];*/
 					</div>
-				</div><!-- ./ entry fee detail end--> 
+				</div><!-- ./ entry fee detail end--> -->
 				<!-- start date detail -->
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
@@ -190,14 +191,14 @@ require_once "segments/navigation.php";
 						<?php $timestamp =$row['tour_start'];
                               /*$justDate = substr($timestamp,0,10);	*/
                               echo $timestamp?>
-					</div><!-- ./timestamp detail end --> 
+					</div><!-- ./timestamp detail end --> hh
 				</div>
                 <div class="width-6 piece">
                     <div class="nameOfDetail piece">
                        Tour Details
                     </div>
                     <div class="actualDetail piece">
-                        <?= $row['tour_details'];?> 
+                        <?= $row['tournament_details'];?> 
                     </div>
                 </div>
             
@@ -218,7 +219,7 @@ require_once "segments/navigation.php";
 				<div  class="width-6 piece ">
 					<?php
                     if($loggedIn){
-                        if($row['tour_checkin_phase']!=2){ ?><div onclick="joinAndLeave()" class="nameOfDetail piece <?=$text?>" >
+                        if($row['tournament_checkin_phase']!=2){ ?><div onclick="joinAndLeave()" class="nameOfDetail piece <?=$text?>" >
 						<!--<input type='button' class='sendBtn btn'>-->
 						<?php
 							echo $text;
@@ -239,7 +240,7 @@ require_once "segments/navigation.php";
 		<!-- right column-->
 		<column cols="4">
 			<div class="infoHeader">
-				Tour Chat Lobby
+				Tournament Lobby
 			</div>
 			<div class="infoBody chatbox">
 				<?php 
@@ -253,7 +254,7 @@ require_once "segments/navigation.php";
 		</column><!-- ./right column end -->
 		
 				
-	</row><!-- ./ tour overview end-->
+	</row><!-- ./ tournament overview end-->
 </div><!-- ./content end -->
 
 	<!-- panel header -->
@@ -285,7 +286,7 @@ require_once "segments/navigation.php";
 						<?php } ?>
 						<?php 
                         $savedRow = $row;
-                        if($savedRow['tour_checkin_phase']==2){
+                        if($savedRow['tournament_checkin_phase']==2){
                         ?>
 						<?php 
 							include 'tournamentInfo/matchinfo.php';
@@ -296,7 +297,7 @@ require_once "segments/navigation.php";
 					</div>
 					<div id="theBrackets">
 						<?php 
-                        if($savedRow['tour_checkin_phase']==2){
+                        if($savedRow['tournament_checkin_phase']==2){
                         ?>
 							
 							<iframe width="" class="iframe bracketFrame" <?php echo'src="bracket_test.php?id='.$t_id.'"'?>></iframe>
@@ -318,6 +319,6 @@ require_once "segments/navigation.php";
 			</column><!-- ./column end -->
 		</row><!-- ./row end -->
 <?php 
-//include "tour/.../..."
+//include "games/hearthstone/match_reporting.php";
 include 'segments/footer.php';
 ?>
