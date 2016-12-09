@@ -7,7 +7,7 @@
 			
 			</div>	
 			
-			<?php if($inTour==1 || $isAdmin){?>			
+			<?php if($intour==1 || $isAdmin){?>			
 			<div id='ajaxForm' class='ajxForm'>
 				<input type='text' class='chatInput' id='chatInput<?=$chatID?>' onkeydown='keyPress(event)' onkeyup='keyUp()'/>
 				<input type='button' value='Send' id='sendBtn<?=$chatID?>' class='sendBtn btn' />
