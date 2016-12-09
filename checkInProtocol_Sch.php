@@ -9,8 +9,8 @@
 	echo '1';
 	$sql = "SELECT id
 			FROM tours
-			WHERE unix_timestamp(tournament_start_timestamp) - unix_timestamp(NOW())<=3600
-			AND tournament_checkin_phase=0";
+			WHERE unix_timestamp(tour_start) - unix_timestamp(NOW())<=3600
+			AND tour_checkin_phase=0";
 	echo '2';
 	$tournament = $db_connection->query($sql);
 
@@ -19,8 +19,8 @@
 		echo '4';
 		while($t_row=$tournament->fetch_assoc()){
 
-			$sql= "UPDATE tournaments
-				   SET tournament_checkin_phase = 1
+			$sql= "UPDATE tours
+				   SET tour_checkin_phase = 1
 				   WHERE id='".$t_row['id']."'";
 			$db_connection->query($sql);
 
