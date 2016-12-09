@@ -8,7 +8,6 @@ bracketgeneration.php
 
 require_once 'segments/header.php';
 require_once 'classes/connections.php';
-require_once 'bracketgeneration.php';
 $db_connection = db_connect();
 include 'classes/Login.php';
 $login = new Login();
@@ -103,8 +102,7 @@ include 'payments/entry_fee.php';
 </head>
 <body>
 <?php 
-require_once "segments/navigation.php"; 
-require_once "payments/entry_fee.php";
+require_once "segments/navigation.php";
 ?>
 <script>
 	function joinAndLeave(){
