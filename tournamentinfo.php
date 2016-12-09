@@ -177,7 +177,7 @@ require_once "segments/navigation.php";
 					<div class="actualDetail piece">
 						€/*= $row['tournament_entry_fee'];*/
 					</div>
-				</div><!-- ./ entry fee detail end--> -->
+				</div><!-- ./ entry fee detail end--> 
 				<!-- start date detail -->
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
@@ -188,7 +188,7 @@ require_once "segments/navigation.php";
 						<?php $timestamp =$row['tour_start'];
                               /*$justDate = substr($timestamp,0,10);	*/
                               echo $timestamp?>
-					</div><!-- ./timestamp detail end --> hh
+					</div><!-- ./timestamp detail end --> 
 				</div>
                 <div class="width-6 piece">
                     <div class="nameOfDetail piece">
