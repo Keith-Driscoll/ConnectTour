@@ -541,12 +541,9 @@
     <Compile Include="testsched.php" />
     <Compile Include="ticket.php" />
     <Compile Include="tournamentinfo.php" />
-    <Compile Include="tournamentinfoold.php" />
     <Compile Include="tournaments.php" />
     <Compile Include="unverified.php" />
-    <Compile Include="updateoptions.php" />
     <Compile Include="updateTournament.php" />
-    <Compile Include="uploader_test.php" />
     <Compile Include="verification.php" />
     <Compile Include="viewSettings.php" />
     <Compile Include="web.config" />
