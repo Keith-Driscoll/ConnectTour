@@ -196,10 +196,10 @@ require_once "payments/entry_fee.php";
 				</div>
                 <div class="width-6 piece">
                     <div class="nameOfDetail piece">
-                       Tour Details
+                       <!--StartTime-->
                     </div>
                     <div class="actualDetail piece">
-                        <?= $row['tournament_details'];?> 
+                        <?= $row['tournament_details'];?> Tour Details
                     </div>
                 </div>
             
