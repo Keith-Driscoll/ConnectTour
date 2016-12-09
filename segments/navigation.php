@@ -1,11 +1,4 @@
-
-
-
-<!-- Google analytics 
-Last modified  7/3/2016 - Keith
--->
-
-<?php require_once 'analyticstracking.php';
+<?php
       session_start();
       require_once 'getProfilePicture.php';
       /*
