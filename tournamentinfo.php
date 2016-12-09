@@ -241,7 +241,7 @@ require_once "payments/entry_fee.php";
 		<!-- right column-->
 		<column cols="4">
 			<div class="infoHeader">
-				Tournament Lobby
+				Tour Lobby
 			</div>
 			<div class="infoBody chatbox">
 				<?php 
@@ -255,7 +255,7 @@ require_once "payments/entry_fee.php";
 		</column><!-- ./right column end -->
 		
 				
-	</row><!-- ./ tournament overview end-->
+	</row><!-- ./ tour overview end-->
 </div><!-- ./content end -->
 
 	<!-- panel header -->
@@ -320,6 +320,6 @@ require_once "payments/entry_fee.php";
 			</column><!-- ./column end -->
 		</row><!-- ./row end -->
 <?php 
-//include "games/hearthstone/match_reporting.php";
+//include "tour/.../..."
 include 'segments/footer.php';
 ?>
