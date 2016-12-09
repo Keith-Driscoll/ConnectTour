@@ -1,11 +1,5 @@
 <?php 
 
-/* list of files included in this page
-bracketgeneration.php
- */
-
-//require_once("classes/doLoginCheck.php");
-
 require_once 'segments/header.php';
 require_once 'classes/connections.php';
 $db_connection = db_connect();
