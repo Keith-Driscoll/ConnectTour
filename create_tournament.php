@@ -19,7 +19,7 @@
 															tour_details, tour_start, 
 															tour_max, tour_entry_fee, tour_price, 
                                                            tour_region, tour_privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-	$timestamp =  "" . $_POST['tour_start']." ".$_POST['StartTime'];
+	$timestamp =  "" . $_POST['tour_start'];
     if(isset($_POST["submit"])){							   
         $stmt->bind_param("sssssidiss", $_POST['tour_type'], $_POST['tour_name'], $_POST['tour_details'],$tour_start['tour_start'],$timestamp, $_POST['tour_max'], $_POST['tour_entry_fee'], 
                                         $_POST['tour_price'], $_POST['tour_region'], $_POST['tour_privacy']);

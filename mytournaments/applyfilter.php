@@ -24,7 +24,7 @@
 	// if(isset($_POST['Max_fee'])){
 	// 	$sql .= " AND tournament_entry_fee <= '".$_POST['Max_fee']."'";
 	// }
-	$sql.= " ORDER BY tours.tournament_checkin_phase DESC";
+	$sql.= " ORDER BY tours.tour_checkin_phase DESC";
 	$result = $db_connection->query($sql);
 	$rows = mysqli_fetch_all($result);
 	$json = json_encode($rows);
