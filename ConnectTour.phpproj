@@ -421,8 +421,6 @@
     <Compile Include="mytournaments\applyfilter.php" />
     <Compile Include="mytournaments\filter.php" />
     <Compile Include="mytournaments\pagination.php" />
-    <Compile Include="payments\entry_fee.php" />
-    <Compile Include="payments\init.php" />
     <Compile Include="profile\activity.php" />
     <Compile Include="profile\contact.php" />
     <Compile Include="profile\follow.php" />
@@ -445,8 +443,6 @@
     <Compile Include="support\user\applyfilter.php" />
     <Compile Include="support\user\myTickets.php" />
     <Compile Include="support\user\pagination.php" />
-    <Compile Include="TournamentInfo\league_table\pagination.php" />
-    <Compile Include="TournamentInfo\league_table\table.php" />
     <Compile Include="TournamentInfo\.Rhistory" />
     <Compile Include="TournamentInfo\brackets.php" />
     <Compile Include="TournamentInfo\info.php" />
@@ -458,7 +454,6 @@
     <Compile Include="tournaments\applyfilter.php" />
     <Compile Include="tournaments\filter.php" />
     <Compile Include="tournaments\pagination.php" />
-    <Compile Include="typings\jquery\jquery.d.ts" />
     <Compile Include="uploads\profile_pictures\1.png" />
     <Compile Include="uploads\profile_pictures\100.jpg" />
     <Compile Include="uploads\profile_pictures\109.jpg" />
@@ -608,17 +603,13 @@
     <Folder Include="js" />
     <Folder Include="libraries" />
     <Folder Include="mytournaments" />
-    <Folder Include="payments" />
     <Folder Include="profile" />
     <Folder Include="segments" />
     <Folder Include="support\admin" />
     <Folder Include="support\user" />
     <Folder Include="support" />
-    <Folder Include="TournamentInfo\league_table" />
     <Folder Include="TournamentInfo" />
     <Folder Include="tournaments" />
-    <Folder Include="typings\jquery" />
-    <Folder Include="typings" />
     <Folder Include="uploads\profile_pictures" />
     <Folder Include="uploads" />
   </ItemGroup>
