@@ -488,7 +488,6 @@
     <Compile Include="image_upload.php" />
     <Compile Include="login.php" />
     <Compile Include="logintocontinue.php" />
-    <Compile Include="matchinit.php" />
     <Compile Include="match_chat.php" />
     <Compile Include="myTickets.php" />
     <Compile Include="mytours.php" />
