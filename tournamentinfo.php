@@ -199,7 +199,7 @@
                        <!--Tour Details-->
                     </div>
                     <div class="actualDetail piece">
-                        <?php<?= $row['tournament_details'];?> 
+                        <?php/*<?= $row['tournament_details'];*/?> 
                        
                     </div>
                 </div>
