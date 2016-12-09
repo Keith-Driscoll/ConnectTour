@@ -293,7 +293,7 @@
 						<?php 
 							include 'tournamentInfo/matchinfo.php';
 							}else{
-								echo "No matches started";
+								echo "Tour hasn't begun yet";
 							}
 						?>
 					</div>
