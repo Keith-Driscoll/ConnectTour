@@ -211,7 +211,7 @@
 			<hr class="divider">
 			<p>We aim to bring a completely genuine approach to tours, by giving locals the oppurtunity to give a tour of their area of living. This could be a historic or architectural tour.
             It also gives tourists the opportunity to visit rural areas.<br/></p>
-			<!--<p><b>At GGLeagues, we are unified on three core values:</b></p>
+			
 			<p>
 				<b>-</b> A competitive community environment.</br>
 				<b>-</b> Full tourt control for tourists and companies.</br>
