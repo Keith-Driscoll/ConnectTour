@@ -1,4 +1,5 @@
 <?php
+//Access Members database to output registered members on the page
 	$p_id = $_GET['p_id'];
 	require_once ("classes/connections.php");
 	session_start();

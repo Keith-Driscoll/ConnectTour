@@ -3,7 +3,6 @@
 	<script src='javascript/m_lobby_chat.js'></script>
 	<div class='col-md-12 col-sm-12 col-xs-12'>								
 		<link rel='stylesheet' href='css/chat.css' />
-		<!-- missing bootstrap that deals with chat colour??? -->
 		<div>
 			<div id='view_ajax2' >
 			</div>		

@@ -56,8 +56,6 @@ $sql = "SELECT is_admin FROM player WHERE id=$p_id";
 $adminres= $db_connection->query($sql);
 $adminrow = $adminres->fetch_assoc();
 $isAdmin = $adminrow['is_admin'];
-//includes necessary file to handle payment of entry fee if required
-include 'payments/entry_fee.php';
 ?>
 
 <script src='js/jquery.min.js'></script>
