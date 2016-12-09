@@ -1,6 +1,6 @@
 <?php 
 	// edited table formatting to make each row a link to it's respective
-	// tournamentinfoNew.php page.
+	// TourinfoNew.php page.
 ?>
 <script>
 	var current_page = 1;
@@ -54,7 +54,7 @@
 					}
 					else readstring="Read";
 					//Modified by Keith 30/6/2016
-					var stringPart = `<div id="support-ticket" class="oneTournament">
+					var stringPart = `<div id="support-ticket" class="oneTour">
 									
 											<a class="selected-ticket" href="ticket.php?id=`+array[0]+`">	
 												<row centered>

@@ -75,7 +75,7 @@
 						if (array[3] == <?=$support_id['id']?>){
 							flag = 1;
 							var date = array[5];
-							var stringPart = `<div class="oneTournament">
+							var stringPart = `<div class="oneTour">
 													<a href= "ticket.php?id=`+array[0]+`">
 														<row>
 															<column cols="1"><div class="width-12 giveMinWidth">`+array[1]+`</div></column>
@@ -111,7 +111,7 @@
 						if (array[3] == 1){
 							flag = 1;
 							var date = array[5];
-							var stringPart = `<div class="oneTournament">
+							var stringPart = `<div class="oneTour">
 													<!--<a href= "ticket.php?id=`+array[0]+`"-->
 														<row>
 															<column cols="1" onclick="link(`+array[0]+`)"><div class="width-12 giveMinWidth">`+array[1]+`</div></column>

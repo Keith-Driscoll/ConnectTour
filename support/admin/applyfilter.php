@@ -12,16 +12,16 @@
 			
 	//append filters to text if needed
 	if(isset($_POST['Game']) && $_POST['Game'] != "Choose Game"){
-		//$sql .= " AND tournament_game = '".$_POST['Game']."'";
+		//$sql .= " AND tour_game = '".$_POST['Game']."'";
 	}
 	if(isset($_POST['Region']) && $_POST['Region'] != "Choose Region"){
-		//$sql .= " AND tournament_region = '".$_POST['Region']."'";
+		//$sql .= " AND tour_region = '".$_POST['Region']."'";
 	}
 	// if(isset($_POST['Min_pool'])){
-	// 	$sql .= " AND tournament_prize_pool_start >= '".$_POST['Min_pool']."'";
+	// 	$sql .= " AND tour_prize_pool_start >= '".$_POST['Min_pool']."'";
 	// }
 	// if(isset($_POST['Max_fee'])){
-	// 	$sql .= " AND tournament_entry_fee <= '".$_POST['Max_fee']."'";
+	// 	$sql .= " AND tour_entry_fee <= '".$_POST['Max_fee']."'";
 	// }
 	$result = $db_connection->query($sql);
 	$rows = mysqli_fetch_all($result);

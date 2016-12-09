@@ -12,10 +12,10 @@
 			
 	//append filters to text if needed
 	if(isset($_POST['Game']) && $_POST['Game'] != "Choose Game"){
-		//$sql .= " AND tournament_game = '".$_POST['Game']."'";
+		//$sql .= " AND tour_game = '".$_POST['Game']."'";
 	}
 	if(isset($_POST['Region']) && $_POST['Region'] != "Choose Region"){
-		//$sql .= " AND tournament_region = '".$_POST['Region']."'";
+		//$sql .= " AND tour_region = '".$_POST['Region']."'";
 	}
 	$result = $db_connection->query($sql);
 	$rows = mysqli_fetch_all($result);

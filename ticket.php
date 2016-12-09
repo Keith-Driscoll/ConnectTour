@@ -59,7 +59,7 @@
 	}
 	
 	//get replies
-	$sql3 = "SELECT * FROM ticket_messages WHERE ticket_id = ".$ticket_id." ORDER BY timestamp DESC";
+	$sql3 = "SELECT * FROM ticket_messages WHERE ticket_id = ".$ticket_id." ORDER BY timestamp ASC";
 	$messages = $db_connection->query($sql3);
 
 ?> 
