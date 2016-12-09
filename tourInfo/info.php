@@ -27,11 +27,11 @@
 						//prints out the relevant details for the tour
 						echo "
 							<li>Name: ".$row['tour_name']."</li>
-							<li>Game: ".$row['tour_game']."</li>
-							<li>Format: ".$row['tour_format']."</li>
-							<li>Start-Date: ".$row['tour_startdate']."</li>
-							<li>Start-Time: ".$row['tour_starttime']."</li>
-							<li>Max Players: ".$row['tour_p_max']."</li>
+							<li>Type: ".$row['tour_type']."</li>
+							
+							<li>Start-Date: ".$row['tour_start']."</li>
+							
+							<li>Max Players: ".$row['tour_max']."</li>
 						";
 					?>
 				</ul>
@@ -41,11 +41,11 @@
 					<?php 
 						//prints out the relevant details for the tour
 						echo "
-							<li>Min-Players: ".$row["tour_p_min"]."</li>
-							<li>Current-Players: ".$row["tour_current_players"]."</li>
+					
+							<li>Current-Members: ".$row["tour_members"]."</li>
 							<li>Entry-fee: ".$row["tour_entry_fee"]."</li>
 							<li>Region: ".$row["tour_region"]."</li>
-							<li>Prize-pool: ".$row["tour_prize_pool_start"]."</li>
+							<li>Price: ".$row["tour_price"]."</li>
 							<li>Privacy: ".$row["tour_privacy"]."</li>
 						";
 					?>
