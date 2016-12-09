@@ -22,73 +22,7 @@
 		$stmt->bind_param("s",$bio);
 		$stmt->execute();
 	}
-?>
-<!-- Insert Some JS/ajax to call follow function, and change state if buttons to match following status -->
-<!-- FIGURE SHIT OUT PLS
-	I want the follow.php script to run when big follow button, and smaller recently followed buttons are pressed
-	both times with the id of the person to be followed in the url. (id will be echoed into class of div or something)
-	Then div needs to update to show that the user is now following/unfollowing that person.__CLASS__
-	
-	Speaking of unfollowing, i'll need hover effects for the follow buttons (both big and small) that say unfollow depending on
-	whether or not the user follows them.__CLASS__
-	
-	All that's left then is to do the recently followed tabs and the following system is done. (except for feed etc.)
-
- -->
- <style>
-	.following:hover span {display:none}
-	.following:hover:before {content:"Unfollow"}
-	.edit:hover{
-		 background-color: lightgray;
-	}
-	
-</style>
-<script>	
-$(document).ready(function(){
-	//alert ('in function');
-    $('#followBtn').click( function(){
-		alert ('in function');
-        var followeeID = $('#followBtn').attr('class');
-		alert ('in function');
-		$.ajax({
-			type: "GET",
-			url: "profile/follow.php",
-			data: {followeeID: followeeID}
-  		}).done(function (data){
-		});
-    });
-});
-
-function follow(id,button_id){
-			//id: id of person to apply action on, e.g. p1_id adds id as friend
-			//codes: 1 -remove friend 2-accept request 3- reject request 4-add friend 5-follow 6-unfollow
-			var p1_id = <?= $myid ?>;
-			var p2_id = id;
-			var action_code = 6;
-			if(document.getElementById(''+button_id+'').className == "follow"){
-				action_code=5;
-			}
-			var button_id = button_id
-				$.ajax({
-				type: "GET",
-				url: "addfriend.php",
-				data: {p1_id:p1_id, p2_id:p2_id, action_code:action_code}
-  			}).done( function() {
-				if(action_code==5){
-					document.getElementById(''+button_id+'').className="";
-					document.getElementById(''+button_id+'').className="following";
-					document.getElementById(''+button_id+'').innerHTML="<span>Following</span>";
-				}
-				else{
-					document.getElementById(''+button_id+'').className="";									
-					document.getElementById(''+button_id+'').className="follow";
-					document.getElementById(''+button_id+'').innerHTML="<span>Follow</span>";
-				}
-				
-			
-			});
-}
-
+?><script>
 function copy(){
 	document.getElementById("bio").value =  
         document.getElementById("edit").innerHTML;

@@ -421,7 +421,6 @@
     <Compile Include="mytours\applyfilter.php" />
     <Compile Include="mytours\filter.php" />
     <Compile Include="mytours\pagination.php" />
-    <Compile Include="profile\activity.php" />
     <Compile Include="profile\contact.php" />
     <Compile Include="profile\notifications.php" />
     <Compile Include="profile\overview.php" />
