@@ -47,7 +47,10 @@
 	<script src="../js/jquery.validate.min.js"></script>
 	<script src="../js/scripts.js"></script> 
 	<script src="../js/navigation.js"></script> 
-	<!--<script src="../js/signup.js"></script> -->
+<!-- 
+    Commented out signup.js as it breaks the login.php page
+	<script src="../js/signup.js"></script> 
+-->
 <!--<script src="../js/main.js"></script> -->
 	<!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
 	
