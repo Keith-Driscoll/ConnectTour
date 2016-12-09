@@ -145,18 +145,7 @@
 				}
 				?>
 				
-				<p class="profile-id large"><?php echo $p_username; ?>
-					<a href="#">
-						<!-- Edit button -->
-						<?php 
-							if($isMe){
-								//echo "<span onClick='editProfile()' class='edit-icon fa fa-pencil-square-o'></span>";
-							}			
-						?>
-						
-						<!-- ./Edit button end-->
-					</a>
-				</p>
+				<p class="profile-id large"><?php echo $p_username; ?></p>
 			
 			</column>
 		</row><!-- ./ row end -->
