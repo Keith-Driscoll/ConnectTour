@@ -1,4 +1,5 @@
 /* Entry fee popup box */
+@import url('tourInfoNew.css');
 #entry_fee {
 	width:85%;
 	height:85%;
@@ -252,7 +253,7 @@
 	float: right;
 	margin-bottom:0px;
 }
-/* Tournament Overview Styling */
+/* tour Overview Styling */
 
 .infoHeader{
 	margin: 0;
@@ -559,7 +560,7 @@
 	padding:10px;
 	margin-top:15px;
 }
-.tournamentDetails{
+.tourDetails{
 	background-color: white;
 	text-align:center;
 	padding:20px;

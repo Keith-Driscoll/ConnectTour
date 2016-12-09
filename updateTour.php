@@ -8,10 +8,10 @@
 		$sql = "SELECT tour_members,tour_max FROM tours WHERE id=$t_id";
 		$res = $db_connection->query($sql);
 		$row = $res->fetch_assoc();
-		$current = $row['tournament_participants'];
+		$current = $row['tour_participants'];
 		$max = $row['tour_max'];
 		if($current<$max){
-			$stmt = $db_connection->prepare("INSERT INTO tournament_participants (Player_id, Tournaments_id) VALUES (?, ?) ");
+			$stmt = $db_connection->prepare("INSERT INTO tour_participants (Player_id, tours_id) VALUES (?, ?) ");
 			$stmt->bind_param("ii", $p_id, $t_id);
 			$stmt->execute();
 			$stmt->close();
@@ -35,7 +35,7 @@
 		
 	}
 	else{
-		$sql = "DELETE FROM tournament_participants WHERE Tournaments_id=".$t_id." AND Player_id=".$p_id;
+		$sql = "DELETE FROM tour_participants WHERE tours_id=".$t_id." AND Player_id=".$p_id;
 		$db_connection->query($sql);
 		$sql = "UPDATE tours SET tour_members = tour_members - 1 WHERE id=".$t_id;
 		$db_connection->query($sql);

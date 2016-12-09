@@ -12,11 +12,11 @@ $db_connection = db_connect();
 include 'classes/Login.php';
 $login = new Login();
 session_start();
-//holds the id of the tournament, pulled from url
+//holds the id of the tour, pulled from url
 $t_id = intval($_GET['id']);
 //holds user_id stored in session if the player is logged in
 $p_id = intval($_SESSION['user_id']);
-//query retrieves all data relating to the tournament $t_id
+//query retrieves all data relating to the tour $t_id
 $sql = "SELECT * FROM tours WHERE id = '".$t_id."'";
 $result = $db_connection->query($sql);
 $row = $result->fetch_assoc();
@@ -27,25 +27,25 @@ if($game!="Sport"){ //TODO Should be replaced with a list of supported games
 }
 
 //$checkin =$row;
-//query retrieves the ids of all players registered to the tournament
-$sql = "SELECT Player_id FROM tournament_participants WHERE Player_id = '".$p_id."' AND Tournaments_id = '".$t_id."'";
+//query retrieves the ids of all players registered to the tour
+$sql = "SELECT Player_id FROM tour_participants WHERE Player_id = '".$p_id."' AND tours_id = '".$t_id."'";
 $res = $db_connection->query($sql);
 $text = "leave";
 $joining=0;
-$inTournament = 1;
+$intour = 1;
 if($res->num_rows==0){
     $text="join";
     $joining=1;
-    $inTournament = 0;
+    $intour = 0;
 } 
 $loggedIn = $login->isUserLoggedIn();
-//if user tries to join, is logged in, is not already part of the tournament, and there is space in the tournament;
+//if user tries to join, is logged in, is not already part of the tour, and there is space in the tour;
 if (isset($_POST['join']) && ($login->isUserLoggedIn() == true) && ($test->num_rows == 0) && ($row['tour_members'] < $row['tour_max'])){
-    //query adds player to tournament participants
-    $sql = "INSERT INTO tournament_participants (Player_id, Tournaments_id) VALUES ('".$p_id."', '".$t_id."')";
+    //query adds player to tour participants
+    $sql = "INSERT INTO tour_participants (Player_id, tours_id) VALUES ('".$p_id."', '".$t_id."')";
     $enter = $db_connection->query($sql);
 
-    //query increments number of players in tournament by 1
+    //query increments number of players in tour by 1
     $sql = "UPDATE tours SET tour_members=tour_members+1";
     $enter = $db_connection->query($sql);
 }
@@ -98,7 +98,7 @@ include 'payments/entry_fee.php';
 	
 </script>
 <link rel='stylesheet' href='css/chat.css' /> 
-<link href="../css/tournamentInfoNew.css" rel="stylesheet"/>
+<link href="../css/tourInfoNew.css" rel="stylesheet"/>
 </head>
 <body>
 <?php 
@@ -110,7 +110,7 @@ require_once "payments/entry_fee.php";
 		var text  = '<?=$text?>';
 		var p_id = <?=intval($p_id)?>;
 		var t_id = <?=$t_id?>;
-		var entryFee = <?=$row['tournament_entry_fee']?>;
+		var entryFee = <?=$row['tour_entry_fee']?>;
 		
 		//If entryFee > 0, a payment is required
 		if (entryFee > 0){	
@@ -122,7 +122,7 @@ require_once "payments/entry_fee.php";
 			var joining = <?=$joining?>;
 				$.ajax({
 					type: "GET",
-					url: "updateTournament.php",
+					url: "updatetour.php",
 					data: {p_id:p_id, t_id:t_id, joining:joining}
 				}).done( function() {
 					window.location.reload(true);
@@ -133,7 +133,7 @@ require_once "payments/entry_fee.php";
 	}
 </script>	
 <div class="content top">
-	<!-- tournament overview -->
+	<!-- tour overview -->
 	<row centered>
 		<!-- left column -->
 		<column class="panel" cols="8">
@@ -178,7 +178,7 @@ require_once "payments/entry_fee.php";
 						Tour Cost
 					</div>
 					<div class="actualDetail piece">
-						€/*= $row['tournament_entry_fee'];*/
+						€/*= $row['tour_entry_fee'];*/
 					</div>
 				</div><!-- ./ entry fee detail end--> -->
 				<!-- start date detail -->
@@ -244,7 +244,7 @@ require_once "payments/entry_fee.php";
 			</div>
 			<div class="infoBody chatbox">
 				<?php 
-                $sql = "SELECT chat_id FROM chat_session WHERE class_id = ".$t_id." AND chat_class = 'tournament_lobby'";
+                $sql = "SELECT chat_id FROM chat_session WHERE class_id = ".$t_id." AND chat_class = 'tour_lobby'";
                 $result = $db_connection->query($sql);
                 $res = $result->fetch_assoc();
                 $chatID = $res['chat_id']; 
@@ -254,7 +254,7 @@ require_once "payments/entry_fee.php";
 		</column><!-- ./right column end -->
 		
 				
-	</row><!-- ./ tournament overview end-->
+	</row><!-- ./ tour overview end-->
 </div><!-- ./content end -->
 
 	<!-- panel header -->
@@ -289,7 +289,7 @@ require_once "payments/entry_fee.php";
                         if($savedRow['tour_checkin_phase']==2){
                         ?>
 						<?php 
-							include 'tournamentInfo/matchinfo.php';
+							include 'tourInfo/matchinfo.php';
                         }else{
                             echo "Tour hasn't begun yet";
                         }
@@ -308,11 +308,11 @@ require_once "payments/entry_fee.php";
                         ?>	
 					</div>
 					<div id="theParticipants">
-						<?php include 'tournamentInfo/participants.php';?>
+						<?php include 'tourInfo/participants.php';?>
 					</div>	
 					
 					<div id="theRules">
-						<?php echo $savedRow['tournament_rules']; ?>
+						<?php echo $savedRow['tour_rules']; ?>
 						
 					</div>
 				<!-- ./tabbed content end -->

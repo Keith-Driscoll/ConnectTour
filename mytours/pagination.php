@@ -1,6 +1,6 @@
 <?php 
 	// edited table formatting to make each row a link to it's respective
-	// tournamentinfoNew.php page.
+	// tourinfoNew.php page.
 ?>
 <script>
 	var current_page = 1;
@@ -54,8 +54,8 @@
 					});
 					var date = array[7].substring(0, 10);
 					var gameIconString = "../images/old/icons/png/"+array[1]+"mini.png";
-					var stringPart = `<div class="oneTournament">
-											<a href= "tournamentinfo.php?id=`+array[0]+`">
+					var stringPart = `<div class="onetour">
+											<a href= "tourinfo.php?id=`+array[0]+`">
 												<row>
 													<column cols="1"><img src="`+gameIconString+`" class="gameIcon"></column>
 													<column cols="4"><div class="width-12 giveMinWidth">`+array[2]+`</div></column>
@@ -67,8 +67,8 @@
 											</a>						
 										</div>	`;
 										
-					var mobileStringPart =` <div class="tournamentBlock">
-												<a href= "tournamentinfo.php?id=`+array[0]+`">
+					var mobileStringPart =` <div class="tourBlock">
+												<a href= "tourinfo.php?id=`+array[0]+`">
 													<div class="infoBlock">							
 														<div class="">`+array[2]+`</div>								
 														<div class="linedividor"></div>

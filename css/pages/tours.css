@@ -1,4 +1,4 @@
-/* Tournament listing styling page*/
+/* tour listing styling page*/
 .compete-tables img{width: 30px; height: 30px; margin: 0 auto; }
 .compete-tables {
     border-collapse: separate;
@@ -88,7 +88,7 @@ ul.pages {
 ul.pages li{
     float:left;
 }
-/*Tournament Creation Styling*/
+/*tour Creation Styling*/
 
 .top { float: left; margin-top: 5%; margin-bottom: 5%;
 }
@@ -104,25 +104,25 @@ aside ul {list-style: none;}
 	#legend legend{float:left;}
 	#legend h5 {margin: 0; padding: 0 15px; float:left; text-align: center; font-weight: bolder;}
 
-	/*Tournament Listing Styling*/
-.btn-join-tournament {
+	/*tour Listing Styling*/
+.btn-join-tour {
     border: 1px solid rgba(238,238,238,0.5);
     background-color: #eee;
     color: #333;
 }
-.btn-join-tournament:hover {
+.btn-join-tour:hover {
     color: #fff;
     background-color: transparent;
 }
 
-.tournament-info {
+.tour-info {
     padding: 10px;
     background: rgba(238,238,238,0.5);
     color: #fff;
     text-shadow: 1px 1px #000;
     margin: 3% 20px 0px 20px;
 }
-.tournament-info legend {
+.tour-info legend {
     color: #fff;
 }
 

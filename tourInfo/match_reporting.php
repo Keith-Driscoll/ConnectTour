@@ -59,7 +59,7 @@
 													
 				} else if ($match['player_2_result'] == $user_result){
 					
-					//create admin table, with composite key player_id and tournament_id
+					//create admin table, with composite key player_id and tour_id
 					echo "It appears that you have disagreed on who won. Admins have been notified and will be with you
 							shortly to resolve the dispute";
 					//and alert the admins				
@@ -116,7 +116,7 @@
 					
 				} else if ($match['player_1_result'] == $user_result){
 					
-					//create admin table, with composite key player_id and tournament_id
+					//create admin table, with composite key player_id and tour_id
 					echo "It appears that you have disagreed on who won. Admins have been notified and will be with you
 							shortly to resolve the dispute";
 					//and alert the admins

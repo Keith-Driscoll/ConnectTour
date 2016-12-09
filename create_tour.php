@@ -29,7 +29,7 @@
         else echo mysqli_error($db_connection);
         $stmt->close();
         $lastid = $db_connection->insert_id;	
-        $sql = "INSERT INTO chat_session (chat_class, class_id) VALUES ('tournament_lobby', ".$lastid.")";
+        $sql = "INSERT INTO chat_session (chat_class, class_id) VALUES ('tour_lobby', ".$lastid.")";
         $db_connection->query($sql);
         //deal with league scheduling table
         if($_POST['format']==='League'){
@@ -71,7 +71,7 @@
                 
             }
         }
-        header("Location: /tournamentinfo.php?id=".$lastid);
+        header("Location: /tourinfo.php?id=".$lastid);
         $db_connection->close();
         
    }	
@@ -179,7 +179,7 @@
                         <div class="date controls">
                             <input data-format="dd/MM/yyyy hh:mm" type="date" id="tour_start" name="tour_start" required=""></input>
                            
-                            <p class="help-block">Choose your tournament start time/date</p>
+                            <p class="help-block">Choose your tour start time/date</p>
                         </div>
                     </div>
                     <!-- DATE END-->
@@ -239,7 +239,7 @@
                             </select>
                         
 
-                            <p class="help-block">Select your favoured tournament format.</p>
+                            <p class="help-block">Select your favoured tour format.</p>
                         </div>
                         
                         <div class="control-group" id='leaguedetails'>

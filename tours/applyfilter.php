@@ -15,10 +15,10 @@
 		$sql .= " AND tour_region = '".$_POST['Region']."'";
 	}
 	// if(isset($_POST['Min_pool'])){
-	// 	$sql .= " AND tournament_prize_pool_start >= '".$_POST['Min_pool']."'";
+	// 	$sql .= " AND tour_prize_pool_start >= '".$_POST['Min_pool']."'";
 	// }
 	// if(isset($_POST['Max_fee'])){
-	// 	$sql .= " AND tournament_entry_fee <= '".$_POST['Max_fee']."'";
+	// 	$sql .= " AND tour_entry_fee <= '".$_POST['Max_fee']."'";
 	// }
 	$result = $db_connection->query($sql);
 	$rows = mysqli_fetch_all($result);

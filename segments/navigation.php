@@ -54,7 +54,7 @@
 			<h1 id="logo">ConnectTour</h1>
 		</a>
 		<nav>	
-			<a href="tournaments.php" class="">Tours</a>
+			<a href="tours.php" class="">Tours</a>
 			<a href="support.php" class=""> Support</a>
 			<?php 
             
@@ -117,7 +117,7 @@
 			</li>
 			<!-- link -->
 			<li>
-				<a href="mytournaments.php" class="">Your Tours</a>
+				<a href="mytours.php" class="">Your Tours</a>
 			</li>
 			<!-- link -->
 			

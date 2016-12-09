@@ -10,7 +10,7 @@
 
 	$pageNumber= 1;
 ?>
-<link href="css/tournaments.css" rel="stylesheet"/>
+<link href="css/tours.css" rel="stylesheet"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -23,15 +23,15 @@
 		<row centered>
 			
 			<?php
-				include 'tournaments/filter.php';
+				include 'tours/filter.php';
             ?>
 			
 			<!-- tour list -->
 			<column class="bothColumns" cols="10">
 				<!--Desktop Version Start-->
-				<div class="tournamentContainer xs-hidden">			
-					<div class="tournamentsList">
-						<div class="oneTournament tournamentListHeader">
+				<div class="tourContainer xs-hidden">			
+					<div class="toursList">
+						<div class="onetour tourListHeader">
 										<row>
 											<column cols="4"><div class="width-12 giveMinWidth">Name</div></column>
 											<column cols="2"><div class="width-12 giveMinWidth">Price</div></column>

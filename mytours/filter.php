@@ -26,10 +26,10 @@
 				<div>
 					<label>Tour</label>
 					<select id="game" class="select width-12" name='game'>
-						<option>Choose Tour</option>
-						<option value='Sport'>Sport</option>
-						<option value='History'>History</option>
-						<option value='Architecture'>Architecture</option>
+                        <option>Choose Tour</option>
+                        <option value='Sport'>Sport</option>
+                        <option value='History'>History</option>
+                        <option value='Architecture'>Architecture</option>
                         <option value='Adventure'>Adventure</option>
                         <option value='Scenic'>Scenic</option>
 					</select>
@@ -41,11 +41,10 @@
 				<div>
 					<label>Region</label>
 					<select id="region" class="select width-12" name='region'>
-						<option>Choose Region</option>
-						<option value='LEI'>Leinster</option>
-						<option value='MUN'>Munster</option>
-						<option value='ULS'>Ulster</option>
-						<option value='CON'>Connacht</option>
+                        <option value='LEI'>Leinster</option>
+                        <option value='MUN'>Munster</option>
+                        <option value='ULS'>Ulster</option>
+                        <option value='CON'>Connacht</option>
 					</select>
 				</div>		
 				<!-- option divider -->
@@ -53,9 +52,6 @@
 				<!-- ./option end -->
 				<!-- apply button -->
 				<input type='button' onclick='filter();' id='apply' value='Apply' class="applyButton width-12">
-                <!-- link so user can create tour -->
-                <input type='button' onclick="window.location.href= 'create_tournament.php'" id='create' value="Create" class="btn width-12">
-
 			</form>
 		</div><!-- ./filter options end -->
 	</div><!-- ./filters list end-->
@@ -72,7 +68,7 @@
 	function filterResults(game, region){
 		$.ajax({
 			type: "POST",
-			url: "tournaments/applyfilter.php",
+			url: "mytours/applyfilter.php",
 			dataType : 'json',
 			cache: false,
 			data: {Game: game, Region: region},

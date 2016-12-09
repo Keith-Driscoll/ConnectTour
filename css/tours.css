@@ -8,15 +8,15 @@
  	background-color: lightgrey;
 	margin-bottom:20px;		
 }
-.tournamentListHeader column{
+.tourListHeader column{
 	background-color: skyblue;
 	color:white;	
 }
-.tournamentListHeader{
+.tourListHeader{
 	background-color: skyblue;
 	color:white;
 }
-.tournamentListHeader row{
+.tourListHeader row{
 	background-color: skyblue;
 	color:white;
 }
@@ -43,7 +43,7 @@
 	margin-top:10px;
 	margin-bottom:10px;
 }
-.tournamentsList{	
+.toursList{	
 	min-height:455px;
 	max-height:455px;
  	background-color: lightgrey;
@@ -59,17 +59,17 @@
 	background-color: white;
 	margin: auto;
 }
-.tournamentContainer{
+.tourContainer{
 	min-height: 500px;	
 	background-color: lightgrey;
 }
-.oneTournament{
+.onetour{
 	background-color: white;
 	min-height:36px;
 	margin-top:8px;
 	transition: all ease 0.5s;
 }
-.oneTournament:hover{
+.onetour:hover{
 	cursor:pointer;
 	background-color: RGBA(255,255,255,0.6);
 	transition: all ease 0.5s;
@@ -82,20 +82,20 @@
 .optionMenu:active{
 	border:none;
 }
-.oneTournament row{
+.onetour row{
 	margin-bottom:0px;
 }
-.oneTournament column{
+.onetour column{
 	padding:10px;
 	display: flex;
 	border-right:solid 1px RGBA(0,0,0,0.1);
 	text-align: center;	
 	min-width:64px;
 }
-.oneTournament column:last-child{
+.onetour column:last-child{
 	border-right:0px;
 }
-.oneTournament column div{
+.onetour column div{
 	vertical-align: middle;
 	align-self: center;
 	text-align: center;
@@ -196,7 +196,7 @@ row column{
 .blockCoverage{
 	background-color:lightgrey;
 }
-.tournamentBlock{
+.tourBlock{
 	min-height:200px;
 	padding:10px;
 }

@@ -1,9 +1,9 @@
 <?php
 	
- // included in tournament info file.   
+ // included in tour info file.   
 	
-	//query returns entry of logged in player from tournament_participants (if it exists)
-	$sql = "SELECT * FROM tournament_participants WHERE Player_id = '".$p_id."' AND Tournaments_id = '".$t_id."'";
+	//query returns entry of logged in player from tour_participants (if it exists)
+	$sql = "SELECT * FROM tour_participants WHERE Player_id = '".$p_id."' AND tours_id = '".$t_id."'";
 	$view = $db_connection->query($sql);
 	
 	if ($view->num_rows == 1){ 
@@ -11,7 +11,7 @@
 		$banState = 0;
 		$user_name = $_SESSION['user_name'];
 		$p_id = $_SESSION['user_id'];
-		$sql = "SELECT * FROM matches WHERE (player_1_id = ".$p_id." OR player_2_id = ".$p_id.") AND (tournament_id = ".$t_id.") ";
+		$sql = "SELECT * FROM matches WHERE (player_1_id = ".$p_id." OR player_2_id = ".$p_id.") AND (tour_id = ".$t_id.") ";
 		$missingData = false;
 		$result = $db_connection->query($sql);
 		
@@ -28,7 +28,7 @@
 			$matchid = $match['id'];	
 			$self = 0;
 			$opponent = 0;
-			$pfin = 0; // Is the tournament over for this player
+			$pfin = 0; // Is the tour over for this player
 			//set self and opp to figure out who is who in the database
 			if ($p_id == $match['player_1_id']){
 				$self = 1;
@@ -40,7 +40,7 @@
 			if (($match['player_1_result'] == 1) || ($match['player_2_result'] == 1)){
 				$pfin =1;
 				if($match['player_1_result'] == 1 && $self ==1 || $match['player_2_result'] == 1 && $self ==2 ){
-					echo "<div class='youWon'>You won this tournament.</div>";
+					echo "<div class='youWon'>You won this tour.</div>";
 				}
 				else{
 					echo "<div class='knockedOut'>You have been knocked out.</div>";
@@ -99,7 +99,7 @@
 			}	
 		}
 									
-		//if (tournament has started) {
+		//if (tour has started) {
 		if ($view->num_rows == 1){   
 			//checks is user logged in
 			
@@ -111,7 +111,7 @@
 						//checks is player logged in
 						if ($row['checked_in'] == true){ 
 							
-							//if ($checkin['tournament_checkin_phase'] == 2){
+							//if ($checkin['tour_checkin_phase'] == 2){
 								//prints out match display interface					
 								if ($missingData == false){
 									require_once 'getProfilePicture.php';
@@ -198,7 +198,7 @@
 							//}
 							//else {
 								//logged in, signed up and checked in, but bracket not generated
-								//echo "The tournament has not begun yet. Please wait for the checkin phase to finish";
+								//echo "The tour has not begun yet. Please wait for the checkin phase to finish";
 							//}
 						}
 						else {
@@ -209,7 +209,7 @@
 								<row>
 									<column cols='12'>
 										<div class='alert alert-warning align-centered'>
-											You did not check into this tournament in time
+											You did not check into this tour in time
 										</div>
 									</column>
 								</row>";
@@ -239,7 +239,7 @@
 				<row>
 					<column cols='12'>
 						<div class='alert alert-warning align-centered'>
-							You didn't sign up to this tournament
+							You didn't sign up to this tour
 						</div>
 					</column>
 				</row>";

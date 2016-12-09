@@ -1,14 +1,14 @@
-<!-- this page is used in tournamentpages. -->
+<!-- this page is used in tourpages. -->
 
 <?php
-	if ($checkin['tournament_checkin_phase'] == 2){
-		// This searches for all of the matches in the tournament and orders them first by their round number and then by their id number.
-		$sql = "SELECT * FROM matches WHERE tournament_id = $t_id ORDER BY round_num ASC, id DESC";
+	if ($checkin['tour_checkin_phase'] == 2){
+		// This searches for all of the matches in the tour and orders them first by their round number and then by their id number.
+		$sql = "SELECT * FROM matches WHERE tour_id = $t_id ORDER BY round_num ASC, id DESC";
 		$result = $db_connection->query($sql);
 
 		if ($result && $result->num_rows > 0){
 			// This searches for the highest round number and sets that as the total number of rounds.
-			$sql = "SELECT MAX(round_num) as round_ceiling FROM matches WHERE tournament_id = $t_id";
+			$sql = "SELECT MAX(round_num) as round_ceiling FROM matches WHERE tour_id = $t_id";
 			$total_rounds = $db_connection->query($sql);
 			$x = $total_rounds->fetch_assoc();
 
@@ -130,7 +130,7 @@
 			}
 		}	
 	} else {
-		echo "Sorry, the bracket for this tournament has not been generated yet. Please wait for the tournament to start.";
+		echo "Sorry, the bracket for this tour has not been generated yet. Please wait for the tour to start.";
 	}
 ?>
 	</tr>

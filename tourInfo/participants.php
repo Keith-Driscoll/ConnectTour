@@ -1,6 +1,6 @@
 <?php
-    //query returns the set of all players who are part of the given tournament
-    $sql = "SELECT player.player_username,id  FROM player, tournament_participants WHERE player.id = tournament_participants.Player_id AND tournament_participants.Tournaments_id = '".$t_id."'";
+    //query returns the set of all players who are part of the given tour
+    $sql = "SELECT player.player_username,id  FROM player, tour_participants WHERE player.id = tour_participants.Player_id AND tour_participants.tours_id = '".$t_id."'";
     $result = $db_connection->query($sql);
     
     if ($result->num_rows > 0) {

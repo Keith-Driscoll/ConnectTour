@@ -1,9 +1,9 @@
-<div class="tab-pane" id="tournamentinfo">
+<div class="tab-pane" id="tourinfo">
 	<div class="row">
 		<!-- chatbox to be continued -->
     	
 			<?php
-				if ($inTournament && ($result->num_rows > 0) && $checkin['tournament_checkin_phase'] != 0){
+				if ($intour && ($result->num_rows > 0) && $checkin['tour_checkin_phase'] != 0){
 					echo "<div class='chat-box container col-lg-12 col-md-12 col-sm-12 col-xs-12'>
         					<legend>Chatbox</legend>";
 					$sql = "SELECT chat_id FROM chat_session WHERE class_id = '".$t_id."'";
@@ -19,19 +19,19 @@
 			
     	
 		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-			<h4>Tournament Information</h4>
+			<h4>tour Information</h4>
 
 			<div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
 				<ul>
 					<?php
-						//prints out the relevant details for the tournament
+						//prints out the relevant details for the tour
 						echo "
-							<li>Name: ".$row['tournament_name']."</li>
-							<li>Game: ".$row['tournament_game']."</li>
-							<li>Format: ".$row['tournament_format']."</li>
-							<li>Start-Date: ".$row['tournament_startdate']."</li>
-							<li>Start-Time: ".$row['tournament_starttime']."</li>
-							<li>Max Players: ".$row['tournament_p_max']."</li>
+							<li>Name: ".$row['tour_name']."</li>
+							<li>Game: ".$row['tour_game']."</li>
+							<li>Format: ".$row['tour_format']."</li>
+							<li>Start-Date: ".$row['tour_startdate']."</li>
+							<li>Start-Time: ".$row['tour_starttime']."</li>
+							<li>Max Players: ".$row['tour_p_max']."</li>
 						";
 					?>
 				</ul>
@@ -39,24 +39,24 @@
 			<div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
 				<ul>
 					<?php 
-						//prints out the relevant details for the tournament
+						//prints out the relevant details for the tour
 						echo "
-							<li>Min-Players: ".$row["tournament_p_min"]."</li>
-							<li>Current-Players: ".$row["tournament_current_players"]."</li>
-							<li>Entry-fee: ".$row["tournament_entry_fee"]."</li>
-							<li>Region: ".$row["tournament_region"]."</li>
-							<li>Prize-pool: ".$row["tournament_prize_pool_start"]."</li>
-							<li>Privacy: ".$row["tournament_privacy"]."</li>
+							<li>Min-Players: ".$row["tour_p_min"]."</li>
+							<li>Current-Players: ".$row["tour_current_players"]."</li>
+							<li>Entry-fee: ".$row["tour_entry_fee"]."</li>
+							<li>Region: ".$row["tour_region"]."</li>
+							<li>Prize-pool: ".$row["tour_prize_pool_start"]."</li>
+							<li>Privacy: ".$row["tour_privacy"]."</li>
 						";
 					?>
 				</ul>
 			</div>
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<h4>Tournament Description</h4>
+			<h4>tour Description</h4>
 			<?php
 				echo "
-					<p>".$row["tournament_details"]."</p>
+					<p>".$row["tour_details"]."</p>
 				";
 			?>
 			<p> 
