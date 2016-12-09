@@ -156,7 +156,7 @@
 		<ul id="sidemenu" class="align-centered">
 			<!-- Overview -->
 				<li>
-					<a href="#!" class="" id="overview">
+					<a href="#!" class="selected" id="overview">
 						<span class="fa fa-th"></span><br/>
 						<p>Overview</p>
 					</a>

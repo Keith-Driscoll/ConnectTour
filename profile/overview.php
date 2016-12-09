@@ -33,61 +33,9 @@ function copy(){
 
 
 <row centered>
-	<!-- first column -->
-	<!-- recently followed -->
-	<column cols="3">
-		<blocks cols="1">
-			<!-- title -->
-			<row centered>
-				<column cols="12">
-					<h1 class="title align-centered">Recently followed</h1>
-				</column><!-- ./title end -->
-			</row>
-			<!-- user start -->
-			<?php
-				$sql = "SELECT followers.followee, player.player_username FROM followers
-				 JOIN player ON player.id=followers.followee
-				WHERE followers.follower=".$p_id." ORDER BY followers.follow_time DESC LIMIT 3";
-				$res = $db_connection->query($sql);
-				$count = 0;
-				while($row=$res->fetch_assoc()){
-					$sql = "SELECT * FROM followers WHERE follower=".$myid." AND followee=".$row['followee'];
-					$result = $db_connection->query($sql);
-					$iFollow = 0;
-					if($result->num_rows>=1){
-						$iFollow=1;
-					}
-					$thisIsMe = $_SESSION['user_id']==$row['followee'];
-					echo "
-					<row class='align-centered'>
-					<column cols='6'>
-					<h4><a href='profile.php?id=".$row['followee']."'>".$row['player_username']."</a></h4>
-					</column>
-					<column cols='6'>
-					";
-					if(!$thisIsMe){
-						if(!$isMe && !$iFollow){
-							echo"
-							<button id='".$count."' class='follow' onClick='follow(".$row['followee'].",".$count.")'><span>Follow</span></button>
-							";
-						}
-						else echo "<button id='".$count."' class='following' onClick='follow(".$row['followee'].",".$count.")'><span>Following</span></button>";
-					}
-					
-					
-					echo "
-					</column>
-					</row>";
-					$count++;
-				}
-			
-			?>
-
-			
-		</blocks><!-- ./side bar end -->
-	</column><!-- ./ first column end -->
+	
 	<!-- second column -->
-	<column cols="9">
+	<column cols="12">
 		<!-- title -->
 		<row>
 			<column cols="6">
