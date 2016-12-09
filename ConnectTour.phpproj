@@ -490,11 +490,8 @@
     <Compile Include="uploads\profile_pictures\91.jpg" />
     <Compile Include="uploads\profile_pictures\98.jpg" />
     <Compile Include=".gitignore" />
-    <Compile Include="addfriend.php" />
-    <Compile Include="alphasignup.php" />
     <Compile Include="bracketgeneration.php" />
     <Compile Include="bracket_manipulation.php" />
-    <Compile Include="bracket_test.php" />
     <Compile Include="browse.VC.db" />
     <Compile Include="chatbox.php" />
     <Compile Include="chatClass.php" />
