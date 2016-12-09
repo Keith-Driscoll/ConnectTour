@@ -107,7 +107,7 @@ require_once "segments/navigation.php";
 		var text  = '<?=$text?>';
 		var p_id = <?=intval($p_id)?>;
 		var t_id = <?=$t_id?>;
-		var entryFee = <?=$row['tournament_entry_fee']?>;
+		var entryFee = <?=$row['tour_entry_fee']?>;
 		
 		//If entryFee > 0, a payment is required
 		if (entryFee > 0){	
