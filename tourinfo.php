@@ -319,6 +319,6 @@ require_once "payments/entry_fee.php";
 			</column><!-- ./column end -->
 		</row><!-- ./row end -->
 <?php 
-//include "games/hearthstone/match_reporting.php";
+
 include 'segments/footer.php';
 ?>
