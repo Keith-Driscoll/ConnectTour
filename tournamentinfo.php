@@ -107,16 +107,16 @@ require_once "segments/navigation.php";
 		var text  = '<?=$text?>';
 		var p_id = <?=intval($p_id)?>;
 		var t_id = <?=$t_id?>;
-		//var entryFee = <?=//$row['tour_entry_fee']?>;
+	//	var entryFee = <?=/*$row['tour_entry_fee']*/ ?>
 		
 		//If entryFee > 0, a payment is required
-	    /*
+	    
         
-        if (entryFee > 0){	
-			entry_div_show();
-            */
+      //  if (entryFee > 0){	
+	//		entry_div_show();
+            
 
-	//}  
+//	}  
     if (confirm('Are you sure you want to '+text+'?')) {			
 			var joining = <?=$joining?>;
 				$.ajax({
