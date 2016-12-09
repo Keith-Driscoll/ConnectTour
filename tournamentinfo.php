@@ -309,7 +309,7 @@ require_once "segments/navigation.php";
 					<div id="theParticipants">
 						<?php include 'tournamentInfo/participants.php';?>
 					</div>	
-					
+					hh
 					<div id="theRules">
 						<?php echo $savedRow['tournament_rules']; ?>
 						
