@@ -194,15 +194,7 @@
 							echo $timestamp?>
 					</div><!-- ./timestamp detail end -->
 				</div>
-                <div class="width-6 piece">
-                    <div class="nameOfDetail piece">
-                       <!--Tour Details-->
-                    </div>
-                    <div class="actualDetail piece">
-                        <?php/*<?= $row['tournament_details'];*/?> 
-                       
-                    </div>
-                </div>
+               
             
             
             
