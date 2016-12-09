@@ -3,7 +3,7 @@
 	$db_connection = db_connect();
 
 	$sql = "SELECT id, tour_type, tour_name, tour_price, 
-					tour_region, tour_members, tour_max, tour_start
+					tour_region, tour_members, tour_max, tour_start, tournament_details
 			FROM tours WHERE TRUE";
 
 			
