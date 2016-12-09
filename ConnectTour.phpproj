@@ -438,13 +438,9 @@
     <Compile Include="support\user\myTickets.php" />
     <Compile Include="support\user\pagination.php" />
     <Compile Include="tourInfo\.Rhistory" />
-    <Compile Include="tourInfo\brackets.php" />
     <Compile Include="tourInfo\info.php" />
-    <Compile Include="tourInfo\matchinfo.php" />
-    <Compile Include="tourInfo\match_reporting.php" />
     <Compile Include="tourInfo\participants.php" />
     <Compile Include="tourInfo\rules.php" />
-    <Compile Include="tourInfo\uglybox.php" />
     <Compile Include="tours\applyfilter.php" />
     <Compile Include="tours\filter.php" />
     <Compile Include="tours\pagination.php" />

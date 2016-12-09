@@ -68,7 +68,7 @@ include 'payments/entry_fee.php';
 	$( document ).ready(function() {
 		//Tab System (Kube doesn't have one)
 		var active;
-		active = $("#matchTab");
+		active = $("#tourTab");
     	active.addClass('active');
 		var content;
 		content = active.attr('href');
@@ -264,7 +264,7 @@ require_once "payments/entry_fee.php";
 			<!-- Main content -->
 			<div class="tabbedHeaders">
 				<div class="tabCollection">
-					<div id="matchTab" href="theMatch" class="myTabClass">Tour</div>
+					<div id="tourTab" href="theTour" class="myTabClass">Tour</div>
 					<div id="pTab" class="participantsTab myTabClass" href="theParticipants">Tour members</div>		
 					<div id="actualrulesTab" class="myTabClass" href="theRules">Extra info</div>
 				</div>	
@@ -277,21 +277,14 @@ require_once "payments/entry_fee.php";
 			<!-- container -->
 			<column cols="12">
 				<!-- tabbed content -->
-					<div id="theMatch">
+					<div id="theTour">
 						<?php if($_SESSION['user_name']=="admin"){ ?>
 							<form class="form-horizontal" action="<?php echo $_SERVER['PHP_SELF']; ?>?id=<?=$t_id?>" method="post">
 								<!--<button type="submit" name="b_gen" value="1">b_gen</button>	-->
 							</form>
 						<?php } ?>
 						<?php 
-                        $savedRow = $row;
-                        if($savedRow['tour_checkin_phase']==2){
-                        ?>
-						<?php 
-							include 'tourinfo.php';
-                        }else{
-                            echo "Tour hasn't begun yet";
-                        }
+							include 'tourInfo/info.php';
                         ?>
 					</div>
 					
@@ -299,9 +292,8 @@ require_once "payments/entry_fee.php";
 						<?php include 'tourinfo/participants.php';?>
 					</div>	
 					
-					<div id="theRules">
-						<?php echo $savedRow['tour_rules']; ?>
-						
+					<div id="theRules">                        
+                        <?php include 'tourinfo/rules.php';?>
 					</div>
 				<!-- ./tabbed content end -->
 			</column><!-- ./column end -->

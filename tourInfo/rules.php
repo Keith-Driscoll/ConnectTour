@@ -1,4 +1,6 @@
 
 <div class="row">
-	Here are some rules
+    <?php
+    $tourRules = $_GET['tour_rules'];
+    echo $tourRules; ?>
 </div>
