@@ -28,7 +28,7 @@ if($game!="Sport"){ //TODO Should be replaced with a list of supported games
 
 //$checkin =$row;
 //query retrieves the ids of all players registered to the tour
-$sql = "SELECT Player_id FROM tour_participants WHERE Player_id = '".$p_id."' AND tours_id = '".$t_id."'";
+$sql = "SELECT Player_id FROM tour_participants WHERE Player_id = '".$p_id."' AND Tours_id = '".$t_id."'";
 $res = $db_connection->query($sql);
 $text = "leave";
 $joining=0;
@@ -42,7 +42,7 @@ $loggedIn = $login->isUserLoggedIn();
 //if user tries to join, is logged in, is not already part of the tour, and there is space in the tour;
 if (isset($_POST['join']) && ($login->isUserLoggedIn() == true) && ($test->num_rows == 0) && ($row['tour_members'] < $row['tour_max'])){
     //query adds player to tour participants
-    $sql = "INSERT INTO tour_participants (Player_id, tours_id) VALUES ('".$p_id."', '".$t_id."')";
+    $sql = "INSERT INTO tour_participants (Player_id, Tours_id) VALUES ('".$p_id."', '".$t_id."')";
     $enter = $db_connection->query($sql);
 
     //query increments number of players in tour by 1
@@ -122,7 +122,7 @@ require_once "payments/entry_fee.php";
 			var joining = <?=$joining?>;
 				$.ajax({
 					type: "GET",
-					url: "updatetour.php",
+					url: "updateTour.php",
 					data: {p_id:p_id, t_id:t_id, joining:joining}
 				}).done( function() {
 					window.location.reload(true);
@@ -289,7 +289,7 @@ require_once "payments/entry_fee.php";
                         if($savedRow['tour_checkin_phase']==2){
                         ?>
 						<?php 
-							include 'tourInfo/matchinfo.php';
+							include 'tourinfo.php';
                         }else{
                             echo "Tour hasn't begun yet";
                         }
@@ -308,7 +308,7 @@ require_once "payments/entry_fee.php";
                         ?>	
 					</div>
 					<div id="theParticipants">
-						<?php include 'tourInfo/participants.php';?>
+						<?php include 'tourinfo/participants.php';?>
 					</div>	
 					
 					<div id="theRules">
