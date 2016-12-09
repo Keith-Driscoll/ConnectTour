@@ -486,8 +486,6 @@
     <Compile Include="uploads\profile_pictures\91.jpg" />
     <Compile Include="uploads\profile_pictures\98.jpg" />
     <Compile Include=".gitignore" />
-    <Compile Include="bracketgeneration.php" />
-    <Compile Include="bracket_manipulation.php" />
     <Compile Include="browse.VC.db" />
     <Compile Include="chatbox.php" />
     <Compile Include="chatClass.php" />
@@ -531,7 +529,6 @@
     <Compile Include="supporthome.php" />
     <Compile Include="table.php" />
     <Compile Include="table_data.php" />
-    <Compile Include="team.php" />
     <Compile Include="test.php" />
     <Compile Include="testsched.php" />
     <Compile Include="ticket.php" />
