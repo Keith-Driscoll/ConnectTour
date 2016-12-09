@@ -143,10 +143,10 @@
 	<div class="container">
 		<div class="clearfix"></div>
 		<row centered>
-			<column cols="3" class="right sm-hidden">
+			<!--<column cols="3" class="right sm-hidden">
 				<h2 class="align-right">Followers</h2>
 				<p class="align-right large"><?php echo $num_followers; ?></p>
-			</column>
+			</column>-->
 			<column cols="3" class="align-centered">
 				<div class="profile-photo">
 					
