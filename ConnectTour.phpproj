@@ -513,8 +513,6 @@
     <Compile Include="support.php" />
     <Compile Include="supportadmin.php" />
     <Compile Include="supporthome.php" />
-    <Compile Include="table.php" />
-    <Compile Include="table_data.php" />
     <Compile Include="test.php" />
     <Compile Include="testsched.php" />
     <Compile Include="ticket.php" />
