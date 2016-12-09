@@ -179,7 +179,7 @@ require_once "payments/entry_fee.php";
 						Tour Cost
 					</div>
 					<div class="actualDetail piece">
-						€<?= $row['tournament_entry_fee'];?>
+						€<?/*= $row['tournament_entry_fee'];*/?>
 					</div>
 				</div><!-- ./ entry fee detail end--> -->
 				<!-- start date detail -->
