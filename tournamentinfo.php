@@ -13,7 +13,7 @@
 	include 'classes/Login.php';
 	$login = new Login();
 	session_start();
-    //holds the id of the tournament, pulled from url
+    //holds the id of the tour, pulled from url
     $t_id = intval($_GET['id']);
     //holds user_id stored in session if the player is logged in
     $p_id = intval($_SESSION['user_id']);
@@ -174,15 +174,15 @@
 					</div>
 				</div><!-- ./players detail end-->
 				<!-- entry fee detail -->
-				 <!--<div class="width-6 piece">
+				 <div class="width-6 piece">
 					<div class="nameOfDetail piece">
 						Tour Cost
 					</div>
 					<div class="actualDetail piece">
-						€<?= $row['tournament_entry_fee'];?>
+						€/*<?=/* $row['tournament_entry_fee'];*/?>*/
 					</div>
 				</div><!-- ./ entry fee detail end--> -->
-				<!-- start date detail -->
+				<!-- start date detail -->-->
 				<div class="width-6 piece">
 					<div class="nameOfDetail piece">
 						Start Date
@@ -194,16 +194,7 @@
 							echo $timestamp?>
 					</div><!-- ./timestamp detail end --> 
 				</div>
-                <div class="width-6 piece">
-                    <div class="nameOfDetail piece">
-                       <!--StartTime-->
-                    </div>
-                    <div class="actualDetail piece">
-                        <?php /*$timestamp =$row['StartTime'];
-                              $justTime = substr($timestamp,0,10);	
-                              echo $justTime */?>
-                    </div>
-                </div>
+               
             
             
             
