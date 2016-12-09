@@ -198,7 +198,7 @@ require_once "payments/entry_fee.php";
                        Tour Details
                     </div>
                     <div class="actualDetail piece">
-                        <?= $row['tournament_details'];?> 
+                        <?= $row['tour_details'];?> 
                     </div>
                 </div>
             
@@ -219,7 +219,7 @@ require_once "payments/entry_fee.php";
 				<div  class="width-6 piece ">
 					<?php
                     if($loggedIn){
-                        if($row['tournament_checkin_phase']!=2){ ?><div onclick="joinAndLeave()" class="nameOfDetail piece <?=$text?>" >
+                        if($row['tour_checkin_phase']!=2){ ?><div onclick="joinAndLeave()" class="nameOfDetail piece <?=$text?>" >
 						<!--<input type='button' class='sendBtn btn'>-->
 						<?php
 							echo $text;
@@ -240,7 +240,7 @@ require_once "payments/entry_fee.php";
 		<!-- right column-->
 		<column cols="4">
 			<div class="infoHeader">
-				Tournament Lobby
+				Tour Lobby
 			</div>
 			<div class="infoBody chatbox">
 				<?php 
@@ -286,7 +286,7 @@ require_once "payments/entry_fee.php";
 						<?php } ?>
 						<?php 
                         $savedRow = $row;
-                        if($savedRow['tournament_checkin_phase']==2){
+                        if($savedRow['tour_checkin_phase']==2){
                         ?>
 						<?php 
 							include 'tournamentInfo/matchinfo.php';
@@ -297,7 +297,7 @@ require_once "payments/entry_fee.php";
 					</div>
 					<div id="theBrackets">
 						<?php 
-                        if($savedRow['tournament_checkin_phase']==2){
+                        if($savedRow['tour_checkin_phase']==2){
                         ?>
 							
 							<iframe width="" class="iframe bracketFrame" <?php echo'src="bracket_test.php?id='.$t_id.'"'?>></iframe>
