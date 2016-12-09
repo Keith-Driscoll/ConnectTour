@@ -117,7 +117,7 @@
 			</li>
 			<!-- link -->
 			<li>
-				<a href="mytournaments.php" class="">Your Tournaments</a>
+				<a href="mytournaments.php" class="">Your Tours</a>
 			</li>
 			<!-- link -->
 			
