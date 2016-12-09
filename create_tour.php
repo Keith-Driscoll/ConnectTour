@@ -31,81 +31,19 @@
         $lastid = $db_connection->insert_id;	
         $sql = "INSERT INTO chat_session (chat_class, class_id) VALUES ('tour_lobby', ".$lastid.")";
         $db_connection->query($sql);
-        //deal with league scheduling table
-        if($_POST['format']==='League'){
-            $num_matches = intval($_POST['matches_per_week']);   
-            $lastid=1;
-            for($i=0;$i<$num_matches;$i++){
-                $daypost = 'dayofweek'.$i;
-                $timepost = 'time'.$i;
-                $time=$_POST[$timepost];
-                $daynumber =0;
-                switch($_POST[$daypost]){
-                    case 'Monday':
-                        $daynumber=1;
-                        break;
-                    case 'Tuesday':
-                        $daynumber=2;
-                        break;
-                    case 'Wednesday':
-                        $daynumber=3;
-                        break;
-                    case 'Thursday':
-                        $daynumber=4;
-                        break;
-                    case 'Friday':
-                        $daynumber=5;
-                        break;
-                    case 'Saturday':
-                        $daynumber=6;
-                        break;
-                    case 'Sunday':
-                        $daynumber=7;  
-                        break;
-                    default:
-                        break;            
-                }
-                
-                 $sql = "INSERT INTO league_scheduling (league_id,day,time) VALUES ($lastid,$daynumber,'$time')";
-                 $db_connection->query($sql);
-                
+       
             }
-        }
+        
         header("Location: /tourinfo.php?id=".$lastid);
         $db_connection->close();
         
-   }	
+   	
 	
 
 	
 
 ?>	
 <script src='js/jquery.min.js'></script>
-<script>
-    $('document').ready(function(){
-        $('#leaguedetails').hide();
-        
-        $('#format').on('change', function() {
-            if(this.value=='League'){
-                $('#leaguedetails').show();
-            }
-            else{
-                $('#leaguedetails').hide();
-            }
-        });
-        
-        $('#matches_per_week').on('change',function(){
-            var i = parseInt(this.value);
-            $('.dayform').remove();
-            for(var j=0;j<i;j++){
-                var html_string = "<div class='dayform'><br><select name='dayofweek"+j+"'><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option></select><input type='time' name='time"+j+"'></input></div><br>";
-                $(this).parent().append(html_string);
-            }
-        });
-    });
-    
-    
-</script>
 <style>
 	
 	.top{
@@ -118,26 +56,7 @@
 </style>
 	
     <div class="container top">
-        <!--<aside class="well col-lg-3 col-mid-3 col-sm-3 hidden-xs">
-            <ul>
-                <li><legend>Sidebar</legend></li>
-
-                <li>
-                    <p>Lorem ipsum doler sit amet.</p>
-                </li>
-
-                <li><a href="#">link</a></li>
-
-                <li><a href="#">link</a></li>
-
-                <li><a href="#">link</a></li>
-
-                <li><a href="#">link</a></li>
-
-                <li><a href="#">link</a></li>
-            </ul>
-        </aside>-->
-
+       
         <div style="margin-bottom:10px"class="container col-lg-9 col-md-9 col-sm-9 col-xs-12">
             <div class="well container col-lg-12 col-md-9 col-sm-12 col-xs-12">
                 <h3>Create your own Tour</h3>
@@ -224,38 +143,7 @@
                     </div>
                     <!-- DESCRIPTION END-->
                     
-                    <!-- FORMAT START
-
-                    <div class="control-group">
-                        <label class="control-label" for="format">Format</label>
-
-                        <div class="controls">
-                            <select name="format" id="format" required="">
-	                            <option>Single Elimination</option>
-	                            <option>Double Elimination</option>
-                                <option>League</option>
-	                            <option>Groups - Single Elimination</option>
-	                            <option>Groups - Double Elimination</option>
-                            </select>
-                        
-
-                            <p class="help-block">Select your favoured tour format.</p>
-                        </div>
-                        
-                        <div class="control-group" id='leaguedetails'>
-                             <label class="control-label" >Matches Per Week</label>
-
-                            <div class="controls">
-                                <select name='matches_per_week' id='matches_per_week'>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- FORMAT END-->
+                   
                     
                     <!-- MAX Tourists START -->
 
@@ -336,7 +224,7 @@
                             <p class="help-block">Select your starting entry fee</p>
                         </div>
                     </div>
-                    <!-- Prize pool END-->
+                    <!-- Price END-->
                     
                     <!-- Entry Fee START -->
 
