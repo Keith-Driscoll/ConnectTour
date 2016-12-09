@@ -317,7 +317,6 @@
     <Compile Include="css\pages\navigation.css" />
     <Compile Include="css\pages\profile.css" />
     <Compile Include="css\pages\signup.css" />
-    <Compile Include="css\pages\tourInfo.css" />
     <Compile Include="css\pages\tours.css" />
     <Compile Include="css\bracketStyle.css" />
     <Compile Include="css\chat.css" />
@@ -325,7 +324,6 @@
     <Compile Include="css\entry_fee.css" />
     <Compile Include="css\flexslider.css" />
     <Compile Include="css\games.css" />
-    <Compile Include="css\games_played.css" />
     <Compile Include="css\generalCase.css" />
     <Compile Include="css\icons.css" />
     <Compile Include="css\kube.css" />
@@ -333,7 +331,7 @@
     <Compile Include="css\notifications.css" />
     <Compile Include="css\style.css" />
     <Compile Include="css\ticket.css" />
-    <Compile Include="css\tourInfoNew.css" />
+    <Compile Include="css\tourInfo.css" />
     <Compile Include="css\tours.css" />
     <Compile Include="fonts\ElegantIcons.eot" />
     <Compile Include="fonts\ElegantIcons.svg" />
@@ -428,21 +426,11 @@
     <Compile Include="segments\.htaccess" />
     <Compile Include="segments\footer.php" />
     <Compile Include="segments\header.php" />
-    <Compile Include="segments\jumbotron.php" />
     <Compile Include="segments\logged_in.php" />
     <Compile Include="segments\not_logged_in.php" />
-    <Compile Include="support\admin\applyfilter.php" />
-    <Compile Include="support\admin\claimticket.php" />
-    <Compile Include="support\admin\myTickets.php" />
-    <Compile Include="support\admin\pagination.php" />
-    <Compile Include="support\user\applyfilter.php" />
-    <Compile Include="support\user\myTickets.php" />
-    <Compile Include="support\user\pagination.php" />
     <Compile Include="tourInfo\.Rhistory" />
-    <Compile Include="tourInfo\brackets.php" />
     <Compile Include="tourInfo\info.php" />
     <Compile Include="tourInfo\matchinfo.php" />
-    <Compile Include="tourInfo\match_reporting.php" />
     <Compile Include="tourInfo\participants.php" />
     <Compile Include="tourInfo\rules.php" />
     <Compile Include="tourInfo\uglybox.php" />
@@ -576,8 +564,6 @@
     <Folder Include="mytours\" />
     <Folder Include="profile" />
     <Folder Include="segments" />
-    <Folder Include="support\admin" />
-    <Folder Include="support\user" />
     <Folder Include="support" />
     <Folder Include="tourInfo\" />
     <Folder Include="tours\" />
