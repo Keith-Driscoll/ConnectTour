@@ -161,27 +161,6 @@
 						<p>Overview</p>
 					</a>
 				</li><!-- ./Overview End -->
-			<!-- Friends -->
-				<li>
-					<a href="#!" id="friends" class="">
-						<span class="fa fa-heart"></span><br/>
-						<p>Friends</p>
-					</a>
-				</li><!-- ./Friends End -->
-			<!-- Game Accounts -->
-				<li>
-					<a href="#!" id="games" class="">
-						<span class="fa fa-gamepad"></span><br/>
-						<p>Tours</p>
-					</a>
-				</li><!-- ./Tour Accounts End -->
-			<!-- Teams -->
-				<li>
-					<a href="#!" id="teams" class="">
-						<span class="fa fa-shield"></span><br/>
-						<p>Groups</p>
-					</a>
-				</li><!-- ./Group End -->
 			<!-- Contact -->		
 				<li>
 					<a href="#!" id="contact" class="">
