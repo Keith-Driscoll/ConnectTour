@@ -317,7 +317,6 @@
     <Compile Include="css\pages\navigation.css" />
     <Compile Include="css\pages\profile.css" />
     <Compile Include="css\pages\signup.css" />
-    <Compile Include="css\pages\tourInfo.css" />
     <Compile Include="css\pages\tours.css" />
     <Compile Include="css\bracketStyle.css" />
     <Compile Include="css\chat.css" />
@@ -332,7 +331,7 @@
     <Compile Include="css\notifications.css" />
     <Compile Include="css\style.css" />
     <Compile Include="css\ticket.css" />
-    <Compile Include="css\tourInfoNew.css" />
+    <Compile Include="css\tourInfo.css" />
     <Compile Include="css\tours.css" />
     <Compile Include="fonts\ElegantIcons.eot" />
     <Compile Include="fonts\ElegantIcons.svg" />
@@ -420,7 +419,6 @@
     <Compile Include="mytours\applyfilter.php" />
     <Compile Include="mytours\filter.php" />
     <Compile Include="mytours\pagination.php" />
-    <Compile Include="profile\activity.php" />
     <Compile Include="profile\contact.php" />
     <Compile Include="profile\notifications.php" />
     <Compile Include="profile\overview.php" />
