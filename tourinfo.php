@@ -98,7 +98,7 @@ include 'payments/entry_fee.php';
 	
 </script>
 <link rel='stylesheet' href='css/chat.css' /> 
-<link href="../css/tourInfoNew.css" rel="stylesheet"/>
+<link href="../css/tourInfo.css" rel="stylesheet"/>
 </head>
 <body>
 <?php 
@@ -265,7 +265,6 @@ require_once "payments/entry_fee.php";
 			<div class="tabbedHeaders">
 				<div class="tabCollection">
 					<div id="matchTab" href="theMatch" class="myTabClass">Tour</div>
-					<div class="myTabClass" href="theBrackets">places visited</div>
 					<div id="pTab" class="participantsTab myTabClass" href="theParticipants">Tour members</div>		
 					<div id="actualrulesTab" class="myTabClass" href="theRules">Extra info</div>
 				</div>	
@@ -295,18 +294,7 @@ require_once "payments/entry_fee.php";
                         }
                         ?>
 					</div>
-					<div id="theBrackets">
-						<?php 
-                        if($savedRow['tour_checkin_phase']==2){
-                        ?>
-							
-							<iframe width="" class="iframe bracketFrame" <?php echo'src="bracket_test.php?id='.$t_id.'"'?>></iframe>
-						<?php
-                        }else{
-                            echo "Tour has not begun yet.";
-                        }
-                        ?>	
-					</div>
+					
 					<div id="theParticipants">
 						<?php include 'tourinfo/participants.php';?>
 					</div>	
