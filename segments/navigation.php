@@ -135,7 +135,7 @@
 			<!-- link -->
 			
 			<li>
-				<a href="support.php" class="">My Tickets</a>
+				<a href="mytickets.php" class="">My Tickets</a>
 			</li>
 			<hr/>
 			<!-- link -->
