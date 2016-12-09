@@ -192,10 +192,10 @@ require_once "segments/navigation.php";
 				</div>
                 <div class="width-6 piece">
                     <div class="nameOfDetail piece">
-                       <!--StartTime-->
+                       Tour Details
                     </div>
                     <div class="actualDetail piece">
-                        <?= $row['tour_details'];?> Tour Details
+                        <?= $row['tour_details'];?> 
                     </div>
                 </div>
             
