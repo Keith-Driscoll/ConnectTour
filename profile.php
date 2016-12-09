@@ -99,35 +99,6 @@
 		//end
 	}); 
 	
-	function addFriend(code){
-			//codes: 1 -remove friend 2-accept request 3- reject request 4-add friend 5-follow 6-unfollow 
-			var p1_id = <?= intval($_SESSION['user_id']) ?>;
-			var p2_id = <?= intval($_GET['id']) ?>;
-			var action_code = code;
-			if(action_code == 6 && document.getElementById('follow').className=='followButton'){
-				action_code = 5;
-			}
-			if(action_code ==5 && document.getElementById('follow').className=='unfollowButton'){
-				action_code = 6;
-			}
-			$.ajax({
-				type: "GET",
-				url: "addfriend.php",
-				data: {p1_id:p1_id, p2_id:p2_id, action_code:action_code},
-				success:function(){
-					if(action_code==5){
-					document.getElementById('follow').className="";
-					document.getElementById('follow').className="unfollowButton";
-					document.getElementById('follow').innerHTML="<span>Following</span>";
-				}
-					else{
-					document.getElementById('follow').className="";									
-					document.getElementById('follow').className="followButton";
-					document.getElementById('follow').innerHTML="<span>Follow</span>";
-				}
-				}
-  			});		
-	}
 	function editPicture(){
 		$(".editProfilePicButton").hide();
 		$(".imageErrorMessage").html("");
@@ -143,11 +114,7 @@
 	<div class="container">
 		<div class="clearfix"></div>
 		<row centered>
-			<!--<column cols="3" class="right sm-hidden">
-				<h2 class="align-right">Followers</h2>
-				<p class="align-right large"><?php echo $num_followers; ?></p>
-			</column>-->
-			<column cols="3" class="align-centered">
+			<column cols="6" class="align-centered">
 				<div class="profile-photo">
 					
 					<?php 
@@ -183,41 +150,8 @@
 						<!-- Edit button -->
 						<?php 
 							if($isMe){
-								//echo "<span onClick='editProfile()' class='edit-icon fa fa-pencil-square-o'></span>";
-							}
-							else {
-								//friends
-								if($areFriends){
-									echo "<span onClick='addFriend(1)' class='edit-icon fa fa-times'></span>";
-								}
-								//friend request sent but not friends
-								elseif($sentMeRequest){
-									echo "<span onClick='addFriend(2)' class='edit-icon fa fa-check-circle'></span>";
-									echo "<span onClick='addFriend(3)' class='edit-icon fa fa-times'></span>";
-								}
-								elseif($ISentRequest){
-									echo "<button class='requestSent' onClick='addFriend(3)'><span>Request Sent</span></button>";
-								}
-								//not friends
-								else {
-									echo "<span onClick='addFriend(4)' class='edit-icon fa fa-plus-square-o'></span>";
-								}
-								
-								echo "<br>";
-								//not following
-								if(!$following){
-									echo "<button id='follow' class='followButton' onClick='addFriend(5)'><span>Follow</span></button>";
-								}
-								//following
-								else{
-									echo "<button  id='follow' onClick='addFriend(6)' class='unfollowButton'><span>Following</span></button>";
-								}
-								//follows you
-								if($followsMe){
-									echo "<button>Follows You</button>";
-								}
-							}
-							
+								echo "<span onClick='editProfile()' class='edit-icon fa fa-pencil-square-o'></span>";
+							}			
 						?>
 						
 						<!-- ./Edit button end-->
@@ -225,50 +159,8 @@
 				</p>
 			
 			</column>
-			<column cols="3" class="left sm-hidden">
-				<h2 class="align-left">Following</h2>
-				<p class="align-left large"><?php echo $num_following; ?></p>
-			</column>
 		</row><!-- ./ row end -->
 	</div><!-- ./container end -->
-
-
-
-
-
-<!-- Move PHP where appropriate -->
-				<!-- Following
-				<div class="following-float">
-					<div class="following ">
-						<h3>Following</h3>
-						
-					</div>
-				</div><!-- ./Following end -->
-				<!-- Followers 
-				<div class="followers-float">
-					<div class="followers">
-						<h3>Followers</h3>
-						<?php /*
-							$sql = "SELECT COUNT(followee) AS followees FROM followers WHERE followee = '".$p_id."'";
-							$result = $db_connection->query($sql);
-							if ($result){	
-								$num_followees = $result->fetch_assoc();
-							}
-							echo "
-								<p>".$num_followees['followees']."</p>
-							";
-						*/ ?>
-					</div>
-				</div><!-- ./text styling end-->
-				<!-- ./Followers end-->
-				
-<!-- ./ END -->
-
-
-
-
-
-
 	<!-- navigation -->
 	<row centered id="sidebar" class="<?php echo $p_id; ?>">
 		<!-- Sidebar -->
