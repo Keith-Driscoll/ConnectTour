@@ -203,18 +203,18 @@
 									echo "<span onClick='addFriend(4)' class='edit-icon fa fa-plus-square-o'></span>";
 								}
 								
-								//echo "<br>";
-								////not following
-								//if(!$following){
-								//    echo "<button id='follow' class='followButton' onClick='addFriend(5)'><span>Follow</span></button>";
-								//}
-								////following
-								//else{
-								//    echo "<button  id='follow' onClick='addFriend(6)' class='unfollowButton'><span>Following</span></button>";
-								//}
-								////follows you
-								//if($followsMe){
-								//    echo "<button>Follows You</button>";
+								echo "<br>";
+								//not following
+								if(!$following){
+									echo "<button id='follow' class='followButton' onClick='addFriend(5)'><span>Follow</span></button>";
+								}
+								//following
+								else{
+									echo "<button  id='follow' onClick='addFriend(6)' class='unfollowButton'><span>Following</span></button>";
+								}
+								//follows you
+								if($followsMe){
+									echo "<button>Follows You</button>";
 								}
 							}
 							
