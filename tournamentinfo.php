@@ -192,7 +192,7 @@
 						<?php $timestamp =$row['tour_start'];
 							/*$justDate = substr($timestamp,0,10);	*/
 							echo $timestamp?>
-					</div><!-- ./timestamp detail end -->
+					</div><!-- ./timestamp detail end --> 
 				</div>
                 <div class="width-6 piece">
                     <div class="nameOfDetail piece">
