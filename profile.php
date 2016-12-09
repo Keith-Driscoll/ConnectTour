@@ -150,7 +150,7 @@
 						<!-- Edit button -->
 						<?php 
 							if($isMe){
-								echo //"<span onClick='editProfile()' class='edit-icon fa fa-pencil-square-o'></span>";
+								//echo "<span onClick='editProfile()' class='edit-icon fa fa-pencil-square-o'></span>";
 							}			
 						?>
 						
