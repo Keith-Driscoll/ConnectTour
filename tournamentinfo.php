@@ -102,8 +102,7 @@ include 'payments/entry_fee.php';
 </head>
 <body>
 <?php 
-require_once "segments/navigation.php"; 
-require_once "payments/entry_fee.php";
+require_once "segments/navigation.php";
 ?>
 <script>
 	function joinAndLeave(){
