@@ -143,10 +143,10 @@
 	<div class="container">
 		<div class="clearfix"></div>
 		<row centered>
-			<column cols="3" class="right sm-hidden">
+			<!--<column cols="3" class="right sm-hidden">
 				<h2 class="align-right">Followers</h2>
 				<p class="align-right large"><?php echo $num_followers; ?></p>
-			</column>
+			</column>-->
 			<column cols="3" class="align-centered">
 				<div class="profile-photo">
 					
@@ -203,18 +203,18 @@
 									echo "<span onClick='addFriend(4)' class='edit-icon fa fa-plus-square-o'></span>";
 								}
 								
-								echo "<br>";
-								//not following
-								if(!$following){
-									echo "<button id='follow' class='followButton' onClick='addFriend(5)'><span>Follow</span></button>";
-								}
-								//following
-								else{
-									echo "<button  id='follow' onClick='addFriend(6)' class='unfollowButton'><span>Following</span></button>";
-								}
-								//follows you
-								if($followsMe){
-									echo "<button>Follows You</button>";
+								//echo "<br>";
+								////not following
+								//if(!$following){
+								//    echo "<button id='follow' class='followButton' onClick='addFriend(5)'><span>Follow</span></button>";
+								//}
+								////following
+								//else{
+								//    echo "<button  id='follow' onClick='addFriend(6)' class='unfollowButton'><span>Following</span></button>";
+								//}
+								////follows you
+								//if($followsMe){
+								//    echo "<button>Follows You</button>";
 								}
 							}
 							

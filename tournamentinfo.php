@@ -237,7 +237,7 @@ require_once "segments/navigation.php";
 		<!-- right column-->
 		<column cols="4">
 			<div class="infoHeader">
-				Tour Lobby
+				Tour Chat Lobby
 			</div>
 			<div class="infoBody chatbox">
 				<?php 
