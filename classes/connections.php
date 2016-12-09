@@ -3,7 +3,7 @@
 		$servername = "127.0.0.1:49354";
         $username = "azure";
         $password = "6#vWHD_$";
-        $dbname = "ggl_main";
+        $dbname = "connecttour_db";
 
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);

@@ -43,7 +43,7 @@
 		&& ($_POST['user_password_new'] === $_POST['user_password_repeat'])
 	) {
 		// create a database connection
-		$db_connection = new mysqli("127.0.0.1:49354", "azure", "6#vWHD_$", "ggl_main");
+		$db_connection = new mysqli("127.0.0.1:49354", "azure", "6#vWHD_$", "connecttour_db");
 		// change character set to utf8 and check it
 		if (!($db_connection->set_charset("utf8_general_ci"))) {
 			$errors[] = $db_connection->error;
