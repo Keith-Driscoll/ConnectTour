@@ -501,7 +501,6 @@
     <Compile Include="getProfilePicture.php" />
     <Compile Include="get_notifications.php" />
     <Compile Include="image_upload.php" />
-    <Compile Include="leagues.php" />
     <Compile Include="login.php" />
     <Compile Include="logintocontinue.php" />
     <Compile Include="matchinit.php" />
