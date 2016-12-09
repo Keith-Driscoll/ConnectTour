@@ -12,11 +12,11 @@ $db_connection = db_connect();
 include 'classes/Login.php';
 $login = new Login();
 session_start();
-//holds the id of the tournament, pulled from url
+//holds the id of the tour, pulled from url
 $t_id = intval($_GET['id']);
-//holds user_id stored in session if the player is logged in
+//holds user_id stored in session if the tourist is logged in
 $p_id = intval($_SESSION['user_id']);
-//query retrieves all data relating to the tournament $t_id
+//query retrieves all data relating to the tour $t_id
 $sql = "SELECT * FROM tours WHERE id = '".$t_id."'";
 $result = $db_connection->query($sql);
 $row = $result->fetch_assoc();
