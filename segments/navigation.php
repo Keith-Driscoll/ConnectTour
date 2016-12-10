@@ -64,10 +64,14 @@
             ?>
 			
 			
-			<?php /*
+			<?php
+            /*
+             Email system is still non-functional so default database value for 
+             verification check is set to 1
+             * */
              $currentpage = $_SERVER['PHP_SELF'];
-            // //Pages allowed to be visited when user is unverified
-            // //Removing unverified or login will cause infinite loop, don't remove.
+             //Pages allowed to be visited when user is unverified
+             //Removing unverified or login will cause infinite loop, don't remove.
              if($currentpage!= "/index.php" && $currentpage != "/unverified.php" && $currentpage != "/login.php" && $currentpage != "/signup.php"){
              	if($_SESSION['user_id']!=null){
              		$sql = "SELECT is_verified FROM player WHERE id = " . $_SESSION['user_id'];
@@ -82,7 +86,7 @@
              	else{
              		header('Location: login.php');	
              	}				
-             }*/
+             }
             ?>
 			
 			
