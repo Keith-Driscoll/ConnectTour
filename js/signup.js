@@ -103,7 +103,11 @@ $(function() {
                         $(this).find('label').css('cursor','default');
                         $('#success').fadeIn();
 						// Handler for page redirect
-						window.setTimeout(function () {
+                        window.setTimeout(function () {
+                            /*
+                            ***ERROR***
+                            Redirection link doesnt unclude user's ID
+                            */
 							location.href = "profile.php";
 						}, 3000);// 3 second delay until page redirect
                     });
