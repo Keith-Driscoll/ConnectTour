@@ -427,7 +427,6 @@
     <Compile Include="segments\.htaccess" />
     <Compile Include="segments\footer.php" />
     <Compile Include="segments\header.php" />
-    <Compile Include="segments\jumbotron.php" />
     <Compile Include="segments\logged_in.php" />
     <Compile Include="segments\not_logged_in.php" />
     <Compile Include="support\admin\applyfilter.php" />
