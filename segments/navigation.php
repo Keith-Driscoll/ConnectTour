@@ -12,9 +12,9 @@
 <!--./ Do not delete -->
 <script src='../js/jquery.min.js'></script>
 <script>
-	/*
+	
 	function getNotifications(){
-	var p_id = 0; ///CHANGE THIS BACK SOON
+	var p_id = 0; 
 	$.ajax({
 		type: "GET",
 		url: "get_notifications.php",
@@ -32,7 +32,7 @@
 	
 	
 	function sessionTimer(){
-		var p_id = 0;///CHANGE THIS BACK SOON
+		var p_id = 0;
 		if(p_id!=0){
 			alert("Session timed out. Please login to continue.");
 		}
@@ -43,7 +43,7 @@
 			var notificationTimer = setInterval(getNotifications, 600000);	
 			//var sessionTime = setInterval(sessionTimer,18000000); //30 minute timeout
 	});
-	*/
+	
 	
 </script>
 <header>
