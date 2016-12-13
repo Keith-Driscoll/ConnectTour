@@ -12,7 +12,7 @@ $login = new Login();
 //Original
 require_once 'segments/navigation.php'; 
 	if($login->isUserLoggedIn()==true){
-		header("Location: index.php");
+        header("Location: profile.php?id=".$_SESSION['user_id']."");
 		exit;
 	}
 

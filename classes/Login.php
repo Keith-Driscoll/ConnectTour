@@ -62,7 +62,6 @@ class Login{
             // if no connection errors (= working database connection)
             if (!$this->db_connection->connect_errno) {
 
-                echo 'connected to database';
                 // escape the POST stuff
                 $user_name = $this->db_connection->real_escape_string($_POST['user_name']);
                 // database query, getting all the info of the selected user (allows login via email address in the
@@ -89,7 +88,7 @@ class Login{
 
 						function random_colour_part() {
     						return str_pad( dechex( mt_rand( 0, 255 ) ), 2, '0', STR_PAD_LEFT);
-						}
+						}   
 
 						function random_colour() {
                             return random_colour_part() . random_colour_part() . random_colour_part();

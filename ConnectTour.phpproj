@@ -427,7 +427,6 @@
     <Compile Include="segments\.htaccess" />
     <Compile Include="segments\footer.php" />
     <Compile Include="segments\header.php" />
-    <Compile Include="segments\jumbotron.php" />
     <Compile Include="segments\logged_in.php" />
     <Compile Include="segments\not_logged_in.php" />
     <Compile Include="support\admin\applyfilter.php" />
@@ -495,7 +494,6 @@
     <Compile Include="image_upload.php" />
     <Compile Include="login.php" />
     <Compile Include="logintocontinue.php" />
-    <Compile Include="matchinit.php" />
     <Compile Include="match_chat.php" />
     <Compile Include="myTickets.php" />
     <Compile Include="mytours.php" />
@@ -517,14 +515,9 @@
     <Compile Include="setBans.php" />
     <Compile Include="signup.php" />
     <Compile Include="submit.php" />
-    <Compile Include="support(old).php" />
     <Compile Include="support.php" />
     <Compile Include="supportadmin.php" />
     <Compile Include="supporthome.php" />
-    <Compile Include="table.php" />
-    <Compile Include="table_data.php" />
-    <Compile Include="test.php" />
-    <Compile Include="testsched.php" />
     <Compile Include="ticket.php" />
     <Compile Include="tourinfo.php" />
     <Compile Include="tours.php" />
