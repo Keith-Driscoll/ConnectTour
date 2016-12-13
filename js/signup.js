@@ -95,7 +95,7 @@ $(function() {
             $(form).ajaxSubmit({
                 type:"GET",
                 data: $(form).serialize(),
-                url:"login.php",
+                url:"index.php",
                 success: function() {
                     $('#login-form :input').attr('disabled', 'disabled');
                     $('#login-form').fadeTo( "slow", 0.15, function() {
@@ -108,7 +108,7 @@ $(function() {
                             ***ERROR***
                             Redirection link doesnt unclude user's ID
                             */
-							location.href = "index.php";
+							location.href = "profile.php";
 						}, 3000);// 3 second delay until page redirect
                     });
                 },
