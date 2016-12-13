@@ -34,7 +34,7 @@
        
             }
         
-        header("Location: /tourinfo.php?id=".$lastid);
+        //header("Location: /tourinfo.php?id=".$lastid);
         $db_connection->close();
         
    	
