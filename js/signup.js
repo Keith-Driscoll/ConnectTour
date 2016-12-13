@@ -95,7 +95,7 @@ $(function() {
             $(form).ajaxSubmit({
                 type:"GET",
                 data: $(form).serialize(),
-                url:"index.php",
+                url:"login.php",
                 success: function() {
                     $('#login-form :input').attr('disabled', 'disabled');
                     $('#login-form').fadeTo( "slow", 0.15, function() {
