@@ -2,7 +2,7 @@
 <?php 
 
 include 'segments/header.php';
-/*Added in by Keith*/
+
 
 // load the login class
 require_once 'classes/Login.php';
@@ -17,9 +17,12 @@ require_once 'segments/navigation.php';
 	}
 
 ?>
-<link rel="stylesheet" href="css/pages/signup.css"> 
-</head><!--./ head tag ends here to support page-specific style-sheets/scripts -->
+ 
+<html><!--./ head tag ends here to support page-specific style-sheets/scripts -->
+<head>
+    <link rel="stylesheet" href="css/pages/signup.css"> 
 
+</head>
 <body class="signup">
 
 <!-- ./Header End -->
