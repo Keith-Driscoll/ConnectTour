@@ -10,7 +10,16 @@
     //    echo "Not logged in";
     //    header('Location: login.php');
     //} 
-    
+if (isset($_GET['game'])){
+    $game = $_GET['game'];	
+}
+$sql = "SELECT * FROM tours";
+$db_connection = db_connect();
+$result = $db_connection->query($sql);
+
+$pageNumber= 1;    
+
+
     include 'segments/header.php';
 	include "segments/navigation.php";
     require_once 'classes/connections.php';
