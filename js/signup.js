@@ -108,7 +108,7 @@ $(function() {
                             ***ERROR***
                             Redirection link doesnt unclude user's ID
                             */
-							location.href = "profile.php";
+							location.href = "index.php";
 						}, 3000);// 3 second delay until page redirect
                     });
                 },

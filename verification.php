@@ -8,7 +8,7 @@
 	// load the login class
 	include "classes/connections.php";
 	include 'segments/navigation.php';
-	require_once("classes/login.php");
+	require_once("classes/Login.php");
 ?>
 <!-- Email Verification Body -->
 <section id="content">
