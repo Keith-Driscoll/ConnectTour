@@ -1,16 +1,16 @@
 <?php 
     
-    //require_once("classes/Login.php");
+    require_once("classes/Login.php");
     //checks if a player is logged in, and displays navbar accordingly
-    //$login = new Login();
-    /*
+    $login = new Login();
+    
     if ($login->isUserLoggedIn() == true) {
         include("segments/logged_in.php");
     } else {
 		echo "Not logged in";
         header('Location: login.php');
     } 
-    */
+    
     include 'segments/header.php';
 	include "segments/navigation.php";
     require_once 'classes/connections.php';
